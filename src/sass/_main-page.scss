@@ -1,0 +1,49 @@
+.main-slogan-container{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    height: 478px;
+    background: linear-gradient(
+        0deg,
+        rgba(2, 2, 2, 0.40) 1.01%,
+        rgba(177, 170, 170, 0.40) 101.01%
+      ),
+      /* Добавляем ссылку на фоновое изображение */
+      url('../images/mob-main-slogan.jpg');
+    /* Задаем свойства фона */
+    background-size: cover; /* Полностью покрывает область */
+    background-position: center; /* Центрируем изображение */
+}
+
+.slogan-text h1{
+    color: var(--header-white-color);
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom:28px;
+}
+.slogan-text h3{
+    color: var(--header-white-color);
+    text-align: center;
+    font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4; /* 16.8px */
+}
+
+.slogan-text{
+    width: 288px;
+    margin: 0 auto;
+}
+.slogan-order-btn{
+    width: 278px;
+    color:var(--button-white-color);
+font-weight: 700;
+line-height: 1.4; /* 19.6px */
+}
