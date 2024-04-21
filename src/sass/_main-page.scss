@@ -12,7 +12,7 @@
       rgba(177, 170, 170, 0.4) 101.01%
     ),
     /* Добавляем ссылку на фоновое изображение */
-      url('../images/mob-main-slogan.jpg');
+      url('../images/mob-main-slogan.webp');
   /* Задаем свойства фона */
   background-size: cover; /* Полностью покрывает область */
   background-position: center; /* Центрируем изображение */
@@ -141,16 +141,59 @@ background: var(--brown-gradient);
 .product-card{
 position: relative;
  overflow: hidden; 
-background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%);
-
  border-radius: 4px;
 }
 
 .card-image{
- width: 100%;
+  width: 100%;
   height: 94px; /* Указываем высоту картинки */
 
+  background-size: cover; /* Растягиваем изображение до размеров блока */
+  background-position: center; /* Выравниваем изображение по центру */
+  transition: transform 0.5s ease; /* Плавный переход для эффекта zoom */
+
 }
+.image-1{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-1_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+
+.image-2{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-2_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-3{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-3_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-4{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-4_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-5{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-1_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-6{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-2_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+
+.image-7{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-7_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-8{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-8_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+
+.image-9{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-3_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-10{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-4_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-11{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-1_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+.image-12{
+background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/area-2_352x234.jpg') lightgray 50% / cover no-repeat;
+}
+
+
 .card-image img {
   width: 100%;
   height: 100%;
@@ -158,9 +201,9 @@ background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 1
  transition: transform 0.5s ease;
 }
 
-.product-card:hover .card-image img {
-  transform: scale(1.1);
-  
+.product-card:hover .card-image{
+  transform: scale(1.15);
+
 }
 
 .caption {
@@ -174,4 +217,79 @@ text-align: center;
     height: 42px;
     align-content: center;
  background-color: #D7D7D7;
+}
+
+// feedback-section
+.feedback-container{
+  padding: 40px 16px;
+  background: var(--feedback-background-color);
+}
+.feedback-container h2{
+  color: #000;
+  font-family: Merriweather;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+.feedback-container img{
+  border-radius: 4px;
+  width: 100%;
+}
+
+// slider
+.slider-slide{
+  padding: 10px;
+  width: 250px;
+}
+.slider-slide h3{
+  color: #000;
+  font-family: Merriweather;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.stars{
+  display: flex;
+  justify-content: flex-start;
+  gap:4px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.stars>li>svg{
+  width: 10px;
+height: 10px;
+}
+.quotes{
+  display: flex;
+  margin-bottom: 4px;
+}
+.quotes svg{
+width: 5px;
+height: 7px;
+}
+.slider-text{
+  color: #000;
+font-family: 'Roboto';
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4; /* 15.4px */
+}
+.quotes-bottom{
+  justify-content: flex-end;
+}
+
+.slider-controls{
+  display:flex;
+  justify-content: space-between;
+}
+.prev-slide,
+.next-slide{
+  border:none;
+  background: transparent;
+}
+
+.prev-slide svg,
+.next-slide svg{
+  width: 32px;
+  height: 32px;
 }
