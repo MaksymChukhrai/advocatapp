@@ -1,48 +1,61 @@
 :root {
-    --header-white-color: #FFFDFA;
-    --black-main-text-color:#000000;
-    --black-secondary-text-color:#0D0D0E;
-    --brown-gradient: linear-gradient(91deg, #7E7B79 0.66%, #524D45 28.33%, #211E1E 100.76%);
-    --footer-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #3A3838;
-    --achievements-background-color: linear-gradient(92deg, #918F8D 0.35%, #D9A96E 100%);
---feedback-background-color: linear-gradient(91deg, #CFC9C2 0.16%, #FFFAF4 100.76%);
-    --main-white-color:#FFFFFF;
---button-white-color:#E7E7E7;
---main-order-gradient:linear-gradient(91deg, #CFC9C2 0.16%, #FFFAF4 100.76%);
+  --header-white-color: #fffdfa;
+  --black-main-text-color: #000000;
+  --black-secondary-text-color: #0d0d0e;
+  --black-button-color: #262525;
+  --brown-gradient: linear-gradient(
+    91deg,
+    #7e7b79 0.66%,
+    #524d45 28.33%,
+    #211e1e 100.76%
+  );
+  --footer-background-color: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #3a3838;
+  --achievements-background-color: linear-gradient(
+    92deg,
+    #918f8d 0.35%,
+    #d9a96e 100%
+  );
+  --feedback-background-color: linear-gradient(
+    91deg,
+    #cfc9c2 0.16%,
+    #fffaf4 100.76%
+  );
+  --main-white-color: #ffffff;
+  --button-white-color: #e7e7e7;
+  --main-order-gradient: linear-gradient(91deg, #cfc9c2 0.16%, #fffaf4 100.76%);
+  --bronze-button: #b4721d;
+}
 
+body {
+  font-family: Roboto, sans-serif, Raleway;
+  font-size: 14px;
+  font-style: normal;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+li,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
-
-
-
-
-  }
-
-  body {
-    font-family: Roboto, sans-serif, Raleway;
-    font-size: 14px;
-    font-style: normal;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
-  ul,
-  li,
-  a,
-  p {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  img {
-    display: block;
-  }
+img {
+  display: block;
+}
