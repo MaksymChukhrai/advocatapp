@@ -1,14 +1,16 @@
 (() => {
-    const refs = {
-    openMenuBtn: document.querySelector(` [data-menu-open]`),
-    closeMenuBtn: document. querySelector(` [data-menu-close]`),
-    menu: document. querySelector(` [data-menu]`),
-    };
-    
-    refs.openMenuBtn.addEventListener(`click`, toggleModal);
-    refs.closeMenuBtn.addEventListener(`click`, toggleModal);
-    
-    function toggleModal() {
-     refs.menu.classList.toggle(`is-open`);
+    const openMenuBtns = document.querySelectorAll("[data-menu-open]");
+    const closeMenuBtn = document.querySelector("[data-menu-close]");
+    const menu = document.querySelector("[data-menu]");
+  
+    openMenuBtns.forEach(btn => {
+      btn.addEventListener("click", toggleMenu);
+    });
+  
+    closeMenuBtn.addEventListener("click", toggleMenu);
+  
+    function toggleMenu() {
+      menu.classList.toggle("is-open");
     }
-    })();
+  })();
+  
