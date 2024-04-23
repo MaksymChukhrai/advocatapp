@@ -83,6 +83,13 @@
     visibility: 500ms linear;
     
   }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    max-height: 900px;
+  }
+  
   .mobile-menu_close-btn {
     position: absolute;
     top: 22px;
