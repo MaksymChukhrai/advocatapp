@@ -20,9 +20,32 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 1.4; 
   margin-bottom: 20px;
 }
+
+/* Стили для кастомного выпадающего списка */
+.custom-select {
+    position: relative;
+    display: block;
+  }
+
+  /* Скрываем оригинальный селект */
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+  }
+  
+  .select-arrow {
+    position: absolute;
+    top: 43%;
+    right: 30px;
+
+  }
+
+
 
 select {
     display: block;
