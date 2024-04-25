@@ -47,6 +47,7 @@ display: block;
 .whyme-section-container{
     background-color: #FFFFFF;
     padding: 50px 16px;
+    gap: 4px;
 }
 .whyme-section-container h1{
     color: #000;
@@ -65,15 +66,18 @@ color: #000;
 font-family: 'Roboto';
 font-size: 12px;
 padding: 8px;
-gap: 8px;
+
+
 }
 .online-support img{
 width: 30px;
 height: 30px;
+margin-bottom: 8px;
 }
 
 .online-support h4{
     font-weight: 700;
+    margin-bottom: 4px;
 }
 
 .online-support p{
