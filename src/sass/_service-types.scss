@@ -75,6 +75,13 @@ select {
      align-self: center;
 }
 
+.service-title h1{
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 .migration-serv-container img{
     width: 40px;
 height: 40px;
@@ -91,7 +98,15 @@ margin-bottom: 4px;
 
 .migration-serv-img{
     height: 288px;
+    border-radius: 4px;
+}
+
+.migration-img{
     background: var(--gradient-service-img),url('../images/migration-image.jpg') lightgray 50% / cover no-repeat;
+}
+
+.criminal-img{
+    background: var(--gradient-service-img),url('../images/area-2_352x234.webp') lightgray 50% / cover no-repeat;
 }
 
 .migration-serv-container article{
