@@ -62,3 +62,109 @@ select {
     font-weight: 700;
     line-height: 1.4;
 }
+
+.migration-serv-container{
+    padding: 0px 15px;
+    padding-bottom: 50px;
+    background: var(--feedback-background-color);
+   
+}
+.service-title{
+    display: flex;
+    flex-direction: column;
+     align-self: center;
+}
+
+.migration-serv-container img{
+    width: 40px;
+height: 40px;
+display: block;
+margin: 0 auto;
+margin-bottom: 4px;
+}
+.migration-serv-container h1{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+
+.migration-serv-img{
+    height: 288px;
+    background: var(--gradient-service-img),url('../images/migration-image.jpg') lightgray 50% / cover no-repeat;
+}
+
+.migration-serv-container article{
+    margin-top: 20px;
+   
+}
+.migration-serv-container article p{
+    color: var(--black-main-text-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.services-btn{
+    color: var(--black-button-color);
+    border: 1px solid var(--bronze-button);
+    padding: 14px 30px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+
+font-family: 'Roboto';
+font-weight: 700;
+line-height: 1.4; 
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+.get-title{
+    color: var(--black-button-color);
+    font-family: 'Merriweather';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.whyme-title p{
+        font-size: 12px;
+        line-height: 1.4;
+}
+
+.service-item{
+margin-top: 18px;
+margin-bottom: 18px;
+}
+
+.service-item p{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    }
+
+.service-details{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 7.5px;
+}
+
+.service-details h3{
+    color: var(--black-button-color);
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+.service-item-bottom-text{
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 1.4;
+}

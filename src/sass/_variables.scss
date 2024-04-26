@@ -3,7 +3,7 @@
   --black-main-text-color: #000000;
   --black-secondary-text-color: #0d0d0e;
   --black-button-color: #262525;
-  --select-bg-color:#F8F3ED;
+  --select-bg-color: #f8f3ed;
   --brown-gradient: linear-gradient(
     91deg,
     #7e7b79 0.66%,
@@ -25,6 +25,11 @@
     91deg,
     #cfc9c2 0.16%,
     #fffaf4 100.76%
+  );
+  --gradient-service-img: linear-gradient(
+    0deg,
+    rgba(135, 125, 125, 0.4) 0%,
+    rgba(135, 125, 125, 0.4) 100%
   );
   --main-white-color: #ffffff;
   --button-white-color: #e7e7e7;
