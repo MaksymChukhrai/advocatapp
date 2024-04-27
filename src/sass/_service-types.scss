@@ -111,6 +111,16 @@ margin-bottom: 4px;
 .admin-img{
     background: var(--gradient-service-img),url('../images/admin-practice_w363.jpg') lightgray 50% / cover no-repeat;
 }
+.civil-img{
+    background: var(--gradient-service-img),url('../images/area-4_352x234.webp') lightgray 50% / cover no-repeat;
+}
+.intellectual-img{
+    background: var(--gradient-service-img),url('../images/area-1_352x234.webp') lightgray 50% / cover no-repeat;
+}
+
+.tax-img{
+    background: var(--gradient-service-img),url('../images/tax-law.jpg') lightgray 50% / cover no-repeat; 
+}
 
 .migration-serv-container article{
     margin-top: 20px;
@@ -139,6 +149,27 @@ line-height: 1.4;
 margin-top: 20px;
 margin-bottom: 20px;
 
+}
+.intel-list{
+    margin-bottom: 20px;
+}
+.intel-list h2{
+    color: var(--black-button-color);
+    margin-bottom: 8px;
+    font-family: 'Merriweather';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.intel-title{
+    padding: 0px 15px;
+}
+.intel-title li{
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    list-style-type: disc !important;
 }
 
 .get-title{
