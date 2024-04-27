@@ -17,11 +17,19 @@
   background-size: cover; /* Полностью покрывает область */
   background-position: center; /* Центрируем изображение */
 }
+.contacts-container{
+  background: linear-gradient(0deg, rgba(220, 218, 216, 0.30) 0%, rgba(220, 218, 216, 0.30) 100%),
+
+    url('../images/mob-menu-w393.jpg') lightgray 50% / cover no-repeat;
+    height: 546px;
+}
+
+
 
 .slogan-text h1 {
   color: var(--header-white-color);
   text-align: center;
-  font-family: Merriweather;
+  font-family: 'Merriweather';
   font-size: 18px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -47,6 +55,30 @@
   font-weight: 700;
   line-height: 1.4;
 }
+
+.contact-slogan-text{
+  width: 236px;
+  margin-top: 50px;
+}
+.contact-slogan-text h1,
+.contact-slogan-text h3{
+  color:var(--black-main-text-color);
+}
+.contact-slogan-btn{
+  padding: 14px 30px;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 8px;
+      border: 1px solid var(--Bronze-Button, #B4721D);
+      background: var(--Bronze-Button, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #B4721D);
+      margin: 0px 14px 0px 16px;
+      color: var( --header-white-color);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 120px;
+}
+
 
 // hero-section
 .hero-container {
@@ -356,8 +388,12 @@
   width: 100%;
   margin: 0 auto;
 }
+.contacts{
+  padding: 0;
+}
 
 //order-form
+.order-slogan,
 .order-form {
   display: flex;
   padding: 20px 15px;
@@ -365,6 +401,11 @@
 
   background: var(--header-white-color);
 }
+.order-slogan{
+  background:none;
+}
+
+.order-slogan h2,
 .order-form h2 {
   font-family: 'Merriweather';
   font-size: 18px;
@@ -374,6 +415,7 @@
   margin-bottom: 8px;
 }
 
+.order-slogan h3,
 .order-form h3 {
   color: var(--black-secondary-text-color);
   font-family: 'Roboto';
@@ -382,6 +424,10 @@
   line-height: 1.4; /* 19.6px */
   margin-bottom: 20px;
 }
+.order-slogan h3{
+  margin-bottom: 0px;
+}
+
 .form,
 .form-label {
   display: flex;
