@@ -122,6 +122,26 @@ margin-bottom: 4px;
     background: var(--gradient-service-img),url('../images/tax-law.jpg') lightgray 50% / cover no-repeat; 
 }
 
+.fintech-img{
+    background: var(--gradient-service-img),url('../images/fintech.jpg') lightgray 50% / cover no-repeat; 
+}
+
+.military-img{
+    background: var(--gradient-service-img),url('../images/military-law.jpg') lightgray 50% / cover no-repeat; 
+}
+
+.business-law-img{
+    background: var(--gradient-service-img),url('../images/area-8_352x234.webp') lightgray 50% / cover no-repeat; 
+}
+
+.debt-recovery-img{
+    background: var(--gradient-service-img),url('../images/debt-recovery.jpg') lightgray 50% / cover no-repeat;  
+}
+
+.debtor-protection-img{
+    background: var(--gradient-service-img),url('../images/debtor-protection.jpg') lightgray 50% / cover no-repeat;  
+}
+
 .migration-serv-container article{
     margin-top: 20px;
    
@@ -165,11 +185,24 @@ margin-bottom: 20px;
 .intel-title{
     padding: 0px 15px;
 }
+
+.labor-law-items li,
+.debt-recovery-items li,
 .intel-title li{
     font-size: 12px;
     line-height: 1.4;
     font-weight: 400;
     list-style-type: disc !important;
+}
+.debt-recovery-items{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 0px 15px;
+}
+.labor-law-items{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px 15px;
 }
 
 .get-title{
