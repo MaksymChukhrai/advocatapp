@@ -58,15 +58,20 @@ font-weight: 700;
     font-size: 12px;
 }
 
+.case-description ol,
 .case-description ul{
     padding: 0px 15px;
 }
 
+.case-description ol>li,
 .case-description ul>li{
     font-size: 12px;
     line-height: 1.4;
     font-weight: 400;
     list-style-type: disc ;
+}
+.case-description ol>li{
+    list-style-type: decimal;
 }
 .main-idea{
     margin-top: 12px;
