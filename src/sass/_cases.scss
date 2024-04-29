@@ -1,0 +1,78 @@
+.cases{
+    padding: 70px 15px;
+    background: var( --main-order-gradient);
+}
+
+.cases-about{
+    line-height:1.4;
+    margin-bottom: 24px;
+}
+.cases-about h1{
+color: var(--black-main-text-color);
+font-family: 'Merriweather';
+font-size: 18px;
+font-weight: 700;
+margin-bottom: 8px;
+}
+
+.cases-about p{
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+}
+
+.case-description{
+    line-height:1.4;
+    color: var(--black-main-text-color);
+    margin-top:10px;
+}
+.case-description h2{
+    font-family: 'Merriweather';
+font-size: 13px;
+font-weight: 700;
+}
+
+.adm-law{
+    margin-top: 8px;
+    margin-bottom:8px;
+}
+
+.case-idea{
+    margin-bottom:12px;
+}
+
+.resolution{
+    margin-bottom:4px;
+}
+.case-context{
+    margin-bottom:16px;
+}
+
+.case-description h3{
+    font-family: 'Roboto';
+font-size: 12px;
+font-weight: 700;
+}
+.case-description p{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.case-description ul{
+    padding: 0px 15px;
+}
+
+.case-description ul>li{
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    list-style-type: disc ;
+}
+.main-idea{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.cases-btn{
+    margin-top:12px;
+    margin-bottom:10px;
+}
