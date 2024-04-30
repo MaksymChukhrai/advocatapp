@@ -20,6 +20,10 @@ justify-content: space-between;
     font-weight: 700;
     line-height: 140%;
 }
+.close-button{
+    background-color: transparent;
+    border: none;
+}
 .modal-form{
     background: var(--feedback-background-color);
 }
@@ -61,6 +65,11 @@ background-color: transparent;
     background-color: transparent;
 }
 
+// скрыли секцию "спасибо"
+.thanks-section{
+    display: none;
+}
+
 .thanks-main-modal{
     padding:20px 0px;
     h1{
@@ -95,4 +104,19 @@ background-color: transparent;
     }
 
 }
-
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop{
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    box-shadow: var(--card-shadow);
+    transition: opacity var(--transition-speed);
+   pointer-events: none;
+}
