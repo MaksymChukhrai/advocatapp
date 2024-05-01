@@ -1,3 +1,5 @@
+// src\js\my-mobile-menu.js
+
 (() => {
     const openMenuBtns = document.querySelectorAll("[data-menu-open]");
     const closeMenuBtn = document.querySelector("[data-menu-close]");
@@ -5,6 +7,7 @@
   
     openMenuBtns.forEach(btn => {
       btn.addEventListener("click", toggleMenu);
+      console.log('Клик по кнопке открытия моб меню');
     });
   
     closeMenuBtn.addEventListener("click", toggleMenu);

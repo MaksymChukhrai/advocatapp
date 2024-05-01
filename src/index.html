@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
     <include src="./partials/includes/header.html"></include>
@@ -174,7 +174,7 @@
         class="form-input input-tel"
       />
       </label>
-        <button class="btn-submit" data-modal-submit type="submit">
+        <button class="btn-submit" data-modal-open type="submit">
           Передзвонити 
           <span class="btn-icon">
             <svg width="17" height="16">
@@ -281,10 +281,11 @@
 
   </main>
     <include src="./partials/includes/footer.html"></include>
-  
+
 
     <!-- modal windows html components-->
     <include src="./partials/includes/modal-order-window.html"></include>
+    <!-- modal windows script -->
   <script defer src="./js/modal-order-window.js"></script>
   <!-- mobile menu script -->
   <script defer src="./js/my-mobile-menu.js"></script>

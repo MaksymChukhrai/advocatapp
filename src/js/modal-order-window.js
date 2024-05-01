@@ -1,3 +1,4 @@
+//src\js\modal-order-window.js
 // Получаем ссылки на необходимые элементы
 const backdrop = document.querySelector('.backdrop');
 const openModalBtn = document.querySelectorAll('[data-modal-open]');
@@ -6,14 +7,18 @@ const submitModalBtn = document.querySelector('[data-modal-submit]');
 
 // Функция для открытия модального окна
 function openModal() {
+  
   backdrop.classList.remove('is-hidden');
   document.body.classList.add('modal-open');
+  console.log('Клик по кнопке открытия модального окна');
 }
 
 // Функция для закрытия модального окна
 function closeModal() {
+    
   backdrop.classList.add('is-hidden');
   document.body.classList.remove('modal-open');
+  console.log('Клик по кнопке закрытия модального окна');
 }
 
 // Добавляем обработчики событий для открытия модального окна
@@ -30,3 +35,4 @@ function closeModalBackdrop(event) {
     closeModal();
   }
 }
+

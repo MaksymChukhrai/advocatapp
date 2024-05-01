@@ -57,10 +57,12 @@ background-color: transparent;
 .thanks-modal-btn{
     background: var(--feedback-background-color);
     padding: 20px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-submit{
-    margin:0 auto;
+
     width:90vw;
     background-color: transparent;
 }
@@ -118,5 +120,5 @@ position: fixed;
     opacity: 1;
     box-shadow: var(--card-shadow);
     transition: opacity var(--transition-speed);
-   pointer-events: none;
+//    pointer-events: none; не включать! Отключает инпуты
 }
