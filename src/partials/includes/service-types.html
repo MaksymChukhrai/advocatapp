@@ -28,36 +28,5 @@
     </div>
   </div>
 </section>
-<!-- <script>
-function redirectToPage(selectElement) {
-  const selectedOption = selectElement.options[selectElement.selectedIndex];
-  const url = selectedOption.getAttribute('data-url');
-  let prefix = ''; // Префикс пустой по умолчанию
 
-  // Проверяем, находится ли проект на GitHub Pages
-  if (window.location.hostname === 'maksymchukhrai.github.io') {
-    prefix = '/advocatapp'; // Префикс для GitHub Pages
-  }
-
-  if (url) {
-    const fullUrl = prefix + url;
-    window.location.href = fullUrl;
-  }
-}
-
-  </script> -->
-  
-  <script>
-function redirectToPage(selectElement) {
-  const selectedOption = selectElement.options[selectElement.selectedIndex];
-  const url = selectedOption.getAttribute('data-url');
-
-  if (url) {
-    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const prefix = isLocalhost ? '' : '/advocatapp';
-    const fullUrl = `${window.location.origin}${prefix}/${url}`;
-    window.location.href = fullUrl;
-  }
-}
-      </script>
   
