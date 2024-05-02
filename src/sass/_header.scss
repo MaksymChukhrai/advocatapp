@@ -1,3 +1,14 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  opacity: 0.9;
+}
+main{
+  padding-top: 73px;
+}
 .header-container {
   border-bottom: 1px solid var(--header-white-color);
   background: var(--brown-gradient);
