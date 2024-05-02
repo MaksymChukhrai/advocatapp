@@ -29,13 +29,22 @@
   </div>
 </section>
 <script>
-  function redirectToPage(selectElement) {
-    const selectedOption = selectElement.options[selectElement.selectedIndex];
-    const url = selectedOption.getAttribute('data-url');
-    if (url) {
-      window.location.href = url;
-    }
+function redirectToPage(selectElement) {
+  const selectedOption = selectElement.options[selectElement.selectedIndex];
+  const url = selectedOption.getAttribute('data-url');
+  let prefix = ''; // Префикс пустой по умолчанию
+
+  // Проверяем, находится ли проект на GitHub Pages
+  if (window.location.hostname === 'maksymchukhrai.github.io') {
+    prefix = '/advocatapp'; // Префикс для GitHub Pages
   }
+
+  if (url) {
+    const fullUrl = prefix + url;
+    window.location.href = fullUrl;
+  }
+}
+
   </script>
   
   
