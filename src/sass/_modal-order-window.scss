@@ -120,5 +120,6 @@ position: fixed;
     opacity: 1;
     box-shadow: var(--card-shadow);
     transition: opacity var(--transition-speed);
+    z-index: 9999;
 //    pointer-events: none; не включать! Отключает инпуты
 }
