@@ -10,18 +10,18 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
-    <section class="main-slogan">
-      <div class="main-slogan-container contacts-container">
-        <div class="slogan-text contact-slogan-text">
-          <h1>Закон на вашому боці</h1>
-          <h3>Професійна юридична допомога доступна кожному</h3>
+      <section class="main-slogan">
+        <div class="main-slogan-container contacts-container">
+          <div class="slogan-text contact-slogan-text">
+            <h1>Закон на вашому боці</h1>
+            <h3>Професійна юридична допомога доступна кожному</h3>
+          </div>
+          <button type="button" class="contact-slogan-btn" data-modal-open>
+            Замовити консультацію
+          </button>
         </div>
-        <button type="button" class="contact-slogan-btn" data-modal-open>
-          Замовити консультацію
-        </button>
-      </div>
-    </section>
-<!-- <section class="hero-section"> 
+      </section>
+      <!-- <section class="hero-section"> 
 <div class="hero-container">
   <div class="hero-name">
     <h2>Адвокат</h2>
@@ -36,7 +36,7 @@
 
 </div>
 </section> -->
-<!-- <section class="achievements-section">
+      <!-- <section class="achievements-section">
 <div class="achievements-container">
   <ul class="achievements">
     <li class="up-text">15 років <br>
@@ -54,7 +54,7 @@
 
 </div>
 </section> -->
-<!-- <section class="areas-section">
+      <!-- <section class="areas-section">
   <div class="areas-section-container">
 <h1>Напрямки юридичної 
   практики</h1>
@@ -146,153 +146,159 @@
   </div>
 </section> -->
 
-<section class="main-order-section">
-  <div class="order-section-container contacts">
-    <div class="order-slogan">
-        <h2>Замовити консультацію</h2>
-        <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3>
-    </div>
-    <img src="./images/igor-2_w393.jpg" alt="адвокат в окулярах"/>
-    <div class="order-form">
-      <!-- <h2>Замовити консультацію</h2>
+      <section class="main-order-section">
+        <div class="order-section-container contacts">
+          <div class="order-slogan">
+            <h2>Замовити консультацію</h2>
+            <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3>
+          </div>
+          <img src="./images/igor-2_w393.jpg" alt="адвокат в окулярах" />
+          <div class="order-form">
+            <!-- <h2>Замовити консультацію</h2>
       <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3> -->
-      <form action="#" class="form" method="POST">
-        <label class="form-label"
-        >Ім'я та Прізвище
-        <input
-          type="text"
-          data-validate-field="name"
-          name="name"
-          placeholder="Ввести ім'я"
-          class="form-input input-name"
-        />
-      </label>
-      <label class="form-label"
-      >Номер телефону
-      <input
-        type="tel"
-        data-validate-field="tel"
-        name="tel"
-        placeholder="Ввести номер"
-        class="form-input input-tel"
-      />
-      </label>
-        <button class="btn-submit" data-modal-submit type="submit">
-          Передзвонити 
-          <span class="btn-icon">
-            <svg width="17" height="16">
-              <use href="./images/sprite.svg#phone"></use>
+            <form action="#" class="form" method="POST">
+              <label class="form-label"
+                >Ім'я та Прізвище
+                <input
+                  type="text"
+                  data-validate-field="name"
+                  name="name"
+                  placeholder="Ввести ім'я"
+                  class="form-input input-name"
+                />
+              </label>
+              <label class="form-label"
+                >Номер телефону
+                <input
+                  type="tel"
+                  data-validate-field="tel"
+                  name="tel"
+                  placeholder="Ввести номер"
+                  class="form-input input-tel"
+                />
+              </label>
+              <button class="btn-submit" data-modal-submit type="submit">
+                Передзвонити
+                <span class="btn-icon">
+                  <svg width="17" height="16">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                </span>
+              </button>
+            </form>
+          </div>
+          <div class="main-socials">
+            <h3>Або напишіть мені:</h3>
+            <ul class="main-social-icons">
+              <li>
+                <div class="social-icon-block">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="social-link"
+                  >
+                    <svg class="main-social-icon">
+                      <use href="././images/sprite.svg#icon-viber"></use>
+                    </svg>
+                    <span class="social-title">Viber</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="social-icon-block">
+                  <a
+                    href="https://t.me/Advokat_Tarasenko_Igor"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="social-link"
+                  >
+                    <svg class="main-social-icon">
+                      <use href="./images/sprite.svg#icon-telegram"></use>
+                    </svg>
+                    <span class="social-title">Telegram</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="social-icon-block">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="social-link"
+                  >
+                    <svg class="main-social-icon">
+                      <use href="./images/sprite.svg#icon-messenger"></use>
+                    </svg>
+                    <span class="social-title">Messenger</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="social-icon-block">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="social-link"
+                  >
+                    <svg class="main-social-icon">
+                      <use href="./images/sprite.svg#icon-whatsapp"></use>
+                    </svg>
+                    <span class="social-title">WhatsApp</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="adress-section">
+        <div class="adress-section-container contact-container">
+          <h2>Контакти</h2>
+          <div class="tel-number">
+            <a href="tel:+38093753-15-16">
+              <svg width="17" height="16">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+              +38(093) 753-15-16</a
+            >
+          </div>
+          <div class="mail">
+            <a href="mailto:tarasenko.igor@ukr.net">
+              <svg width="17" height="13">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              tarasenko.igor@ukr.net</a
+            >
+          </div>
+          <address class="adress">
+            <svg width="16" height="18">
+              <use href="./images/sprite.svg#bank"></use>
             </svg>
-          </span>
-        </button>
-       </form>
-    </div>
-  <div class="main-socials">
-    <h3>Або напишіть мені:</h3>
-    <ul class="main-social-icons">
-      <li>
-        <div class="social-icon-block">
-          <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="social-link"
-        >
-          <svg class="main-social-icon">
-              <use href="././images/sprite.svg#icon-viber"></use>
-          </svg>
-          <span class="social-title">Viber</span>
-      </a>
-    </div>
-      </li>
-      <li>
-        <div class="social-icon-block">
-          <a
-          href="https://t.me/Advokat_Tarasenko_Igor"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="social-link"
-        >
-          <svg class="main-social-icon">
-              <use href="./images/sprite.svg#icon-telegram"></use>
-          </svg>
-          <span class="social-title">Telegram</span>
-      </a>
-      </div>
-      </li>
-      <li>
-        <div class="social-icon-block">
-          <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="social-link"
-        >
-          <svg class="main-social-icon">
-              <use href="./images/sprite.svg#icon-messenger"></use>
-          </svg>
-          <span class="social-title">Messenger</span>
-      </a>
+            <p>м. Київ. вул. Деревлянська, буд. 8, оф. 4</p>
+          </address>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.61131211887!2d30.46810847655832!3d50.46696227159541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdd749dff09b%3A0x1476632af515a66f!2z0LLRg9C70LjRhtGPINCU0LXRgNC10LLQu9GP0L3RgdGM0LrQsCwgOCwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1713828058512!5m2!1sru!2sua"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-      </li>
-      <li>
-        <div class="social-icon-block">
-          <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="social-link"
-        >
-          <svg class="main-social-icon">
-              <use href="./images/sprite.svg#icon-whatsapp"></use>
-          </svg>
-          <span class="social-title">WhatsApp</span>
-      </a>
-        </div>
-      </li>
-  </ul>
-</div>
-  </div>
-</section>
-<section class="adress-section">
-  <div class="adress-section-container contact-container">
-<h2>Контакти</h2>
-<div class="tel-number">
-  <a href="tel:+38093753-15-16">
-  <svg width="17" height="16">
-    <use href="./images/sprite.svg#phone"></use>
-  </svg>
-  +38(093) 753-15-16</a>
-</div>
-<div class="mail">
-  <a href="mailto:tarasenko.igor@ukr.net">
-  <svg width="17" height="13">
-    <use href="./images/sprite.svg#envelope"></use>
-  </svg>
-  tarasenko.igor@ukr.net</a>
-</div>
-<address class="adress">
-  <svg width="16" height="18">
-    <use href="./images/sprite.svg#bank"></use>
-  </svg>
-  <p>м. Київ. вул. Деревлянська, буд. 8, оф. 4</p>
-</address>
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.61131211887!2d30.46810847655832!3d50.46696227159541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdd749dff09b%3A0x1476632af515a66f!2z0LLRg9C70LjRhtGPINCU0LXRgNC10LLQu9GP0L3RgdGM0LrQsCwgOCwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1713828058512!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-  </div>
-</section>
-
-  </main>
+      </section>
+    </main>
     <include src="./partials/includes/footer.html"></include>
-  
-  
+
     <!-- modal windows html components-->
     <include src="./partials/includes/modal-order-window.html"></include>
+    <include src="./partials/includes/modal-thanks.html"></include>
     <!-- modal windows script -->
-  <script defer src="./js/modal-order-window.js"></script>
-  <!-- mobile menu script -->
-  <script defer src="./js/my-mobile-menu.js"></script>
+    <script defer src="./js/modal-order-window.js"></script>
+    <!-- mobile menu script -->
+    <script defer src="./js/my-mobile-menu.js"></script>
 
-  <include src="./partials/includes/modal-thanks.html"></include>
-</body>
+
+  </body>
 </html>

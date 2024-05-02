@@ -10,18 +10,18 @@
       <label for="service"></label>
       <div class="custom-select">
       <select id="service" name="service"  onchange="redirectToPage(this)">
-        <option data-url="migration-services.html" selected>Міграційні послуги</option>
-        <option value="#">Кримінальна практика</option>
-        <option value="#" >Податкова практика</option>
-        <option data-url="index.html">Fintech</option>
-        <option value="#">Цивільна практика</option>
-        <option value="#">Адміністративна практика</option>
-        <option value="#">Інтелектуальна власність</option>
-        <option value="#">Військове право</option>
-        <option value="#">Повернення боргів</option>
-        <option value="#">Захист прав боржника</option>
-        <option value="#">Трудове право</option>
-        <option value="#">Адвокат для бізнесу</option>
+        <option data-url="../../migration-services.html" >Міграційні послуги</option>
+        <option data-url="../../criminal-law.html">Кримінальна практика</option>
+        <option data-url="../../tax-law.html">Податкова практика</option>
+        <option data-url="../../fintech.html" >Fintech</option>
+        <option data-url="../../civil-law.html">Цивільна практика</option>
+        <option data-url="../../administrative-law.html">Адміністративна практика</option>
+        <option data-url="../../intellectual-property.html">Інтелектуальна власність</option>
+        <option data-url="../../military-law.html">Військове право</option>
+        <option data-url="../../debt-recovery.html">Повернення боргів</option>
+        <option data-url="../../debtor-protection.html">Захист прав боржника</option>
+        <option data-url="../../labor-law.html">Трудове право</option>
+        <option data-url="../../business-law.html">Адвокат для бізнесу</option>
       </select>
       <div class="select-arrow"><img src="./images/select-arrow.png" alt="" /></div>
     </div>
@@ -29,13 +29,14 @@
   </div>
 </section>
 <script>
-function redirectToPage(selectElement) {
-  const selectedOption = selectElement.options[selectElement.selectedIndex];
-  const url = selectedOption.getAttribute('data-url');
-  if (url) {
-    const prefix = '/advocatapp'; // Префикс для вашего проекта
-    const fullUrl = prefix + '/' + url;
-    window.location.href = fullUrl;
+  function redirectToPage(selectElement) {
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    const url = selectedOption.getAttribute('data-url');
+    if (url) {
+      window.location.href = url;
+    }
   }
-}
   </script>
+  
+  
+  
