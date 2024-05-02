@@ -10,13 +10,13 @@ function redirectToPage(selectElement) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const currentPageUrl = window.location.pathname.split('/').pop(); // Получаем имя текущего файла
+  const currentPageUrl = window.location.pathname.split('/').pop();
   const selectElement = document.getElementById('service');
 
   if (selectElement) {
     const options = selectElement.options;
     for (let i = 0; i < options.length; i++) {
-      const optionUrl = options[i].getAttribute('data-url');
+      const optionUrl = 'src/' + options[i].getAttribute('data-url');
       if (optionUrl === currentPageUrl) {
         options[i].selected = true;
         break;
