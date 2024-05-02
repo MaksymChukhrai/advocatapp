@@ -10,7 +10,7 @@
       <label for="service"></label>
       <div class="custom-select">
       <select id="service" name="service"  onchange="redirectToPage(this)">
-        <option data-url="../../migration-services.html" >Міграційні послуги</option>
+        <option data-url="../../migration-services.html">Міграційні послуги</option>
         <option data-url="../../criminal-law.html">Кримінальна практика</option>
         <option data-url="../../tax-law.html">Податкова практика</option>
         <option data-url="../../fintech.html" >Fintech</option>
@@ -21,14 +21,14 @@
         <option data-url="../../debt-recovery.html">Повернення боргів</option>
         <option data-url="../../debtor-protection.html">Захист прав боржника</option>
         <option data-url="../../labor-law.html">Трудове право</option>
-        <option data-url="../../business-law.html">Адвокат для бізнесу</option>
+        <option data-url="../../business-law.html" selected>Адвокат для бізнесу</option>
       </select>
       <div class="select-arrow"><img src="./images/select-arrow.png" alt="" /></div>
     </div>
     </div>
   </div>
 </section>
-<script>
+<!-- <script>
 function redirectToPage(selectElement) {
   const selectedOption = selectElement.options[selectElement.selectedIndex];
   const url = selectedOption.getAttribute('data-url');
@@ -45,7 +45,19 @@ function redirectToPage(selectElement) {
   }
 }
 
-  </script>
+  </script> -->
   
-  
+  <script>
+function redirectToPage(selectElement) {
+  const selectedOption = selectElement.options[selectElement.selectedIndex];
+  const url = selectedOption.getAttribute('data-url');
+
+  if (url) {
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const prefix = isLocalhost ? '' : '/advocatapp';
+    const fullUrl = `${window.location.origin}${prefix}/${url}`;
+    window.location.href = fullUrl;
+  }
+}
+      </script>
   
