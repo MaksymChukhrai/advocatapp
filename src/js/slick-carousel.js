@@ -23,4 +23,16 @@ $(document).ready(function(){
           }
         ]
     });
+    // Добавляем пассивные обработчики событий
+    document.addEventListener('touchstart', onTouchStart, { passive: true });
+    document.addEventListener('touchmove', onTouchMove, { passive: true });
+
+    function onTouchStart(event) {
+        // Обработчик touchstart
+    }
+
+    function onTouchMove(event) {
+        // Обработчик touchmove
+    }
+
 });
