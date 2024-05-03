@@ -96,7 +96,7 @@ main{
   padding: 71px 36px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%), url(../images/mob-menu-w320.webp) lightgray 50% / cover no-repeat;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0.9;
   pointer-events: none;
   transition: transform var(--transition-speed), visibility 500ms linear, opacity 500ms linear;
   transform: translateX(-100%);
