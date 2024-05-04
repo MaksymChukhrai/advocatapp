@@ -14,6 +14,7 @@ $(document).ready(function(){
         nextArrow: $('.next-slide'),
         adaptiveHeight: true,
         // fade: true,
+       
    
         responsive: [
           {
