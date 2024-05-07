@@ -81,3 +81,66 @@ font-weight: 700;
     margin-top:12px;
     margin-bottom:10px;
 }
+
+.card-image-container{
+    border-radius: 4px;
+   
+}
+
+.case-card-module{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 15px;
+    justify-content: space-between;
+}
+
+.wide-image{
+    width:100%;
+    // position:relative;
+}
+
+.narrow-image{
+    flex-basis: calc((100% - 15px) / 2);
+       height: 100%;
+    //    position:absolute;
+    //    top:50px;
+}
+.euro-wide{
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-narrow.jpg') lightgray 50% / cover no-repeat;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.euro-narrow{
+    border-radius: 4px 4px 0px 0px;
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-wide.jpg') lightgray 50% / cover no-repeat;
+}
+
+.bispart-narrow{
+    border-radius: 4px 4px 0px 0px;
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bispart-narrow.jpg') lightgray 50% / cover no-repeat;
+}
+.bispart-wide{
+    border-radius: 4px 4px 0px 0px;
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bispart-wide.jpg') lightgray 50% / cover no-repeat;
+}
+
+.cuttingmarriage-narrow{
+    border-radius: 4px 4px 0px 0px;
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/cuttingmarriage-narrow.jpg') lightgray 50% / cover no-repeat;
+}
+.cuttingmarriage-wide{
+    border-radius: 4px 4px 0px 0px;
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/cuttingmarriage-wide.jpg') lightgray 50% / cover no-repeat;
+}
+
+
+
+.case-caption{
+    border-radius: 0px 0px 4px 4px;
+    
+
+}
+.is-hidden{
+    display:none;
+}

@@ -17,9 +17,34 @@
             </div>
       
             <div class="cases-container">
-                <include src="./partials/includes/cases/administrative-liability.html"></include>
-                <!-- <include src="./partials/includes/cases/business-partner-dispute.html"></include> -->
-                <!-- <include src="./partials/includes/cases/amicable-divorce.html"></include> -->
+              <div class="case-card-module">
+                <!-- широкая карточка -->
+                <div class="card-image-container wide-image">
+                  <div class="card-image euro-wide"></div>
+                  <div class="caption case-caption">
+                    Скасування адміністративної відповідальністі
+                  </div>
+                  <include src="./partials/includes/cases/administrative-liability.html"></include>
+                </div>
+                <!-- узкая карточка -->
+                <div class="card-image-container narrow-image">
+                  <div class="card-image bispart-narrow"></div>
+                  <div class="caption case-caption">
+                    Вирішення спору між бізнес-партнерами
+                  </div>
+                   <include src="./partials/includes/cases/business-partner-dispute.html"></include>
+                </div>
+                <!-- узкая карточка -->
+                 <div class="card-image-container narrow-image">
+                    <div class="card-image cuttingmarriage-narrow"></div>
+                    <div class="caption case-caption">
+                    Вирішення спору між бізнес-партнерами
+                    </div>
+                    <include src="./partials/includes/cases/amicable-divorce.html"></include>
+                  </div>
+              </div>
+
+
                 <!-- <include src="./partials/includes/cases/military-deferment.html"></include> -->
                 <!-- <include src="./partials/includes/cases/criminal-defense.html"></include> -->
                 <!-- <include src="./partials/includes/cases/alimony-case.html"></include> -->
@@ -44,6 +69,8 @@
   <!-- mobile menu script -->
   <script defer src="./js/my-mobile-menu.js"></script>
   <script type="module" src="./js/slick-carousel.js"></script>
+  <!-- cases card ainimations -->
+  <script type="module" src="./js/cases.jquery.js"></script>
 
  
 </body>
