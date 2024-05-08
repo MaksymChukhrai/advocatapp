@@ -82,9 +82,10 @@ font-weight: 700;
     margin-bottom:10px;
 }
 
+/* Анимация для карточек */
 .card-image-container{
     border-radius: 4px;
-   
+    transition: transform var(--transition-speed), width var(--transition-speed);
 }
 
 .case-card-module{
@@ -95,6 +96,28 @@ font-weight: 700;
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
+/* Анимация для появления/скрытия описания */
+.case-card {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity var(--transition-speed), max-height var(--transition-speed);
+  }
+  
+  .case-card:not(.is-hidden) {
+    opacity: 1;
+    max-height: 1300px; /* Достаточно большое значение для раскрытия описания */
+  }
+  
+  .case-description {
+    transition: opacity var(--transition-speed);
+  }
+  
+  .is-hidden .case-description {
+    opacity: 0;
+  }
+
 
 .wide-image{
     width:100%;
