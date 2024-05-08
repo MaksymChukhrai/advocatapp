@@ -1,27 +1,47 @@
 import $ from 'jquery';
 
 $(document).ready(function() {
-    $('.card-image-container').on('click', function() {
-        // Проверяем, является ли текущая карточка wide-image
-        if ($(this).hasClass('wide-image')) {
-            // Убираем класс is-hidden только у текущей карточки
-            $(this).find('.case-card').removeClass('is-hidden');
-            return;
-        }
+  $('.case-card-module').each(function() {
+    const $module = $(this);
+    const $containers = $module.find('> .card-image-container');
+    const $caseCards = $module.find('.case-card');
 
-        // Если элемент narrow-image, переключаем классы и убираем is-hidden у текущей карточки
-        if ($(this).hasClass('narrow-image')) {
-            $(this).removeClass('narrow-image').addClass('wide-image');
-            $('.card-image-container.wide-image').not(this).removeClass('wide-image').addClass('narrow-image');
-            $(this).appendTo('.case-card-module'); // Перемещаем wide-image карточку в конец контейнера
-            $(this).find('.case-card').removeClass('is-hidden'); // Убираем класс is-hidden у текущей карточки
-        } else {
-            $(this).removeClass('wide-image').addClass('narrow-image');
-        }
+    $caseCards.addClass('is-hidden'); // Скрываем все описания при загрузке страницы
 
-        // При любом клике в рамках контейнера card-image-container,
-        // добавляем класс is-hidden ко всем элементам case-card
-        $('.card-image-container').find('.case-card').addClass('is-hidden');
+    $containers.on('click', function() {
+      const $container = $(this);
+      const $caseCard = $container.find('.case-card');
+
+      // Если контейнер уже широкий, переключаем показ/скрытие описания
+      if ($container.hasClass('wide-image')) {
+        $caseCard.toggleClass('is-hidden');
+        return;
+      }
+
+      // Если контейнер узкий, делаем его широким
+      if ($container.hasClass('narrow-image')) {
+        const $wideContainer = $containers.filter('.wide-image');
+        const $narrowContainers = $containers.not($wideContainer).not($container);
+
+        $wideContainer.removeClass('wide-image').addClass('narrow-image');
+        $narrowContainers.removeClass('narrow-image').addClass('wide-image');
+        $container.removeClass('narrow-image').addClass('wide-image');
+        $container.prependTo($module);
+        $caseCard.removeClass('is-hidden');
+        $caseCards.not($caseCard).addClass('is-hidden');
+
+        reorderContainers($module, $containers);
+      }
     });
+  });
 });
+
+function reorderContainers($module, $containers) {
+  const $wideContainer = $containers.filter('.wide-image');
+  const $narrowContainers = $containers.not($wideContainer);
+
+  $narrowContainers.detach();
+  $wideContainer.prependTo($module);
+  $narrowContainers.appendTo($module);
+}
 
