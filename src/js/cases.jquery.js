@@ -24,7 +24,6 @@ $(document).ready(function() {
         const $narrowContainers = $containers.not($wideContainer).not($container);
 
         $wideContainer.removeClass('wide-image').addClass('narrow-image');
-        $narrowContainers.removeClass('narrow-image').addClass('wide-image');
         $container.removeClass('narrow-image').addClass('wide-image');
         $container.prependTo($module);
         $caseCard.removeClass('is-hidden');
@@ -44,4 +43,3 @@ function reorderContainers($module, $containers) {
   $wideContainer.prependTo($module);
   $narrowContainers.appendTo($module);
 }
-
