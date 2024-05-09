@@ -486,3 +486,9 @@ line-height: 1.4; /* 16.8px */
   border: none;
 
 }
+.adress>nav>a{
+  display: flex;
+  flex-direction: row;
+  /* align-content: center; */
+  align-items: center;
+}
