@@ -84,7 +84,7 @@ font-weight: 700;
 
 .card-image{
     display: block;
-    height: 100%;
+   
     width: 100%;
   
     object-fit: cover;
@@ -105,27 +105,18 @@ font-weight: 700;
 }
 
 /* Анимация для появления/скрытия описания */
-.include.case-card {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height var(--transition-speed) ease-in-out, opacity var(--transition-speed) ease-in-out;
-  }
+// .case-card {
+//     opacity: 0;
+//     max-height: 0;
+//     overflow: hidden;
+//     transition: max-height var(--transition-speed) ease-in-out, opacity var(--transition-speed) ease-in-out;
+//   }
   
-  .include.case-card :not(.is-hidden) {
-    opacity: 1;
-    max-height: 1300px; /* Достаточно большое значение для раскрытия описания */
-  }
+//   .case-card :not(.is-hidden) {
+//     opacity: 1;
+//     height: auto; 
+//   }
   
-  .case-description {
-    transition: opacity var(--transition-speed), max-height var(--transition-speed);
-  }
-  
-  .is-hidden .case-description {
-    opacity: 0;
-  max-height: 0;
-  }
-
 
 .wide-image{
     flex-basis: 100%;
@@ -143,84 +134,99 @@ font-weight: 700;
 .euro-wide{
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-wide.jpg') lightgray 50% /cover no-repeat;
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
   }
 
 .euro-narrow{
     border-radius: 4px 4px 0px 0px;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-narrow.jpg') lightgray 50% / cover no-repeat;
-   
+    height: 100%;
 }
 
 .bispart-narrow{
     border-radius: 4px 4px 0px 0px;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bispart-narrow.jpg') lightgray 50% / cover no-repeat;
-    
+    height: 100%;
 }
 .bispart-wide{
     border-radius: 4px 4px 0px 0px;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bispart-wide.jpg') lightgray 50% / cover no-repeat;
-    
+    height: 100%;
 }
 
 .cuttingmarriage-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/cuttingmarriage-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 .cuttingmarriage-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/cuttingmarriage-wide.jpg') lightgray 50% / cover no-repeat;
 }
 .justice-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/justice-wide.jpg') lightgray 50% / cover no-repeat;
 }
 .justice-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/justice-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 
 .criminal-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/criminal-wide.jpg') lightgray 50% / cover no-repeat;
 }
 .criminal-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/criminal-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 
 .alimenty-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/alimenty-wide.jpg') lightgray 50% / cover no-repeat;
 }
 .alimenty-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/alimenty-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 
 .land-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/land-wide.jpg') lightgray 50% / cover no-repeat;
 }
 
 .land-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/land-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 .bayer-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bayer-wide.jpg') lightgray 50% / cover no-repeat;
 }
 .bayer-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bayer-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 .custom-wide{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/custom-wide.jpg') lightgray 50% / cover no-repeat;
 }
 
 .custom-narrow{
     border-radius: 4px 4px 0px 0px;
+    height: 100%;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/custom-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 

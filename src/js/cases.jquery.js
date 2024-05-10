@@ -9,14 +9,16 @@ $(document).ready(function() {
     const $caseCards = $module.find('.case-card');
 
     $caseCards.addClass('is-hidden'); // Скрываем все описания при загрузке страницы
-
+   
     $containers.on('click', function() {
       const $container = $(this);
       const $caseCard = $container.find('.case-card');
 
       // Если контейнер уже широкий, переключаем показ/скрытие описания
       if ($container.hasClass('wide-image')) {
+        
         $caseCard.toggleClass('is-hidden');
+
         return;
       }
 
@@ -28,7 +30,9 @@ $(document).ready(function() {
         $wideContainer.removeClass('wide-image').addClass('narrow-image');
         $container.removeClass('narrow-image').addClass('wide-image');
         $container.prependTo($module);
+       
         $caseCard.removeClass('is-hidden');
+       
         $caseCards.not($caseCard).addClass('is-hidden');
 
         reorderContainers($module, $containers);
