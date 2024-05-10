@@ -82,10 +82,17 @@ font-weight: 700;
     margin-bottom:10px;
 }
 
+.card-image{
+    display: block;
+    height: 100%;
+    width: 100%;
+  
+    object-fit: cover;
+}
 /* Анимация для карточек */
 .card-image-container{
     border-radius: 4px;
-    transition: transform var(--transition-speed), width var(--transition-speed);
+    transition: flex-basis 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .case-card-module{
@@ -98,29 +105,30 @@ font-weight: 700;
 }
 
 /* Анимация для появления/скрытия описания */
-.case-card {
+.include.case-card {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity var(--transition-speed), max-height var(--transition-speed);
+    transition: max-height var(--transition-speed) ease-in-out, opacity var(--transition-speed) ease-in-out;
   }
   
-  .case-card:not(.is-hidden) {
+  .include.case-card :not(.is-hidden) {
     opacity: 1;
     max-height: 1300px; /* Достаточно большое значение для раскрытия описания */
   }
   
   .case-description {
-    transition: opacity var(--transition-speed);
+    transition: opacity var(--transition-speed), max-height var(--transition-speed);
   }
   
   .is-hidden .case-description {
     opacity: 0;
+  max-height: 0;
   }
 
 
 .wide-image{
-    width:100%;
+    flex-basis: 100%;
   
 }
 
@@ -129,23 +137,29 @@ font-weight: 700;
        height: 100%;
   
 }
-.euro-wide{
-    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-narrow.jpg') lightgray 50% / cover no-repeat;
-    border-radius: 4px 4px 0px 0px;
+.height-img{
+    height: 122px;
 }
+.euro-wide{
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-wide.jpg') lightgray 50% /cover no-repeat;
+    border-radius: 4px 4px 0px 0px;
+  }
 
 .euro-narrow{
     border-radius: 4px 4px 0px 0px;
-    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-wide.jpg') lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/euro-narrow.jpg') lightgray 50% / cover no-repeat;
+   
 }
 
 .bispart-narrow{
     border-radius: 4px 4px 0px 0px;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bispart-narrow.jpg') lightgray 50% / cover no-repeat;
+    
 }
 .bispart-wide{
     border-radius: 4px 4px 0px 0px;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/bispart-wide.jpg') lightgray 50% / cover no-repeat;
+    
 }
 
 .cuttingmarriage-narrow{
