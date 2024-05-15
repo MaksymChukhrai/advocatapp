@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  .main-slogan-container {
+    height: 481px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/tab-main-slogan.jpg') lightgray 0px -356.803px / 100% 232.23%
+        no-repeat;
+    background-size: cover; /* Полностью покрывает область */
+    background-position: center; /* Центрируем изображение */
+    position: relative;
+  }
+  .position-container {
+    position: absolute;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+.slogan-text{
+    width: 336px;
+    h1{
+        font-size: 20px;
+        text-align: left;
+    }
+    h3{
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 60px;
+    }
+}
+.slogan-order-btn {
+    font-size: 16px;
+    padding: 14px 40px;
+}
+
+}

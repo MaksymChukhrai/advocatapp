@@ -9,7 +9,7 @@ $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Я - твой новый клиент";
+$title = "Я - Ваш новий клієнт";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
@@ -39,7 +39,7 @@ try {
  $mail->Port       = 465;
 
 
-  $mail->setFrom('gateway.2024@ukr.net', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('gateway.2024@ukr.net', 'Заявка з вашого сайту'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
 

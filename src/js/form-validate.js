@@ -79,7 +79,7 @@ function sendFormData(formData) {
 
   // Пример с использованием XMLHttpRequest
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'path/to/server-script.php', true);
+  xhr.open('POST', 'mail.php', true);
   xhr.onload = function () {
     if (xhr.status === 200) {
       // Форма успешно отправлена
@@ -94,9 +94,9 @@ function sendFormData(formData) {
 
 function showThanksModal() {
   // Закрываем модальное окно с формой
-  orderModal.classList.remove('is-open');
+  orderModal.classList.remove('is-visible');
 
-  // Показываем модальное окно "Спасибо"
+  // Показываем модальное окно "Спасибо" (проверить код на хостинге)
   thanksModal.style.display = 'block';
 
   // Здесь вы можете добавить код для закрытия модального окна "Спасибо" при нажатии на кнопку "Ok"
