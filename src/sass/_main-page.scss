@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 120px;
+  // gap: 120px;
   height: 478px;
   background: linear-gradient(
       0deg,
@@ -16,6 +16,12 @@
 
   background-size: cover; /* Полностью покрывает область */
   background-position: center; /* Центрируем изображение */
+}
+.position-container{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
 }
 .contacts-container{
   background: linear-gradient(0deg, rgba(220, 218, 216, 0.30) 0%, rgba(220, 218, 216, 0.30) 100%),
@@ -33,21 +39,26 @@
   font-size: 18px;
   line-height: 1.4;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
+  width: 306px;
 }
 .slogan-text h3 {
   color: var(--header-white-color);
   text-align: center;
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4; /* 16.8px */
+  width: 278px;
 }
 
 .slogan-text {
-  width: 288px;
-  margin: 0 auto;
+  width: 306px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .slogan-order-btn {
   width: 278px;
