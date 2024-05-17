@@ -2,13 +2,8 @@
   .main-slogan-container {
     height: 481px;
 
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      ),
-      url('../images/tab-main-slogan.jpg') lightgray 0px -356.803px / 100% 232.23%
-        no-repeat;
+    background-image:url('../images/tab-main-slogan.jpg') ;
+    background-repeat: no-repeat;
     background-size: cover; /* Полностью покрывает область */
     background-position: center; /* Центрируем изображение */
     position: relative;
@@ -22,6 +17,25 @@
     flex-direction: column;
     align-items: flex-start;
   }
+.hero-container{
+  display: flex;
+  gap: 24px;
+  padding: 70px 60px;
+  img{
+    height: 429px;
+  }
+}
+.hero-name{
+  margin-bottom: 24px;
+  margin-top: 25px;
+  h2{    
+    font-size: 16px;
+  }
+  h1{
+    font-size: 20px;
+  }
+}
+
 .slogan-text{
    
     h1{
@@ -40,10 +54,85 @@
     padding: 14px 40px;
 }
 .hero-details{
-    display: flex;
-    flex-direction: row-reverse;
+    display: block;
+ 
     
 }
+.tab-pc{
+  display: block;
+  p{
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+.mob{
+  display:none;
+}
+
+// achievements-section
+.achievements-container {
+  padding: 12px 60px;
+    .achievements{
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #ach-line {
+      transform: rotate(0deg);
+    }
+    .up-text {
+      gap:0px;
+      font-family: 'Merriweather';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.4 ;
+      .figures{
+        font-family: 'Merriweather';
+    }
+      .bot-text {
+      padding:16px 0px;
+      font-family: 'Merriweather';
+    } 
+
+  }
+}
+// areas-section
+.areas-section-container {
+padding: 70px 60px;
+    h1{
+      font-size: 24px;
+    }
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(calc((100% - 60px - 60px - 24px * 2) / 3), 1fr));
+      gap: 24px;
+    }
+.card-image{
+  height:136px;
+}
+.caption {
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 64px;
+  img{
+    display:block;
+    width: 24px;
+    height: 24px;
+  }
+  h3{
+    font-size: 14px;
+    text-align: left;
+  }
+
+}
+
+
+
+
+}
+
+
 
 
 

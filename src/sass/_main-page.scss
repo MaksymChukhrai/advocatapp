@@ -124,6 +124,9 @@
   font-family: 'Roboto';
   line-height: 1.4;
 }
+.tab-pc{
+display: none;
+}
 
 // achievements-section
 .achievements-container {
@@ -143,6 +146,9 @@
   text-align: center;
 }
 .up-text {
+  display: flex;
+    flex-direction: column;
+    gap:15px;
   color: #0d0d0e;
   font-family: 'Manrope';
   font-size: 20px;
@@ -303,17 +309,25 @@
 
 .caption {
   padding: 6px 2px;
-  font-family: 'Merriweather';
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.4;
+
   text-align: center;
   height: 42px;
   align-content: center;
   background-color: #d7d7d7;
-  color:var(--black-secondary-text-color);
+  img{
+    display:none;
+  }
+  
+  h3{
+    color:var(--black-secondary-text-color);
+    font-family: 'Merriweather';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+  }
 }
+
 
 
 // order-section
