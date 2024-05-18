@@ -17,7 +17,7 @@
   
   // slider
   .slider-slide {
-    padding: 10px;
+
     width: 250px;
     border-radius: 4px;
     border: 1px solid var(--border-grey);
@@ -27,7 +27,7 @@
     background-position: 50%;
     height: 260px;
     margin-right: 12px; /* Отступ справа для создания промежутка */
-       
+    margin-left: 0px;
 }
   .slider-slide h3 {
     color: #000;

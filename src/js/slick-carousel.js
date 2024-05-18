@@ -4,40 +4,44 @@ import 'slick-carousel/slick/slick-theme.css';
 import $ from 'jquery';
 import 'slick-carousel';
 
-$(document).ready(function(){
-    $('.slider-wrapper').slick({
-       
-        slidesToShow: 1.1, // Отображение полтора слайда на экране
-        slidesToScroll: 1,
-        arrows: true, // Использование кастомных стрелок
-        prevArrow: $('.prev-slide'),
-        nextArrow: $('.next-slide'),
-        adaptiveHeight: true,
-        // fade: true,
-       
-   
-        responsive: [
-          {
-            breakpoint: 320,
-        
-            settings: {
-                slidesToShow: 1.1,
-              slidesToScroll: 1,
-             
-            }
+$(document).ready(function() {
+  $('.slider-wrapper').slick({
+      slidesToShow: 1.1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: $('.prev-slide'),
+      nextArrow: $('.next-slide'),
+      adaptiveHeight: true,
+      centerMode:false,
+      centerPadding:'0px',
+      responsive: [
+        {
+          breakpoint: 1280, // до 1280px - tab
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
           }
-        ]
-    });
-    // Добавляем пассивные обработчики событий
-    document.addEventListener('touchstart', onTouchStart, { passive: true });
-    document.addEventListener('touchmove', onTouchMove, { passive: true });
+        },
+        {
+          breakpoint: 768, // до 768px - mob
+          settings: {
+              slidesToShow: 1.1,
+              slidesToScroll: 1,
+          }
+        },
 
-    function onTouchStart(event) {
-        // Обработчик touchstart
-    }
+      ]
+  });
 
-    function onTouchMove(event) {
-        // Обработчик touchmove
-    }
+  // Добавляем пассивные обработчики событий
+  document.addEventListener('touchstart', onTouchStart, { passive: true });
+  document.addEventListener('touchmove', onTouchMove, { passive: true });
 
+  function onTouchStart(event) {
+      // Обработчик touchstart
+  }
+
+  function onTouchMove(event) {
+      // Обработчик touchmove
+  }
 });
