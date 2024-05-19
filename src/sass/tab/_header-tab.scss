@@ -29,7 +29,43 @@ main{
 .line-right {
     width: 50px;
 }
+// tab menu
+.mobile-menu{
+    padding: 78px 120px;
+}
 
+.mobile-menu_container{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.header-nav-menu {
+    gap: 20px !important;
+}
+
+.mobile-menu_link{
+        font-size: 14px;
+        color:var(--header-white-color);
+}
+
+.header-nav-menu-btn{
+    color: #E7E7E7;
+     font-size: 16px;
+     font-weight: 700;
+    line-height: 1.4;
+    padding: 14px ;
+    width: 263px;
+}
+.menu-img {
+display:block;
+img{
+    width: 100px;
+    height: 100px;
+    }
+}
 
 
 

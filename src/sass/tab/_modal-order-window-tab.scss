@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+.modal-form{
+    background: var(--footer-background-color);
+}
+
+.modal-flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 18px;
+    padding: 20px 60px;
+    background: var(--feedback-background-color);
+
+}
+.modal-flex-container img{
+    width: 214px;
+    height: 100%;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.modal-block-container {
+    background: transparent;
+    .modal-form{
+        background: transparent;
+    }
+
+  }
+.main-social-icon{
+    width: 20px;
+height: 20px;
+}
+.social-title-modal{
+    font-size: 12px;
+    color:var(--black-secondary-text-color);
+}
+
+.modal-submit-btn{
+    width: 220px;
+}
+
+}
