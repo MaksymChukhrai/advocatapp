@@ -1,78 +1,79 @@
 @media screen and (min-width: 768px) {
   .main-slogan-container {
     height: 481px;
-
-    background-image:url('../images/tab-main-slogan.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover; /* Полностью покрывает область */
-    background-position: center; /* Центрируем изображение */
+    background-image: linear-gradient(
+        0deg,
+        rgba(2, 2, 2, 0.4) 1.01%,
+        rgba(177, 170, 170, 0.4) 101.01%
+      ),
+      url('../images/tab-main-slogan.jpg');
+    background-size: cover, cover; /* Первое cover для градиента, второе для изображения */
+    background-repeat: no-repeat, no-repeat; /* Оба слоя без повтора */
+    background-position: center, center; /* Центрируем оба слоя */
     position: relative;
     margin-bottom: -5px;
   }
   .position-container {
     position: absolute;
     left: 60px;
-    gap:0px;
+    gap: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-.hero-container{
-  display: flex;
-  gap: 24px;
-  padding: 70px 60px;
-  img{
-    height: 429px;
+  .hero-container {
+    display: flex;
+    gap: 24px;
+    padding: 70px 60px;
+    img {
+      height: 429px;
+    }
   }
-}
-.hero-name{
-  margin-bottom: 24px;
-  margin-top: 25px;
-  h2{    
-    font-size: 16px;
+  .hero-name {
+    margin-bottom: 24px;
+    margin-top: 25px;
+    h2 {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 20px;
+    }
   }
-  h1{
-    font-size: 20px;
-  }
-}
 
-.slogan-text{
-   
-    h1{
-        font-size: 20px;
-        text-align: left;
+  .slogan-text {
+    h1 {
+      font-size: 20px;
+      text-align: left;
     }
-    h3{
-        font-size: 16px;
-        text-align: left;
-        margin-bottom: 60px;
-        width: auto;
+    h3 {
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 60px;
+      width: auto;
     }
-}
-.slogan-order-btn {
+  }
+  .slogan-order-btn {
     font-size: 16px;
     padding: 14px 40px;
-}
-.hero-details{
-    display: block;
- 
-    
-}
-.tab-pc{
-  display: block;
-  p{
-    font-size: 15px;
-    font-weight: 400;
   }
-}
-.mob{
-  display:none;
-}
+  .hero-details {
+    display: block;
+  }
+  .tab-pc {
+    display: block;
+    p {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+  .mob {
+    display: none;
+  }
 
-// achievements-section
-.achievements-container {
-  padding: 12px 60px;
-    .achievements{
+  // achievements-section
+  .achievements-container {
+    padding: 12px 60px;
+    .achievements {
       flex-direction: row;
       justify-content: space-around;
     }
@@ -80,109 +81,133 @@
       transform: rotate(0deg);
     }
     .up-text {
-      gap:0px;
+      gap: 0px;
       font-family: 'Merriweather';
       font-size: 18px;
       font-style: normal;
       font-weight: 700;
-      line-height: 1.4 ;
-      .figures{
+      line-height: 1.4;
+      .figures {
         font-family: 'Merriweather';
-    }
+      }
       .bot-text {
-      padding:16px 0px;
-      font-family: 'Merriweather';
-    } 
-
+        padding: 16px 0px;
+        font-family: 'Merriweather';
+      }
+    }
   }
-}
-// areas-section
-.areas-section-container {
-padding: 70px 60px;
-    h1{
+  // areas-section
+  .areas-section-container {
+    padding: 70px 60px;
+    h1 {
       font-size: 24px;
     }
     .grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(calc((100% - 60px - 60px - 24px * 2) / 3), 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc((100% - 60px - 60px - 24px * 2) / 3), 1fr)
+      );
       gap: 24px;
     }
-.card-image{
-  height:136px;
-}
-.caption {
-  padding: 12px 8px;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  height: 64px;
-  img{
-    display:block;
+    .card-image {
+      height: 136px;
+    }
+    .caption {
+      padding: 12px 8px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      height: 64px;
+      img {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+      h3 {
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+  }
+  // order-section
+  .order-section-container {
+    padding: 70px 60px 50px 60px;
+    img {
+      height: 465px;
+      margin-bottom: 24px;
+    }
+  }
+  .order-slogan,
+  .order-form {
+    padding: 24px 16px 0px 16px;
+  }
+  .order-form {
+    h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    .form-label {
+      font-size: 16px;
+    }
+    .btn-submit {
+      margin-top: 34px;
+      margin-bottom: 34px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 30vw;
+    }
+  }
+  .main-socials {
+    padding: 0 16px 32px;
+    h3 {
+      font-size: 16px;
+    }
+  }
+  .main-social-icons {
+    margin-top: 20px;
+    li {
+      .social-icon-block > a {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+      }
+    }
+  }
+  .social-title {
+    font-size: 15px;
+  }
+  .main-social-icon {
     width: 24px;
     height: 24px;
   }
-  h3{
-    font-size: 14px;
-    text-align: left;
-  }
-
-}
-}
-// order-section
-.order-section-container {
-  padding: 70px 60px 50px 60px;
-  img{
-    height: 465px;
-    margin-bottom: 24px;
-  }
-}
-.order-slogan,
-.order-form {
-  padding: 24px 16px 0px 16px;
-}
-.order-form {
-  h2{    
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-  h3{
-    font-size: 16px;
-    margin-bottom: 24px; 
-  }
-  .form-label {
-    font-size: 16px;
-  }
-  .btn-submit {
-    margin-top:34px;
-    margin-bottom:34px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 30vw;
-  }
-
-}
-.main-socials {
-  padding: 0 16px 24px;
-  h3{
-    font-size: 16px;
-  }
-}
-.main-social-icons {
-  margin-top: 20px;
-  li{
-    .social-icon-block>a{
-      display:flex;
-      flex-direction: row;
-      gap:8px;
+  //adress-section
+  .adress-section-container {
+    padding: 0px 0px 10px 0px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 34px;
+      color: var(--black-button-color);
     }
-   
+    .adress p,
+    .tel-number a,
+    .mail a {
+      font-size: 16px;
+    }
+    .adress {
+      margin-bottom: 12px;
+    }
+    .adress svg,
+    .tel-number svg,
+    .mail svg {
+      margin-right: 8px;
+    }
+    .map {
+      width: 100%;
+      height: 467px;
+    }
   }
-}
-.social-title{
-  font-size: 15px;
-}
-.main-social-icon {
-  width: 24px;
-  height: 24px;
-}
-
 }

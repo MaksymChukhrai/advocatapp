@@ -11,11 +11,11 @@ footer {
   margin: 0 auto;
 }
 
-.all-rigts h3,
+.all-rights h3,
 .socials h3,
 .logo-slogan {
   color: var(--main-white-color);
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -29,6 +29,7 @@ footer {
 .logo-slogan {
     margin-top: 8px;
     text-align: center;
+    font-size: 10px;
 }
 
 .social-icons {
@@ -40,5 +41,16 @@ footer {
   width: 20px;
   height: 20px;
 }
-
+.hidden-viber{
+  display:none;
+}
+.footer-nav-container{
+  display:none;
+}
+.all-rights{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 14px;
+}
 
