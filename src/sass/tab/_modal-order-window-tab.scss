@@ -1,41 +1,99 @@
 @media screen and (min-width: 768px) {
-.modal-form{
-    background: var(--footer-background-color);
-}
+  .header-modal-container {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .close-button > svg {
+    width: 24px;
+    height: 24px;
+  }
 
-.modal-flex-container{
+  .modal-form {
+    background: var(--footer-background-color);
+  }
+
+  .modal-flex-container {
     display: flex;
     justify-content: space-evenly;
     gap: 18px;
     padding: 20px 60px;
     background: var(--feedback-background-color);
-
-}
-.modal-flex-container img{
-    width: 214px;
-    height: 100%;
+  }
+  .modal-flex-container img {
+    // width: 214px;
+    height: 339px;
     margin: 0;
     border-radius: 4px;
-}
+  }
 
-.modal-block-container {
+  .modal-block-container {
     background: transparent;
-    .modal-form{
-        background: transparent;
+    .modal-form {
+      background: transparent;
     }
+  }
+  .main-social-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .social-title-modal {
+    font-size: 12px;
+    color: var(--black-secondary-text-color);
+  }
+
+  .modal-submit-btn {
+    width: 220px;
+  }
+  .order-form {
+    padding: 0;
+    gap: 24px;
+  }
+  .order-form>h2 {
+      color: var(--black-secondary-text-color);
+      font-size: 24px;
+      margin:0;
+    }
+    .order-form>h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+  .input-modal-name,
+  .input-modal-tel  {
+    font-size: 16px;
+    color: var(--black-secondary-text-color);
+  }
+
+  .input-modal-name{
+    margin-bottom: 20px;
+  }
+  .main-socials.modal-form{
+    padding: 0;
+    margin-top: 24px;
+    background: var(--feedback-background-color);
+    border-radius: 8px;
 
   }
-.main-social-icon{
-    width: 20px;
-height: 20px;
-}
-.social-title-modal{
-    font-size: 12px;
-    color:var(--black-secondary-text-color);
-}
-
-.modal-submit-btn{
-    width: 220px;
-}
+#wrightme{
+    font-size: 15px;
+    color: var(--black-secondary-text-color);
 
 }
+
+
+.modal-icons{
+    margin-top: 12px;
+}
+.main-social-icons li .social-icon-block > a {
+    gap:4px;
+}
+
+}
+
+
+
+
