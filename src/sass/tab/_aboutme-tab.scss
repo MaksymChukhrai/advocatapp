@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) {
+.mystory-container{
+    padding: 70px 60px;
+}
+
+.mystory-name{
+    margin:0;
+    margin-bottom: 24px;
+    color:var(--black-secondary-text-color);
+    h3{
+    font-weight: 700;
+    }
+}
+
+.aboutme-flex-container{
+    display:flex;
+    gap: 24px;
+    margin-bottom:18px;
+
+}
+.mystory-mob-img{
+    display:none;
+}
+.aboutme-img {
+    display: block;
+    border-radius: 4px;
+    background: lightgray url('../images/mystory-tab_2x.jpg') no-repeat center center / cover;
+    width: 312px;
+    height: 360px;
+  }
+
+
+  .mystory-section-text {
+    font-size: 15px;
+    color: var(--black-secondary-text-color);
+    margin: 0;
+  }
+  
+  /* Индивидуальные стили для элемента с id flex-text */
+  #flex-text {
+    max-width: 312px;
+    margin:0;
+  }
+  #block-text{
+    margin:0;
+}
+
+  .mystory-section-text p:not(:last-child) {
+    margin-bottom: 9px; /* Отступ между абзацами, кроме последнего */
+  }
+
+#mystory-slogan-text{
+    display:block;
+    font-weight: 700;
+    margin-top:15px;
+    margin-bottom:24px;
+
+}
+.order-btn-aboutme{
+    margin: 0;
+      margin-left: auto;
+}
+//whyme-section
+.whyme-section-container{
+    padding: 70px 60px;
+    background: var(--select-bg-color);
+    h1{
+        font-size: 24px;
+    }
+}
+
+.whyme-flex-container{
+    display: flex;
+    gap:24px;
+   
+}
+.online-support{
+
+    color: var(--black-secondary-text-color);
+    width: calc((100% - 48px) / 3);
+    img{
+        width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+    }
+    h4{
+        font-size: 15px;
+        margin-bottom: 8px;
+        }
+    p{
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+}
+
+.order-form-gradient-container{
+    background:var(--feedback-background-color);
+}
+
+}

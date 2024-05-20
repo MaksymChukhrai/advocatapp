@@ -26,14 +26,25 @@
     border-radius: 4px;
     width: 100%;
 }
-
+.aboutme-img {
+    display:none;
+}
 .mystory-section-text{
-    margin-top: 24px;
-    margin-bottom: 24px;
     font-family: 'Roboto';
     font-size: 12px;
     font-weight: 400;
     line-height: 1.4;
+}
+
+#flex-text{
+    margin-top: 24px;
+}
+#block-text{
+    margin-bottom: 24px;
+}
+#mystory-slogan-text{
+    display:none;
+    
 }
 
 .order-btn-aboutme{
