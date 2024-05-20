@@ -135,23 +135,28 @@
     padding: 70px 60px 50px 60px;
     img {
       height: 465px;
-      margin-bottom: 24px;
+      // margin-bottom: 24px;
     }
   }
 
  
   .order-slogan,
-  .order-form {
+ .order-main {
     padding: 24px 16px 0px 16px;
   }
-  .order-form {
-    h2 {
+ .order-main {
+  background: var(--header-white-color);
+ }
+  .order-main>h2 {
       font-size: 18px;
       margin-bottom: 12px;
+      font-family: 'Merriweather';
     }
-    h3 {
+    .order-main>h3 {
       font-size: 16px;
       margin-bottom: 24px;
+      font-family: 'Roboto';
+      font-weight: 400;
     }
     .form-label {
       font-size: 16px;
@@ -163,7 +168,7 @@
       margin-left: auto;
       width: 30vw;
     }
-  }
+  
   .main-socials {
     padding: 0 16px 32px;
     h3 {
