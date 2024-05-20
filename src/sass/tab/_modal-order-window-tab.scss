@@ -25,8 +25,9 @@
     background: var(--feedback-background-color);
   }
   .modal-flex-container img {
+    display:block;
     // width: 214px;
-    height: 339px;
+    height: 335px;
     margin: 0;
     border-radius: 4px;
   }
