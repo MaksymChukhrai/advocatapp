@@ -30,8 +30,25 @@
       line-height: 1.4;
       border-radius: 4px;
       width: 230px;
+      a{ 
+        color: var(--black-secondary-text-color);
+        }
     }
   }
+.select {
+    background: var(--select-bg-color); /* Цвет фона элемента бокового меню на текущей странице */
+}
+
+  .intel-list h2{
+    font-size: 18px;
+  }
+  .labor-law-items li,
+  .debt-recovery-items li,
+  .intel-title li{
+      font-size: 15px;
+ 
+  }
+
   .service-title {
     align-self: auto; /* Сброс значения align-self */
   }

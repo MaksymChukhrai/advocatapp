@@ -13,9 +13,20 @@
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
+<!-- добавлено -->
+<div class="service-flex-container">
+  <div class="side-buttons">
+    <include src="./partials/includes/side-service-buttons.html"></include>
+  </div>
+<!-- добавлено -->
+
           <div class="service-title">
+<!-- добавлено --> 
+          <div class="service-title-flex-container" >
             <img src="./images/criminal-law.png" alt="#" />
             <h1>Кримінальна практика</h1>
+          </div>
+<!-- добавлено --> 
             <div class="migration-serv-img criminal-img"></div>
             <article>
               <p>
@@ -35,6 +46,8 @@
               Замовити консультацію
             </button>
           </div>
+          <!-- закрыть <div flex-container> -->
+        </div>
           <div class="whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
@@ -178,6 +191,10 @@
     <script defer src="./js/my-mobile-menu.js"></script>
     <!-- redirect service types script -->
     <script defer src="./js/service-types-script.js"></script>
+        <!-- redirect service types script for side menu-->
+        <script src="./js/service-types-sidebar-script.js"></script>
+        <!-- validation script -->
+        <script src="./js/form-validate.js" type="module"></script>
 
    
   </body>
