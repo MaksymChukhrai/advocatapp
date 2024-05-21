@@ -69,6 +69,9 @@ select {
     background: var(--feedback-background-color);
    
 }
+.side-buttons{
+    display:none;
+}
 .service-title{
     display: flex;
     flex-direction: column;
@@ -254,4 +257,10 @@ height: 24px;
     margin-top: 2px;
     font-size: 12px;
     line-height: 1.4;
+}
+
+.page-form-2{
+    h2,h3{
+        display:none;
+    }
 }
