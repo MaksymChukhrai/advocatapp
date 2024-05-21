@@ -35,8 +35,8 @@
         }
     }
   }
-.select {
-    background: var(--select-bg-color); /* Цвет фона элемента бокового меню на текущей странице */
+  .service-buttons li.select {
+    background: var(--select-bg-color);
 }
 
   .intel-list h2{

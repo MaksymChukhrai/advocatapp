@@ -230,6 +230,16 @@ font-weight: 700;
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/custom-narrow.jpg') lightgray 50% / cover no-repeat;
 }
 
+.caption {
+    color: var(--black-secondary-text-color);
+    text-align: center;
+    font-family: 'Merriweather';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 .case-caption{
     border-radius: 0px 0px 4px 4px;
     align-items: center;

@@ -1,70 +1,52 @@
-import $ from 'jquery';
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.sidebar a');
+  const content = document.getElementById('content');
 
-$(document).ready(function() {
-  $('.case-card-module').each(function() {
-    const $module = $(this);
-    const $containers = $module.find('> .card-image-container');
-    const $caseCards = $module.find('.case-card');
-    const $cardImages = $module.find('.card-image');
+  links.forEach(link => {
+      link.addEventListener('click', function(event) {
+          event.preventDefault();
+          const url = this.getAttribute('data-url');
+          
+          // Подгрузка контента услуги
+          fetch(url)
+              .then(response => response.text())
+              .then(data => {
+                  // Извлечение контента между тегами <body>
+                  const parser = new DOMParser();
+                  const doc = parser.parseFromString(data, 'text/html');
+                  const newContent = doc.querySelector('#content').innerHTML;
 
-    $caseCards.addClass('is-hidden');
+                  content.innerHTML = newContent;
 
-    const narrowThreshold = 500; // Пороговое значение для определения узкого изображения
+                  // Обновление истории браузера
+                  history.pushState(null, '', url);
 
-    function getImageClass(width, imageName) {
-      const isNarrow = width < narrowThreshold;
-      return isNarrow ? `${imageName}-narrow` : `${imageName}-wide`;
-    }
-
-    function handleResize() {
-      $cardImages.each(function() {
-        const $image = $(this);
-        const imageWidth = $image.outerWidth();
-        const imageName = $image.attr('class').split(' ')[1].split('-')[0];
-        const imageClass = getImageClass(imageWidth, imageName);
-
-        $image.removeClass(`${imageName}-wide ${imageName}-narrow`);
-        $image.addClass(imageClass);
+                  // Обновление активного класса
+                  links.forEach(link => link.classList.remove('select'));
+                  this.classList.add('select');
+              })
+              .catch(error => console.error('Ошибка загрузки:', error));
       });
-    }
+  });
 
-    handleResize();
+  // Обработка изменения состояния истории (при навигации назад/вперед)
+  window.addEventListener('popstate', function() {
+      const url = location.pathname.split('/').pop();
+      fetch(url)
+          .then(response => response.text())
+          .then(data => {
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(data, 'text/html');
+              const newContent = doc.querySelector('#content').innerHTML;
 
-    const resizeObserver = new ResizeObserver(handleResize);
-    $cardImages.each(function() {
-      resizeObserver.observe(this);
-    });
+              content.innerHTML = newContent;
 
-    $containers.on('click', function() {
-      const $container = $(this);
-      const $caseCard = $container.find('.case-card');
-
-      if ($container.hasClass('wide-image')) {
-        $caseCard.toggleClass('is-hidden');
-        return;
-      }
-
-      if ($container.hasClass('narrow-image')) {
-        const $wideContainer = $containers.filter('.wide-image');
-        const $narrowContainers = $containers.not($wideContainer).not($container);
-
-        $wideContainer.removeClass('wide-image').addClass('narrow-image');
-        $container.removeClass('narrow-image').addClass('wide-image');
-        $container.prependTo($module);
-        $caseCard.removeClass('is-hidden');
-        $caseCards.not($caseCard).addClass('is-hidden');
-        reorderContainers($module, $containers);
-      }
-    });
+              // Обновление активного класса
+              links.forEach(link => link.classList.remove('select'));
+              document.querySelector(`a[data-url="${url}"]`).classList.add('select');
+          })
+          .catch(error => console.error('Ошибка загрузки:', error));
   });
 });
 
-function reorderContainers($module, $containers) {
-  const $wideContainer = $containers.filter('.wide-image');
-  const $narrowContainers = $containers.not($wideContainer);
-
-  $narrowContainers.detach();
-  $wideContainer.prependTo($module);
-  $narrowContainers.appendTo($module);
-}
 

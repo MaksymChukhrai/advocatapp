@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     history.pushState(null, '', url);
 
                     // Обновление активного класса
-                    links.forEach(link => link.classList.remove('select'));
-                    this.classList.add('select');
+                    links.forEach(link => link.parentElement.classList.remove('select'));
+                    this.parentElement.classList.add('select');
+                    console.log('Added select class to', this.parentElement); // Проверка добавления класса
                 })
                 .catch(error => console.error('Ошибка загрузки:', error));
         });
@@ -44,9 +45,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.innerHTML = newContent;
 
                 // Обновление активного класса
-                links.forEach(link => link.classList.remove('select'));
-                document.querySelector(`a[data-url="${url}"]`).classList.add('select');
+                links.forEach(link => link.parentElement.classList.remove('select'));
+                const activeLink = document.querySelector(`a[data-url="${url}"]`);
+                if (activeLink) {
+                    activeLink.parentElement.classList.add('select');
+                    console.log('Added select class to', activeLink.parentElement); // Проверка добавления класса
+                }
             })
             .catch(error => console.error('Ошибка загрузки:', error));
     });
+
+    // Проверка начального состояния для текущей страницы
+    const initialUrl = location.pathname.split('/').pop();
+    const initialActiveLink = document.querySelector(`a[data-url="${initialUrl}"]`);
+    if (initialActiveLink) {
+        initialActiveLink.parentElement.classList.add('select');
+        console.log('Added select class to', initialActiveLink.parentElement); // Проверка добавления класса
+    }
 });
