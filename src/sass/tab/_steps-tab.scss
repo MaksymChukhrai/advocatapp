@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+
+.steps-section-container{
+padding: 100px 60px;
+
+}
+.four-steps{
+    margin-bottom: 34px;
+    h2{
+        width: auto;
+        margin-bottom: 12px;
+        font-size: 24px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+.flex-steps-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 24px;
+   }
+.steps-container {
+    width: calc((100% - 24px) / 2); /* Рассчитываем ширину карточки с учетом отступов между ними */
+}
+
+}
