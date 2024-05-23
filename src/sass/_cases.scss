@@ -70,12 +70,25 @@ font-weight: 700;
     font-weight: 400;
     list-style-type: disc ;
 }
+
+.case-flex-container-right{
+    ul{
+        padding-left: 15px;
+    }
+    ul>li{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.4;
+        list-style-type: disc;
+    }
+}
 .case-description ol>li{
     list-style-type: decimal;
 }
 .main-idea{
     margin-top: 12px;
     margin-bottom: 12px;
+    font-size: 12px;
 }
 .cases-btn{
     margin-top:12px;

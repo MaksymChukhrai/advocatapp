@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px) {
+.case-card{
+margin-top:18px;
+}
+.cases{
+    padding: 70px 60px;
+}
+.cases-about{
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 15px;
+        width: 509px;  
+    }
+
+
+}
+.case-card{
+    display:flex;
+    flex-direction: row;
+    gap:24px;
+    
+}
+.case-flex-container-left{
+    max-width: 55,2vw;
+}
+.case-flex-container-right{
+    max-width: 26vw;
+}
+
+.case-description{
+        margin-top: 0;
+    h2{
+        font-size: 18px;
+    }
+.adm-law{
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+h3{
+    font-size: 16px;
+}
+p{
+    font-size: 15px;
+}
+.resolution{
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+}
+
+.case-flex-container-right{
+    ul{
+        padding-left: 15px;
+    }
+    ul>li{
+        font-size: 15px;
+       
+    }
+}
+.main-idea{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.cases-btn{
+    width: 200px;
+    padding-top:14px;
+    padding-bottom: 14px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+}
