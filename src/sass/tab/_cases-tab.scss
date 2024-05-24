@@ -23,7 +23,7 @@ margin-top:18px;
     
 }
 .case-flex-container-left{
-    max-width: 55,2vw;
+    max-width: 55vw;
 }
 .case-flex-container-right{
     max-width: 26vw;
@@ -50,6 +50,12 @@ p{
     line-height: 140%;
     margin-bottom: 16px;
 }
+ol{
+    padding-left: 15px;
+}
+ol>li{
+    font-size: 15px;
+}
 
 }
 
@@ -62,6 +68,8 @@ p{
        
     }
 }
+
+
 .main-idea{
     margin-top: 24px;
     margin-bottom: 24px;
@@ -74,6 +82,11 @@ p{
     padding-bottom: 14px;
     padding-left: 0;
     padding-right: 0;
+}
+// пресмотреть
+.narrow-image{
+    flex-basis: auto;
+    height: auto;
 }
 
 }
