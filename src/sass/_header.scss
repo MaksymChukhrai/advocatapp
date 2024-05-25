@@ -116,14 +116,14 @@ main{
     pointer-events: auto;
     transform: translateX(0);
   }
-  // .mobile-menu::before {
+  // .mobile-menu-overlay{
   //   content: '';
   //   position: absolute;
   //   top: 0;
   //   left: 0;
   //   width: 100%;
   //   height: 100%;
-  //   background: rgba(0, 0, 0, 0.8); /* Установите нужный уровень прозрачности здесь */
+  //   background: rgba(0, 0, 0,0.9); /* Установите нужный уровень прозрачности здесь */
   //   z-index: -1; /* Поместите псевдоэлемент под контент */
   // }
   
@@ -159,3 +159,4 @@ main{
     color: var(--header-white-color);
   }
 }
+
