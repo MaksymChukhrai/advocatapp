@@ -74,13 +74,21 @@
 }
 
 .contact-slogan-text{
-  width: 236px;
-  margin-top: 50px;
+  justify-content: flex-start;
+  margin-top: 100px;
+  margin-bottom: 101px;
+  
+  h1{
+    margin-bottom: 28px;
+    width: 236px;
+    color:var(--black-main-text-color);
+  }
+  h3{
+    color:var(--black-main-text-color);
+  }
+
 }
-.contact-slogan-text h1,
-.contact-slogan-text h3{
-  color:var(--black-main-text-color);
-}
+
 .contact-slogan-btn{
   padding: 14px 30px;
       justify-content: center;
@@ -89,7 +97,7 @@
       border-radius: 8px;
       border: 1px solid var(--Bronze-Button, #B4721D);
       background: var(--Bronze-Button, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #B4721D);
-      margin: 0px 14px 0px 16px;
+      margin: 0px 14px;
       color: var( --header-white-color);
     font-weight: 700;
     line-height: 1.4;
@@ -347,9 +355,21 @@ display: none;
   width: 100%;
   margin: 0 auto;
 }
+.contacts-order-section{
+  display:none;
+}
 .order-main{
   padding: 20px 15px 0px 15px;
   background: var(--header-white-color);
+}
+.call-to-action{
+  padding: 0px 15px;
+}
+
+.order-main,
+.call-to-action{
+
+ 
   h2{
     font-family: 'Merriweather';
     font-size: 18px;
