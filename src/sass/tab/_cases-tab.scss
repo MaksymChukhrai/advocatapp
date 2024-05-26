@@ -1,5 +1,13 @@
 @media screen and (min-width: 768px) {
 // cards
+.case-description-container {
+    width: calc(100vw - 120px);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: calc(-50vw + 180px); /* Сдвиг для выравнивания */
+    margin-right: calc(-50vw + 180px); /* Сдвиг для выравнивания */
+  }
 .case-card-pc-module:not(:last-child){
     margin-bottom: 18px;
 }
@@ -154,7 +162,8 @@ margin-top:18px;
 }
 
 .cases-pc-container{
-    display:block;
+    display:flex;
+    flex-direction: column;
 }
 
 .case-card{
@@ -231,6 +240,9 @@ ol>li{
 // }
 .is-hidden{
     display:none;
+}
+.all-rights{
+    margin-top: 0;
 }
 
 }
