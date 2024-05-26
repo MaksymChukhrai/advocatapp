@@ -255,7 +255,7 @@ font-weight: 700;
     font-style: normal;
     font-weight: 700;
     line-height: 1.4;
-    background: var(--light-yellow);
+ 
 }
 
 .case-caption{
@@ -265,6 +265,7 @@ font-weight: 700;
     display: flex;
     font-size-adjust: 0.7; 
     height: 58px;
+    background: var(--light-yellow);
 }
 
 .is-hidden{
