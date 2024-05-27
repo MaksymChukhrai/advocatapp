@@ -1,24 +1,24 @@
 //src\js\cases.jquery.js
 
+//src\js\cases.jquery.js
+
 import $ from 'jquery';
 
 $(document).ready(function() {
   $('.case-card-module').each(function() {
     const $module = $(this);
     const $containers = $module.find('> .card-image-container');
-    const $caseCards = $module.find('.case-card');
+    const $caseDescriptionContainers = $module.find('.case-description-container');
 
-    $caseCards.addClass('is-hidden'); // Скрываем все описания при загрузке страницы
-   
+    $caseDescriptionContainers.addClass('is-hidden'); // Скрываем все описания при загрузке страницы
+
     $containers.on('click', function() {
       const $container = $(this);
-      const $caseCard = $container.find('.case-card');
+      const $caseDescriptionContainer = $container.find('.case-description-container');
 
       // Если контейнер уже широкий, переключаем показ/скрытие описания
       if ($container.hasClass('wide-image')) {
-        
-        $caseCard.toggleClass('is-hidden');
-
+        $caseDescriptionContainer.toggleClass('is-hidden');
         return;
       }
 
@@ -30,10 +30,9 @@ $(document).ready(function() {
         $wideContainer.removeClass('wide-image').addClass('narrow-image');
         $container.removeClass('narrow-image').addClass('wide-image');
         $container.prependTo($module);
-       
-        $caseCard.removeClass('is-hidden');
-       
-        $caseCards.not($caseCard).addClass('is-hidden');
+
+        $caseDescriptionContainer.removeClass('is-hidden');
+        $caseDescriptionContainers.not($caseDescriptionContainer).addClass('is-hidden');
 
         reorderContainers($module, $containers);
       }
@@ -46,6 +45,6 @@ function reorderContainers($module, $containers) {
   const $narrowContainers = $containers.not($wideContainer);
 
   $narrowContainers.detach();
-  $wideContainer.prependTo($module);
-  $narrowContainers.appendTo($module);
+  $wideContainer.appendTo($module);
+  $narrowContainers.prependTo($module);
 }

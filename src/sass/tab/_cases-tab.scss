@@ -8,6 +8,12 @@
     margin-left: calc(-50vw + 180px); /* Сдвиг для выравнивания */
     margin-right: calc(-50vw + 180px); /* Сдвиг для выравнивания */
   }
+
+ .right-aligned {
+
+    transform: translateX(-224px);
+  }
+
 .case-card-pc-module:not(:last-child){
     margin-bottom: 18px;
 }
@@ -38,7 +44,7 @@
 .case-caption {
     font-size: 13px;
     background: var(--light-yellow);
-    
+
 }
 .euro-wide{
     background: linear-gradient(0deg, rgba(135, 125, 125, 0.40) 0%, rgba(135, 125, 125, 0.40) 100%), url('../images/cases-img/tab/euro-wide-tab_2x.jpg') lightgray 50% /cover no-repeat;

@@ -19,12 +19,21 @@ if (isDesktopWidth()) {
       const handleWideCardClick = function($card) {
         const $description = $card.find('.case-description-container');
         const $previousDescription = $('.case-description-container:not(.is-hidden)');
-
-        // Закрываем ранее открытое описание (если есть)
+        const isRightAligned = $card.closest('.card-flex-pc-container').index() % 2 === 1;
+      
         $previousDescription.addClass('is-hidden');
-
-        $description.toggleClass('is-hidden');
-        animateDescriptionToggle($description);
+        
+        if ($description.hasClass('is-hidden')) {
+          $description.removeClass('is-hidden');
+          if (isRightAligned) {
+            $description.addClass('right-aligned');
+          } else {
+            $description.removeClass('right-aligned');
+          }
+          animateDescriptionToggle($description, 'open');
+        } else {
+          $description.addClass('is-hidden');
+        }
       }
 
       const handleNarrowCardClick = function($card) {
@@ -32,17 +41,16 @@ if (isDesktopWidth()) {
         const $siblingCard = $card.siblings('.card-image-pc-container').not($card);
         const $description = $card.find('.case-description-container');
         const $previousDescription = $('.case-description-container:not(.is-hidden)');
-
-        // Закрываем ранее открытое описание (если есть)
+      
         $previousDescription.addClass('is-hidden');
-
+      
         animateCardExpansion($card, $siblingCard);
-
+      
         setTimeout(() => {
           $card.removeClass('narrow-image').addClass('wide-image');
           $siblingCard.removeClass('wide-image').addClass('narrow-image');
           $description.removeClass('is-hidden');
-          animateDescriptionToggle($description);
+          animateDescriptionToggle($description, 'open');
         }, 500);
       }
 
@@ -54,8 +62,12 @@ if (isDesktopWidth()) {
         $siblingCard.animate({ width: 0 }, 500);
       }
 
-      const animateDescriptionToggle = function($description) {
-        $description.animate({ height: 'toggle' }, 500);
+      const animateDescriptionToggle = function($description, action) {
+        if (action === 'open') {
+          $description.animate({ height: 'toggle', opacity: 'toggle' }, 500);
+        } else {
+          $description.animate({ height: 'toggle', opacity: 'toggle' }, 500);
+        }
       }
 
       // Добавление обработчиков событий кликов
