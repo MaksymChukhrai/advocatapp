@@ -1,0 +1,170 @@
+@media screen and (min-width: 1280px) {
+    main{
+        padding-top: 115px;
+    }
+    .main-slogan{
+        max-width: 1280px;
+        margin:0 auto;
+display: block;
+    }
+    .main-slogan-container {
+ 
+        height: 729px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(2, 2, 2, 0.4) 1.01%,
+            rgba(177, 170, 170, 0.4) 101.01%
+          ),
+          url('../images/pc-main-slogan.jpg');
+    }
+
+.slogan-text{
+    width: 540px;
+    align-items: start;
+h1{
+    font-size: 32px;
+    margin-bottom: 28px;
+    width: 540px;
+}
+h3{
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+}
+.order-btn {
+    padding: 14px ;
+    font-size: 20px;
+    width: 308px;
+  }
+
+  //hero section
+  .hero-pos-container{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+.hero-container{
+    padding:100px 88px;
+    align-items: center;
+    justify-content: space-between;
+
+    .hero-details{
+        width: 541px;
+    }
+}
+.hero-container img{
+    width: 446px;
+    height: 612px;
+    border-radius: 4px;
+}
+
+.hero-name{
+    margin-top: 0;
+    margin-bottom: 84px;
+    h2{
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+.tab-pc{
+    margin-top: 0;
+    p{
+        font-size: 20px;
+    }
+}
+
+.achievements-container{
+    padding: 24px 45px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.achievements{
+    justify-content: space-evenly;
+}
+.up-text{
+    font-size: 24px;
+}
+
+.areas-section-container{
+    padding: 100px 88px;
+    max-width: 1280px;
+    margin: 0 auto;
+    h1{
+        font-size: 32px;
+        margin-bottom: 34px;
+    }
+
+}
+.grid-container{
+    grid-template-columns: repeat(auto-fit, minmax(calc((100% - 176px - (24px * 4)) / 3), 1fr));
+    gap: 24px;
+}
+.areas-section-container .card-image{
+    height: 250px;
+
+}
+.areas-section-container .caption{
+    padding: 20px 8px;
+    height: 70px;
+    img{
+        width: 30px;
+height: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+
+.product-card:hover .card-image {
+    transform: scale(1.10);
+    // transform-origin: bottom ;
+    // overflow: hidden;
+}
+
+.feedback-container{
+    padding: 100px 88px;
+    max-width: 1280px;
+    margin: 0 auto;
+    h2{
+        font-size: 32px;
+        margin-bottom: 34px;
+      }
+    .feedback-img{
+        height: 418px;
+    }
+    
+}
+
+.slider-slide{
+    padding: 20px 10px;
+    height: 416px;
+    width: 352px !important;
+    h3{
+        font-size: 24px;
+    }
+}
+.stars{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.stars > li > svg {
+    width: 20px;
+    height: 20px;
+}
+.quotes svg {
+    width: 8px;
+    height: 14px;
+}
+
+.slider-text {
+    font-size: 16px;
+}
+
+
+}

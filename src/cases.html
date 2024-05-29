@@ -11,13 +11,14 @@
     <include src="./partials/includes/header.html"></include>
     <main>
       <section class="cases">
-        <div class="cases-about">
-            <h1>Успішні кейси з моєї практики</h1>
-            <p>Приклади реальних кейсів, як успішні рішення допомогли клієнтам вирішити правові проблеми</p>
-        </div>
+        <div class="cases-content">
+            <div class="cases-about">
+                <h1>Успішні кейси з моєї практики</h1>
+                <p>Приклади реальних кейсів, як успішні рішення допомогли клієнтам вирішити правові проблеми</p>
+            </div>
         <include src="./partials/includes/cases/cases-mob-container.html"></include>
         <include src="./partials/includes/cases/cases-pc-tab-container.html"></include>
-
+         </div>
     </section>
       <include src="./partials/includes/steps.html"></include>
       <include src="./partials/includes/feedback.html"></include>
@@ -35,7 +36,7 @@
   <!-- cases card animations for mob version -->
   <script type="module" src="./js/cases.jquery.js"></script>
  <!-- cases card animations for TAB-PC versions -->
- <!-- <script type="module" src="./js/cases-desktop.js"></script> -->
+ <script type="module" src="./js/cases-desktop.jquery.js"></script>
 
      <!-- validation script -->
      <script src="./js/form-validate.js" type="module"></script>

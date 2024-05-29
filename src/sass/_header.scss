@@ -6,6 +6,9 @@ header{
   z-index: 900;
   opacity: 0.9;
 }
+.nav-links{
+  display: none;
+}
 main{
   padding-top: 73px;
 }
@@ -151,12 +154,13 @@ main{
     font-family: 'Roboto';
     line-height: 1.4;
   }
-  .order-btn {
-    padding: 14px 30px;
-    background-color: transparent;
-    border-radius: 8px;
-    border: 1px solid var(--Button, #faac39);
-    color: var(--header-white-color);
-  }
+
 }
 
+.order-btn {
+  padding: 14px 30px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--orange-button);
+  color: var(--header-white-color);
+}

@@ -1,16 +1,20 @@
 @media screen and (min-width: 768px) {
 // cards
-.case-description-container {
-    width: calc(100vw - 120px);
+.cases-content{
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: calc(-50vw + 180px); /* Сдвиг для выравнивания */
-    margin-right: calc(-50vw + 180px); /* Сдвиг для выравнивания */
+}
+
+.case-description-container {
+    position: static;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
- .right-aligned {
-
+  .case-description-container.is-hidden {
+    display: none;
+  }
+  .case-description-container.right-aligned {
     transform: translateX(-224px);
   }
 
@@ -26,15 +30,12 @@
     margin-bottom: 18px;
 }
 .wide-image{
-    flex-basis: 100%;
-  
-}
+    max-width: 424px;
+  }
 
 .narrow-image{
-    flex-basis: calc((100% - 24px) / 2);
        height: 100%;
-  
-}
+  }
 .height-img{
     height: 142px;
 }
@@ -246,9 +247,7 @@ ol>li{
 //     flex-basis: auto;
 //     height: auto;
 // }
-.is-hidden{
-    display:none;
-}
+
 .all-rights{
     margin-top: 0;
 }

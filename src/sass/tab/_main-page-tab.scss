@@ -27,6 +27,8 @@
     padding: 70px 60px;
     img {
       height: 429px;
+      width: 312px;
+      border-radius: 4px;
     }
   }
   .hero-name {
@@ -130,6 +132,33 @@
       }
     }
   }
+
+  .slider-slide{
+  
+    height: 280px;
+    width: 312px !important;
+    h3{
+        font-size: 14px;
+    }
+}
+  .stars{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.stars > li > svg {
+    width: 20px;
+    height: 20px;
+}
+.quotes svg {
+    width: 5px;
+    height: 9px;
+}
+
+.slider-text {
+    font-size: 12px;
+}
+
   // order-section
   .order-section-container {
     padding: 70px 60px 50px 60px;

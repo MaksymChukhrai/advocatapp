@@ -1,7 +1,5 @@
 //src\js\cases.jquery.js
 
-//src\js\cases.jquery.js
-
 import $ from 'jquery';
 
 $(document).ready(function() {

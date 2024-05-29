@@ -6,8 +6,8 @@ import 'slick-carousel';
 
 $(document).ready(function() {
   $('.slider-wrapper').slick({
-      slidesToShow: 1.1,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       arrows: true,
       prevArrow: $('.prev-slide'),
       nextArrow: $('.next-slide'),
@@ -15,6 +15,7 @@ $(document).ready(function() {
       centerMode:false,
       centerPadding:'0px',
       responsive: [
+
         {
           breakpoint: 1280, // до 1280px - tab
           settings: {

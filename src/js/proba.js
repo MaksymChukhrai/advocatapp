@@ -19,14 +19,19 @@ if (isDesktopWidth()) {
       const handleWideCardClick = function($card) {
         const $description = $card.find('.case-description-container');
         const $previousDescription = $('.case-description-container:not(.is-hidden)');
-        const isRightAligned = $card.closest('.card-flex-pc-container').index() % 2 === 1;
-      
+        const $container = $card.closest('.card-flex-pc-container');
+        const isRightAligned = $container.parent().children('.card-flex-pc-container').index($container) % 2 === 1;
+
+        console.log('Card Index:', $container.parent().children('.card-flex-pc-container').index($container));
+        console.log('Is Right Aligned:', isRightAligned);
+
         $previousDescription.addClass('is-hidden');
-        
+
         if ($description.hasClass('is-hidden')) {
           $description.removeClass('is-hidden');
           if (isRightAligned) {
             $description.addClass('right-aligned');
+            console.log('Class right-aligned added');
           } else {
             $description.removeClass('right-aligned');
           }
@@ -41,15 +46,25 @@ if (isDesktopWidth()) {
         const $siblingCard = $card.siblings('.card-image-pc-container').not($card);
         const $description = $card.find('.case-description-container');
         const $previousDescription = $('.case-description-container:not(.is-hidden)');
-      
+        const isRightAligned = $container.parent().children('.card-flex-pc-container').index($container) % 2 === 1;
+
+        console.log('Card Index:', $container.parent().children('.card-flex-pc-container').index($container));
+        console.log('Is Right Aligned:', isRightAligned);
+
         $previousDescription.addClass('is-hidden');
-      
+
         animateCardExpansion($card, $siblingCard);
-      
+
         setTimeout(() => {
           $card.removeClass('narrow-image').addClass('wide-image');
           $siblingCard.removeClass('wide-image').addClass('narrow-image');
           $description.removeClass('is-hidden');
+          if (isRightAligned) {
+            $description.addClass('right-aligned');
+            console.log('Class right-aligned added');
+          } else {
+            $description.removeClass('right-aligned');
+          }
           animateDescriptionToggle($description, 'open');
         }, 500);
       }
