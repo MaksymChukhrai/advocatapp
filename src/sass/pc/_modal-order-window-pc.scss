@@ -12,12 +12,13 @@
 
   .modal-flex-container{
     justify-content: space-between;
+    padding: 20px 32px;
     img{
         display:none;
     }
   }
   .modal-pc-img {
-    height: 402px;
+    // height: 402px;
     width: 291px;
     border-radius: 4px;
     background: linear-gradient(
@@ -45,7 +46,9 @@
 .input-modal-tel{
     font-size: 16px;
 }
-
+#wrightme {
+    font-size: 16px;  
+}
     .main-socials.modal-form {
     padding: 12px 20px;
 }
