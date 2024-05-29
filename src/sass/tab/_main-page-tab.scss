@@ -239,6 +239,9 @@
     .tel-number a,
     .mail a {
       font-size: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
     }
     .adress {
       margin-bottom: 12px;
@@ -247,6 +250,8 @@
     .tel-number svg,
     .mail svg {
       margin-right: 8px;
+      height: 20px;
+      width: 20px;
     }
     .map {
       width: 100%;

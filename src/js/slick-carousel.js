@@ -20,7 +20,7 @@ $(document).ready(function() {
           breakpoint: 1280, // до 1280px - tab
           settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 3,
           }
         },
         {

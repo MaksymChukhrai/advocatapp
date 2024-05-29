@@ -1,0 +1,74 @@
+@media screen and (min-width: 1280px) {
+  .modal-form {
+    max-width: 882px;
+    margin: 0 auto;
+  }
+
+  .header-modal-container {
+    h2 {
+      font-weight: 400;
+    }
+  }
+
+  .modal-flex-container{
+    justify-content: space-between;
+    img{
+        display:none;
+    }
+  }
+  .modal-pc-img {
+    height: 402px;
+    width: 291px;
+    border-radius: 4px;
+    background: linear-gradient(
+        0deg,
+        rgba(159, 163, 170, 0.2) 0%,
+        rgba(159, 163, 170, 0.2) 100%
+      ),
+      url('../images/modal-order-igor_PC_2x.jpg') lightgray 50% / cover
+        no-repeat;
+  }
+.modal-block-container{
+    width: 509px;
+}
+
+.modal-form{
+    h3{
+        font-size: 20px;
+    }
+}
+
+.form-label{
+    font-weight: 400;
+}
+.input-modal-name,
+.input-modal-tel{
+    font-size: 16px;
+}
+
+    .main-socials.modal-form {
+    padding: 12px 20px;
+}
+.modal-social-icon{
+    width: 30px;
+height: 30px;
+}
+.social-title-modal{
+    font-size: 16px;
+}
+.main-social-icons li .social-icon-block > a {
+    gap:8px;
+}
+.modal-submit-btn {
+    width: 247px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.btn-icon{
+    width: 20px;
+    height: 20px;
+}
+
+
+}

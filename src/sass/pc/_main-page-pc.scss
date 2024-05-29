@@ -148,7 +148,15 @@ height: 30px;
         font-size: 24px;
     }
 }
+.stars-mob{
+    display:none;
+  }
+
+
 .stars{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
     margin-top: 8px;
     margin-bottom: 20px;
 }
@@ -166,5 +174,108 @@ height: 30px;
     font-size: 16px;
 }
 
+.order-address-flex-container{
+    display:flex;
+    flex-direction: row-reverse;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:100px 0px;
+    background: var(--feedback-background-color);
+    justify-content: space-between;
+    padding-right: 88px;
 
+.adress-section-container{
+    width: 628px;
+    background: transparent;
+    padding: 0;
+    h2{
+        font-size: 32px;
+        margin-bottom: 34px;
+    }
+    .tel-number a{
+        font-size: 20px;
+
+        svg{
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+.mail a{
+    font-size: 20px;
+}
+.mail svg{
+    width: 22px;
+height: 17px;
+}
+.adress{
+    margin-bottom: 20px;
+}
+.adress svg{
+    width: 22px;
+    height: 24px;
+}
+.adress p{
+    font-size: 20px;
+}
+    .map{
+        height: 742px; 
+    }
+}
+
+
+.order-section-container{
+    background: transparent;
+    padding:0;
+    img{
+        height: 391px;
+    }
+    .order-main{
+        padding: 48px 16px 0;
+    }
+    .order-main > h2{
+        font-size: 24px;
+    }
+    .order-main > h3{
+        font-size: 20px;
+        width: 508px;
+    }
+
+}
+.form-label {
+    font-size: 20px;
+}
+.form-input {
+    font-size: 16px;
+}
+.btn-submit {
+    width: 247px;
+    font-size: 20px;
+    align-items: flex-start;
+    .btn-icon{
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+ 
+    }
+}
+.main-socials {
+    padding: 8px 16px 32px;
+    h3{
+        font-size: 20px; 
+    }
+
+}
+.main-social-icon {
+    width: 30px;
+    height: 30px;
+}
+.main-social-icons li .social-icon-block > a {
+    gap: 8px;
+}
+.social-title {
+    font-size: 20px;
+}
+
+}
 }

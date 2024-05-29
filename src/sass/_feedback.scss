@@ -39,14 +39,19 @@
   font-size: 11px;
   line-height: 1.4;
 }
-.stars {
+
+.stars{
+  display:none;
+}
+
+.stars-mob {
   display: flex;
   justify-content: flex-start;
   gap: 4px;
   margin-top: 4px;
   margin-bottom: 12px;
 }
-.stars > li > svg {
+.stars-mob > li > svg {
   width: 10px;
   height: 10px;
 }
