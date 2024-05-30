@@ -61,6 +61,8 @@ width: 634px;
 //why me
 .whyme-section-container{
     padding: 60px 88px;
+    max-width: 1280px;
+    margin:0 auto;
     h1{
         font-size: 32px;
     margin-bottom: 34px;
@@ -84,6 +86,99 @@ width: 634px;
         font-size: 20px;
     }
 }
+//main-order-section-message-pc
+.order-form-display-container{
+    display:none;
+}
+.main-order-section-message-pc{
+    display:block;
+}
+.section-message-pc-container{
+    padding: 100px 88px;
+    max-width: 1280px;
+    margin:0 auto;
+    background: var(--feedback-background-color);
+    display: flex;
+    gap:24px;
+}
+.message-pc-block-container{
+    display:block;
+    .order-igor-tab-img{
+        width: 447px;
+        height: 402px;
+        margin: 0 auto;
+        border-radius: 4px;
+        background: linear-gradient(0deg, rgba(159, 163, 170, 0.10) 0%, rgba(159, 163, 170, 0.10) 100%), url('../images/order-igor-pc_2x.jpg') lightgray 50% / cover no-repeat;
+    }
+}
+
+.page-form-socials{
+    margin-top: 32px;
+}
+.main-socials h3 {
+    color: var(--black-secondary-text-color);
+     font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
+.main-social-icon{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+.page-form-social-title {
+        font-size: 20px;
+          font-weight: 400;
+      }
+
+.form-container{
+    padding: 24px 16px;
+    .page-form-title{
+        color: var(--black-secondary-text-color);
+        h2{
+            font-family: 'Merriweather';
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 140%;
+            margin-bottom: 12px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+}
+.feedback-form{
+    margin-top: 40px;
+    .form-order-form {
+        width: auto;
+    }
+}
+.page-form-label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.input-name,
+.input-tel,
+.input-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.fixed-height{
+    overflow: hidden; 
+    resize: none; 
+}
+.page-form-btn {
+    margin: 34px auto 0;
+    color: var(--black-button-color);
+    font-size: 20px;
+    width: 247px;
+}
+
+
+
 
 
 
