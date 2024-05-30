@@ -1,0 +1,90 @@
+@media screen and (min-width: 1280px) {
+    .mystory-section-pc{
+        display:block;
+    }
+.mystory-section{
+    display:none;
+}
+.mystory-container{
+    padding: 100px 88px;
+    max-width: 1280px;
+    margin:0 auto;
+   .hero-name {
+    margin-bottom: 34px;
+        h3{
+            font-size: 20px;
+            font-weight: 500;
+        }
+   }
+}
+
+#flex-text {
+    max-width: 634px;
+}
+.mystory-section-text p{
+    font-size: 20px;
+    font-weight: 400;
+ 
+}
+.mystory-section-text p:not(:last-child) {
+    margin-bottom: 18.5px;
+  }
+  
+  .mystory-section-text p:last-child {
+     margin-bottom: 0px; 
+  }
+.aboutme-flex-text-container{
+    display:flex;
+    gap: 24px;
+}
+
+.aboutme-text-container{
+display:block;
+width: 634px;
+}
+
+.aboutme-img {
+    width: 446px;
+    height: 672px;
+    background: #d3d3d3 url('../images/mystory-pc_2x.jpg') center / cover no-repeat;
+}
+#mystory-slogan-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+.order-btn-aboutme {
+    margin: 0 auto 0 0 ;
+}
+//why me
+.whyme-section-container{
+    padding: 60px 88px;
+    h1{
+        font-size: 32px;
+    margin-bottom: 34px;
+    }
+}
+.whyme-flex-container {
+    gap: 32px;
+}
+.online-support{
+
+    img{
+        width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+    }
+    h4{
+        font-size: 20px;
+    margin-bottom: 12px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+
+
+}

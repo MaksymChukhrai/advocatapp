@@ -1,4 +1,7 @@
 @media screen and (min-width: 768px) {
+    .mystory-section-pc{
+        display:none;
+    }
 .mystory-container{
     padding: 70px 60px;
 }
@@ -78,6 +81,7 @@
 
     color: var(--black-secondary-text-color);
     width: calc((100% - 48px) / 3);
+    padding:0;
     img{
         width: 40px;
     height: 40px;
