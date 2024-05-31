@@ -1,0 +1,149 @@
+@media screen and (min-width: 1280px) {
+  .service-types-pc-gradient-container {
+    background: var(--main-order-gradient);
+  }
+  .service-types-section-container {
+    padding: 100px 88px 0px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: transparent;
+    h1{
+        font-size: 32px;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 24px;
+      width: 851px;
+    }
+  }
+
+  .migration-serv-container {
+    padding: 0px 88px 100px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .service-img-flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    gap: 24px;
+    .service-title {
+      width: 728px;
+      .service-title-flex-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        h1{
+            font-family: 'Merriweather';
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+        }
+      }
+      .services-btn {
+        margin: 0 auto 0 0;
+        font-size: 20px;
+        width: auto;
+      }
+    }
+  }
+  .migration-serv-container article {
+    margin-bottom: 0px;
+    margin-top:10px;
+
+    p {
+      font-size: 20px;
+      margin-top: 44px;
+      margin-bottom: 44px;
+    }
+  }
+
+  .side-buttons {
+    display: none;
+  }
+
+  .migration-img {
+    display: none;
+  }
+  .migration-img-pc {
+    display: block;
+    border-radius: 4px;
+    width: 352px;
+    height: 400px;
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/migration-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .side-buttons-pc-flex-container {
+    display: block;
+  }
+  .service-type-pc-flex-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  .pc-service-title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    .pc-column-service-items {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 410px;
+      // посчитать формулу этого width
+      .service-item {
+        margin: 0;
+        height: auto;
+        //либо сюда добавить width
+        .service-details {
+          h3 {
+            width: 320px;
+          }
+        }
+      }
+    }
+  }
+  .side-service-buttons-container {
+    .service-buttons li {
+      padding: 20px;
+      font-size: 20px;
+      width: 352px;
+      &.select {
+        background: var(--select-bg-color);
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .service-buttons li a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .whyme-title {
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

@@ -4,6 +4,7 @@
 }
 header{
     background: var(--brown-gradient);
+    border-bottom: 1px solid var(--header-white-color);
 }
 .header-pos-container{
     max-width: 1280px;
@@ -15,6 +16,7 @@ header{
 .header-container{
     padding: 24px 88px;
     background: transparent;
+    border-bottom:none;
 }
 .igor{
        font-size: 32px;

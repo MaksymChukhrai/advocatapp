@@ -1,8 +1,9 @@
 // src/js/service-types-sidebar-script.js
 
 document.addEventListener('DOMContentLoaded', function() {
+
     const links = document.querySelectorAll('.sidebar a');
-    const content = document.getElementById('content');
+    // const content = document.getElementById('content');
 
     links.forEach(link => {
         link.addEventListener('click', function(event) {
