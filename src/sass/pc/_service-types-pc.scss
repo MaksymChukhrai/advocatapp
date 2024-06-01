@@ -120,8 +120,7 @@
   }
   .side-service-buttons-container {
     .service-buttons li {
-      padding: 20px;
-      font-size: 20px;
+          padding: 20px 10px;
       width: 352px;
       &.select {
         background: var(--select-bg-color);
@@ -137,6 +136,22 @@
     font-style: normal;
     font-weight: 700;
   }
+  .btn-title{
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-start;
+    gap:8px;
+    img{
+        display:block;
+        width: 30px;
+        height: 30px;
+        margin:0;
+    }
+    h3{
+      font-size: 20px;
+
+    }
+  }
 
   .whyme-title {
     h2 {
@@ -146,4 +161,23 @@
       font-size: 16px;
     }
   }
+.main-order-section{
+    display:none;
+}
+.modal-order-window{
+    display:block;
+}
+.main-order-section-pc{
+    display:block;
+    background: var(--select-bg-color);
+}
+.section-pc-container {
+ 
+    gap: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 88px;
+    display: flex;
+}
+
 }
