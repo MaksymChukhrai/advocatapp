@@ -20,7 +20,8 @@ display: block;
 
 .slogan-text{
     width: 540px;
-    align-items: start;
+
+
 h1{
     font-size: 32px;
     margin-bottom: 28px;
@@ -28,10 +29,23 @@ h1{
 }
 h3{
     font-size: 24px;
-    padding-right: 30px;
+    width: 479px;
+}
 }
 
+
+.contact-slogan-text{
+    align-items: center;
+     
 }
+
+.main-slogan-text{
+    align-items: flex-start;
+}
+
+
+
+
 .order-btn {
     padding: 14px ;
     font-size: 20px;
