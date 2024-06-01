@@ -3,7 +3,8 @@
         padding-top: 115px;
     }
     .main-slogan {
-        height: 729px;
+        height: calc(100vw * 0.3695);
+        min-height:729px;
         background-image: linear-gradient(
             0deg,
             rgba(2, 2, 2, 0.4) 1.01%,
@@ -22,8 +23,10 @@
       }
 
     .position-container {
-        top: 187px;
+        top: calc(100vw * 0.1061);
     }
+
+
 
 .slogan-text{
     width: 540px;
@@ -60,6 +63,9 @@ h3{
   }
 
   //hero section
+  .hero-section{
+    background: var(--brown-gradient);
+  }
   .hero-pos-container{
     max-width: 1280px;
     margin: 0 auto;
@@ -68,6 +74,7 @@ h3{
     padding:100px 88px;
     align-items: center;
     justify-content: space-between;
+    background: transparent;
 
     .hero-details{
         width: 541px;
@@ -98,11 +105,14 @@ h3{
         font-size: 20px;
     }
 }
-
+.achievements-section{
+    background: var(--achievements-background-color);
+}
 .achievements-container{
     padding: 24px 45px;
     max-width: 1280px;
     margin: 0 auto;
+    background: transparent;
 }
 .achievements{
     justify-content: space-evenly;
@@ -110,11 +120,15 @@ h3{
 .up-text{
     font-size: 24px;
 }
+.areas-section{
+    background: var(--brown-gradient);
+}
 
 .areas-section-container{
     padding: 100px 88px;
     max-width: 1280px;
     margin: 0 auto;
+    background: transparent;
     h1{
         font-size: 32px;
         margin-bottom: 34px;
@@ -146,11 +160,17 @@ height: 30px;
     // transform-origin: bottom ;
     // overflow: hidden;
 }
-
+.feedback-section{
+    background: var(--feedback-background-color);
+}
+.background-container{
+    background: var(--feedback-background-color);
+}
 .feedback-container{
     padding: 100px 88px;
     max-width: 1280px;
     margin: 0 auto;
+    background: transparent;
     h2{
         font-size: 32px;
         margin-bottom: 34px;
@@ -201,7 +221,7 @@ height: 30px;
     max-width: 1280px;
     margin: 0 auto;
     padding:100px 0px;
-    background: var(--feedback-background-color);
+   
     justify-content: space-between;
     padding-right: 88px;
 
@@ -240,7 +260,7 @@ height: 17px;
     font-size: 20px;
 }
     .map{
-        height: 742px; 
+        height: 754px; 
     }
 }
 .page-order-section{

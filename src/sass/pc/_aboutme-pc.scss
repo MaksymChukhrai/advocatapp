@@ -1,6 +1,8 @@
 @media screen and (min-width: 1280px) {
     .mystory-section-pc{
         display:block;
+        background: var(--feedback-background-color);
+
     }
 .mystory-section{
     display:none;
@@ -9,6 +11,7 @@
     padding: 100px 88px;
     max-width: 1280px;
     margin:0 auto;
+    background: transparent;
    .hero-name {
     margin-bottom: 34px;
         h3{
@@ -59,10 +62,14 @@ width: 634px;
     margin: 0 auto 0 0 ;
 }
 //why me
+.whyme-section{
+    background: var(--select-bg-color);
+}
 .whyme-section-container{
     padding: 60px 88px;
     max-width: 1280px;
     margin:0 auto;
+    background: transparent;
     h1{
         font-size: 32px;
     margin-bottom: 34px;
@@ -92,12 +99,12 @@ width: 634px;
 }
 .main-order-section-message-pc{
     display:block;
+    background: var(--feedback-background-color);
 }
 .section-message-pc-container{
     padding: 100px 88px;
     max-width: 1280px;
     margin:0 auto;
-    background: var(--feedback-background-color);
     display: flex;
     gap:24px;
 }
