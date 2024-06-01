@@ -2,13 +2,7 @@
     main{
         padding-top: 115px;
     }
-    .main-slogan{
-        max-width: 1280px;
-        margin:0 auto;
-display: block;
-    }
-    .main-slogan-container {
- 
+    .main-slogan {
         height: 729px;
         background-image: linear-gradient(
             0deg,
@@ -16,6 +10,19 @@ display: block;
             rgba(177, 170, 170, 0.4) 101.01%
           ),
           url('../images/pc-main-slogan.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .main-slogan-container {
+        background-image: none;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: block;
+      }
+
+    .position-container {
+        top: 187px;
     }
 
 .slogan-text{
