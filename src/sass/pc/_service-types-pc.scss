@@ -55,27 +55,42 @@
       }
     }
   }
-  .migration-serv-container article {
-    margin-bottom: 0px;
-    margin-top: 10px;
+  // .migration-serv-container article {
+  //   margin-bottom: 0px;
+  //   margin-top: 10px;
 
-    p {
-      font-size: 20px;
-      margin-top: 44px;
-      margin-bottom: 44px;
-    }
-  }
-  .migration-serv-container article>.criminal-descr{
+  //   p {
+  //     font-size: 20px;
+  //     margin-top: 44px;
+  //     margin-bottom: 44px;
+  //   }
+  // }
+  // .migration-serv-container article>.criminal-descr{
+  //   color: var(--black-secondary-text-color);
+  //   font-size: 20px;
+
+  // }
+  .migration-serv-container article p{
     color: var(--black-secondary-text-color);
-    font-size: 16px;
-    margin-top: 22px;
-    margin-bottom: 18px;
+    
   }
+
+  .migration-serv-container article>.criminal-descr{
+    font-size: 16px;
+    
+  }
+    .tax-descr{
+      font-size: 20px;
+      margin-top: 58px;
+      margin-bottom: 58px;
+    }
+
 
   .side-buttons {
     display: none;
   }
   .criminal-img,
+  .tax-img,
   .migration-img {
     display: none;
   }
@@ -103,6 +118,18 @@
       ),
       url('../images/criminal-law-pc_2x.jpg') lightgray 50% / cover no-repeat;
   }
+.tax-img-pc{
+  background: linear-gradient(
+    0deg,
+    rgba(135, 125, 125, 0.4) 0%,
+    rgba(135, 125, 125, 0.4) 100%
+  ),
+  url('../images/tax-image_2x.jpg') lightgray 50% / cover no-repeat;
+}
+
+
+
+
 
   .side-buttons-pc-flex-container {
     display: block;

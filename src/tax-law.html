@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+    <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,6 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
+<div class="service-img-flex-container">
+        <!-- вставить новую картинку в CSS -->
+        <div class="service-types-img-pc  tax-img-pc"></div>
           <div class="service-title">
  <!-- добавлено --> 
           <div class="service-title-flex-container" >           
@@ -28,7 +32,7 @@
 <!-- добавлено -->            
             <div class="migration-serv-img tax-img"></div>
             <article>
-              <p>
+              <p class="tax-descr">
                 Податкове право — це спеціалізована галузь юридичної діяльності, яка включає в себе роботу з податковими питаннями та правовими аспектами оподаткування. 
               </p>
             </article>
@@ -37,14 +41,23 @@
             </button>
           </div>
             <!-- закрыть <div flex-container> -->
-            </div>         
+            </div>
+       </div>      
+       <div class="service-type-pc-flex-container">
+          <div class="side-buttons-pc-flex-container">
+            <include src="./partials/includes/side-service-buttons.html"></include>
+          </div>
+      <div class="service-type-pc-block-container">
+            
+
           <div class="whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
                 На практиці, у сфері адміністрування податків, підприємства постійно зіштовхуються з проблемами у вирішенні яких необхідна професійна правнича допомога, до прикладу:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -91,6 +104,9 @@
                     Допомагаю вирішувати спори з податковими органами;
                 </p>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -137,7 +153,7 @@
                     Розробляю стратегію захисту від неправомірних податкових вимог.
                 </p>
               </div>
-
+            </div>
             </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
@@ -152,7 +168,10 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>
