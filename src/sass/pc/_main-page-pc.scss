@@ -46,7 +46,14 @@ h3{
 
 .contact-slogan-text{
     align-items: center;
+    margin-top:  calc(100vw * 0.1057);
      
+}
+
+.contact-slogan-btn {
+    width: 308px;
+    font-size: 20px;
+    padding: 14px;
 }
 
 .main-slogan-text{
@@ -213,6 +220,35 @@ height: 30px;
 
 .slider-text {
     font-size: 16px;
+}
+
+//contacts
+.contacts-address-section{
+    background: var(--feedback-background-color);
+}
+.contacts-main-slogan{
+    background-image: linear-gradient(#b1aaaa66 -1.01%, #02020266 98.99%), url('../images/pc-menu-2x.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vw * 0.3695);
+    min-height: 742px;
+}
+.contacts-container {
+    max-width: 1280px;
+    margin:0 auto;
+    background: transparent;
+}
+
+.contact-slogan-text{
+    margin-bottom: 80px;
+    h1{
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
 }
 
 .order-address-flex-container{
