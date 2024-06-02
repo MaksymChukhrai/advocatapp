@@ -343,7 +343,10 @@ display: none;
   }
 }
 
-
+.main-order-section,
+.page-order-section{
+  display:none;
+}
 
 // order-section
 .order-section-container {
@@ -390,6 +393,7 @@ display: none;
 }
 
 //order-form
+
 .order-slogan,
 .order-form {
   display: flex;

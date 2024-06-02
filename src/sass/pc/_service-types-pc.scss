@@ -7,8 +7,8 @@
     max-width: 1280px;
     margin: 0 auto;
     background: transparent;
-    h1{
-        font-size: 32px;
+    h1 {
+      font-size: 32px;
     }
     p {
       margin-bottom: 0;
@@ -36,16 +36,16 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 0;
-        img{
-            width: 80px;
-            height: 80px;
+        img {
+          width: 80px;
+          height: 80px;
         }
-        h1{
-            font-family: 'Merriweather';
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 140%;
+        h1 {
+          font-family: 'Merriweather';
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
         }
       }
       .services-btn {
@@ -57,7 +57,7 @@
   }
   .migration-serv-container article {
     margin-bottom: 0px;
-    margin-top:10px;
+    margin-top: 10px;
 
     p {
       font-size: 20px;
@@ -65,25 +65,43 @@
       margin-bottom: 44px;
     }
   }
+  .migration-serv-container article>.criminal-descr{
+    color: var(--black-secondary-text-color);
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 18px;
+  }
 
   .side-buttons {
     display: none;
   }
-
+  .criminal-img,
   .migration-img {
     display: none;
   }
-  .migration-img-pc {
+
+  .service-types-img-pc {
     display: block;
     border-radius: 4px;
     width: 352px;
     height: 400px;
+  }
+  .migration-img-pc {
     background: linear-gradient(
         0deg,
         rgba(135, 125, 125, 0.4) 0%,
         rgba(135, 125, 125, 0.4) 100%
       ),
       url('../images/migration-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .criminal-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/criminal-law-pc_2x.jpg') lightgray 50% / cover no-repeat;
   }
 
   .side-buttons-pc-flex-container {
@@ -120,7 +138,7 @@
   }
   .side-service-buttons-container {
     .service-buttons li {
-          padding: 20px 10px;
+      padding: 20px 10px;
       width: 352px;
       &.select {
         background: var(--select-bg-color);
@@ -136,20 +154,19 @@
     font-style: normal;
     font-weight: 700;
   }
-  .btn-title{
+  .btn-title {
     display: flex;
     flex-direction: row;
     // justify-content: flex-start;
-    gap:8px;
-    img{
-        display:block;
-        width: 30px;
-        height: 30px;
-        margin:0;
+    gap: 8px;
+    img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0;
     }
-    h3{
+    h3 {
       font-size: 20px;
-
     }
   }
 
@@ -161,22 +178,26 @@
       font-size: 16px;
     }
   }
-.main-order-section{
-    display:none;
-}
-.modal-order-window{
-    display:block;
-}
-.main-order-section-pc{
-    display:block;
+  .main-order-section {
+    display: none;
+  }
+  .modal-order-window {
+    display: block;
+  }
+  .main-order-section-pc {
+    display: block;
     background: var(--select-bg-color);
-}
-.section-pc-container {
+  }
+  .section-pc-container {
     gap: 24px;
     max-width: 1280px;
     margin: 0 auto;
     padding: 100px 88px;
     display: flex;
-}
+  }
+  .service-item-bottom-text {
+    font-size: 16px;
+  }
+
 
 }
