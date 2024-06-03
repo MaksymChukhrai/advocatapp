@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container"> 
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,7 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
-
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  fintech-img-pc"></div>
           <div class="service-title">
  <!-- добавлено --> 
           <div class="service-title-flex-container" >           
@@ -29,7 +32,7 @@
           <!-- добавлено -->           
             <div class="migration-serv-img fintech-img"></div>
             <article>
-              <p>
+              <p class="fintech-descr">
                 Фінтех – сфера, що динамічно розвивається та потребує чіткої та продуманої правової підтримки. Я готовий запропонувати вам допомогу у різноманітних питаннях у світі гемблінг-індустрії, консультації та отримання ліцензій на криптовалюту, платіжні системи або інші проекти у галузі фінтеху.
               </p>
             </article>
@@ -38,14 +41,23 @@
             </button>
           </div>
            <!-- закрыть <div flex-container> -->
-        </div>
+          </div>
+        </div>      
+        <div class="service-type-pc-flex-container">
+           <div class="side-buttons-pc-flex-container">
+             <include src="./partials/includes/side-service-buttons.html"></include>
+           </div>
+       <div class="service-type-pc-block-container">
+
+
           <div class="whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
                 Я, як досвідчений юрист у сфері фінтех, можу допомогти вам з будь-якими юридичними питаннями, пов'язаними з:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -70,6 +82,9 @@
                     Надам вам підтримку у отриманні необхідних ліцензій для вашої діяльності в сфері гемблінгу та забезпечу гладку і ефективну взаємодію з регуляторами;
                 </p>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -92,7 +107,7 @@
                     Надам консультації з питань стратегії, маркетингу, розвитку бізнесу та інших аспектів гемблінг-індустрії.
                 </p>
               </div>
-
+            </div>
             </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
@@ -107,7 +122,10 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>

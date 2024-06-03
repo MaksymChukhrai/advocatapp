@@ -28,10 +28,12 @@
     display: flex;
     flex-direction: row;
     margin-top: 34px;
-    margin-bottom: 34px;
+    
     gap: 24px;
     .service-title {
       width: 728px;
+      justify-content: space-between;
+
       .service-title-flex-container {
         flex-direction: column;
         justify-content: center;
@@ -55,42 +57,47 @@
       }
     }
   }
-  // .migration-serv-container article {
-  //   margin-bottom: 0px;
-  //   margin-top: 10px;
 
-  //   p {
-  //     font-size: 20px;
-  //     margin-top: 44px;
-  //     margin-bottom: 44px;
-  //   }
-  // }
-  // .migration-serv-container article>.criminal-descr{
-  //   color: var(--black-secondary-text-color);
-  //   font-size: 20px;
-
-  // }
-  .migration-serv-container article p{
+  .migration-serv-container article{
     color: var(--black-secondary-text-color);
-    
-  }
-
-  .migration-serv-container article>.criminal-descr{
-    font-size: 16px;
-    
-  }
-    .tax-descr{
+    margin: 0;
+    p.migtation-descr{
+      font-size: 20px;
+      margin-top: 44px;
+      margin-bottom: 44px;
+    }
+    p.tax-descr{
       font-size: 20px;
       margin-top: 58px;
       margin-bottom: 58px;
     }
+    p.criminal-descr{
+      font-size: 16px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+p.fintech-descr{
+  font-size: 20px;
+}
+p.civil-descr{
+  font-size: 20px;
+}
+p.admin-descr{
+  font-size: 20px;
+}
+
+
+  }
 
 
   .side-buttons {
     display: none;
   }
   .criminal-img,
+  .fintech-img,
   .tax-img,
+  .civil-img,
+  .admin-img,
   .migration-img {
     display: none;
   }
@@ -126,11 +133,42 @@
   ),
   url('../images/tax-image_2x.jpg') lightgray 50% / cover no-repeat;
 }
+.fintech-img-pc{
+  background: linear-gradient(
+    0deg,
+    rgba(135, 125, 125, 0.4) 0%,
+    rgba(135, 125, 125, 0.4) 100%
+  ),
+  url('../images/fintech-image_2x.jpg') lightgray 50% / cover no-repeat;
+}
+.civil-img-pc{
+  background: linear-gradient(
+    0deg,
+    rgba(135, 125, 125, 0.4) 0%,
+    rgba(135, 125, 125, 0.4) 100%
+  ),
+  url('../images/civil-image_2x.jpg') lightgray 50% / cover no-repeat;
+}
+.admin-img-pc{
+  background: linear-gradient(
+    0deg,
+    rgba(135, 125, 125, 0.4) 0%,
+    rgba(135, 125, 125, 0.4) 100%
+  ),
+  url('../images/admin-image_2x.jpg') lightgray 50% / cover no-repeat;
+}
 
 
-
-
-
+.admin-pc-whyme-title{
+  width: 728px;
+  h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p{
+    font-size: 16px;
+  }
+}
   .side-buttons-pc-flex-container {
     display: block;
   }
@@ -138,7 +176,21 @@
     display: flex;
     gap: 24px;
   }
-
+  .admin-pc-service-title-container{
+    display:flex;
+  flex-direction: column;
+    .pc-column-service-items{
+      margin-bottom:-18px;
+        .service-item{
+          .service-details{
+            h3{
+              width: 696px;
+            }
+          }
+        }
+    }
+ 
+}
   .pc-service-title-container {
     display: flex;
     flex-direction: row;
@@ -153,11 +205,13 @@
       // посчитать формулу этого width
       .service-item {
         margin: 0;
-        height: auto;
+        min-height: 100px;
         //либо сюда добавить width
         .service-details {
           h3 {
             width: 320px;
+            font-size: 16px;
+            line-height: 140%;
           }
         }
       }
@@ -200,6 +254,7 @@
   .whyme-title {
     h2 {
       font-size: 20px;
+      font-weight: 500;
     }
     p {
       font-size: 16px;
@@ -225,6 +280,8 @@
   .service-item-bottom-text {
     font-size: 16px;
   }
-
+.admin-bottom-text{
+  margin-top: 18px;
+}
 
 }

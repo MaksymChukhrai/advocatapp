@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,7 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
-
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  civil-img-pc"></div>
         <div class="service-title">
   <!-- добавлено --> 
           <div class="service-title-flex-container" >
@@ -29,7 +32,7 @@
   <!-- добавлено -->          
             <div class="migration-serv-img civil-img"></div>
             <article>
-              <p>
+              <p class="civil-descr">
                 Цивільні справи – найпоширеніша і одночасно найскладніша категорія суперечок в судах України. В основі зазначених конфліктів лежить принцип суперництва і рівноправності сторін, тож у таких конфліктах перемагає той, хто краще підготовлений юридично. Адвокат по цивільних справах – це ваша можливість бути переможцем в будь-якому судовому змаганні.
               </p>
             </article>
@@ -38,14 +41,22 @@
             </button>
           </div>
           <!-- закрыть <div flex-container> -->
+          </div>
         </div>
+        <div class="service-type-pc-flex-container">
+          <div class="side-buttons-pc-flex-container">
+            <include src="./partials/includes/side-service-buttons.html"></include>
+          </div>
+      <div class="service-type-pc-block-container">
+
           <div class="whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
                 Я маю великий досвід роботи з широким спектром цивільних справ, включаючи:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -81,6 +92,9 @@
                     Визнання прав на майно та витребування своєї речі з чужого незаконного володіння;
                 </p>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -116,6 +130,7 @@
                 </p>
               </div>
             </div>
+          </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
           <div class="service-item-bottom-text">
@@ -129,7 +144,10 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>

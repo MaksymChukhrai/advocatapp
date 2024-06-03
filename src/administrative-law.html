@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,6 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  admin-img-pc"></div>
 
           <div class="service-title">
  <!-- добавлено --> 
@@ -29,7 +33,7 @@
 <!-- добавлено -->           
             <div class="migration-serv-img admin-img"></div>
             <article>
-              <p>
+              <p class="admin-descr">
                 Адміністративні правопорушення – це поширена проблема, з якою
                 може зіткнутися будь-хто. Адвокат у сфері адміністративних
                 правопорушень кваліфіковано підходить до вивчення обставин та
@@ -43,15 +47,23 @@
             </button>
           </div>
             <!-- закрыть <div flex-container> -->
-         </div>         
-          <div class="whyme-title">
+            </div>
+          </div>      
+          <div class="service-type-pc-flex-container">
+             <div class="side-buttons-pc-flex-container">
+               <include src="./partials/includes/side-service-buttons.html"></include>
+             </div>
+         <div class="service-type-pc-block-container">
+
+          <div class="admin-pc-whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
               Звертаючись до мене, ви отримаєте необхідну допомогу у вирішенні
               наступних питань з адміністративними порушеннями:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="admin-pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -91,6 +103,9 @@
                   місцях, азартні ігри;
                 </p>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -140,11 +155,11 @@
                   нагляду; неявка на виклик у військовий комісаріат.
                 </p>
               </div>
-
+            </div>
             </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
-          <div class="service-item-bottom-text">
+          <div class="service-item-bottom-text admin-bottom-text">
             <p>
               Я гарантую кожному клієнту прозорі ціни та ефективний результат.
             </p>
@@ -156,6 +171,7 @@
           </div>
         </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
       <include src="./partials/includes/order-form-pc.html"></include>
 
