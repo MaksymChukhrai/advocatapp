@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 34px;
-    
+
     gap: 24px;
     .service-title {
       width: 728px;
@@ -58,37 +58,46 @@
     }
   }
 
-  .migration-serv-container article{
+  .migration-serv-container article {
     color: var(--black-secondary-text-color);
     margin: 0;
-    p.migtation-descr{
+    p.migtation-descr {
       font-size: 20px;
       margin-top: 44px;
       margin-bottom: 44px;
     }
-    p.tax-descr{
+    p.tax-descr {
       font-size: 20px;
       margin-top: 58px;
       margin-bottom: 58px;
     }
-    p.criminal-descr{
+    p.criminal-descr {
       font-size: 16px;
       margin-top: 0px;
       margin-bottom: 0px;
     }
-p.fintech-descr{
-  font-size: 20px;
-}
-p.civil-descr{
-  font-size: 20px;
-}
-p.admin-descr{
-  font-size: 20px;
-}
-
-
+    p.fintech-descr {
+      font-size: 20px;
+    }
+    p.civil-descr {
+      font-size: 20px;
+    }
+    p.admin-descr {
+      font-size: 20px;
+    }
+    p.intellectual-descr {
+      font-size: 20px;
+    }
+    p.debt-rec-descr {
+      font-size: 20px;
+    }
+    p.deb-pro-descr {
+      font-size: 20px;
+    }
+    p.labor-descr {
+      font-size: 20px;
+    }
   }
-
 
   .side-buttons {
     display: none;
@@ -98,6 +107,11 @@ p.admin-descr{
   .tax-img,
   .civil-img,
   .admin-img,
+  .intellectual-img,
+  .military-img,
+  .labor-img,
+  .debt-recovery-img,
+  .debtor-protection-img,
   .migration-img {
     display: none;
   }
@@ -125,50 +139,107 @@ p.admin-descr{
       ),
       url('../images/criminal-law-pc_2x.jpg') lightgray 50% / cover no-repeat;
   }
-.tax-img-pc{
-  background: linear-gradient(
-    0deg,
-    rgba(135, 125, 125, 0.4) 0%,
-    rgba(135, 125, 125, 0.4) 100%
-  ),
-  url('../images/tax-image_2x.jpg') lightgray 50% / cover no-repeat;
-}
-.fintech-img-pc{
-  background: linear-gradient(
-    0deg,
-    rgba(135, 125, 125, 0.4) 0%,
-    rgba(135, 125, 125, 0.4) 100%
-  ),
-  url('../images/fintech-image_2x.jpg') lightgray 50% / cover no-repeat;
-}
-.civil-img-pc{
-  background: linear-gradient(
-    0deg,
-    rgba(135, 125, 125, 0.4) 0%,
-    rgba(135, 125, 125, 0.4) 100%
-  ),
-  url('../images/civil-image_2x.jpg') lightgray 50% / cover no-repeat;
-}
-.admin-img-pc{
-  background: linear-gradient(
-    0deg,
-    rgba(135, 125, 125, 0.4) 0%,
-    rgba(135, 125, 125, 0.4) 100%
-  ),
-  url('../images/admin-image_2x.jpg') lightgray 50% / cover no-repeat;
-}
-
-
-.admin-pc-whyme-title{
-  width: 728px;
-  h2{
-    font-size: 20px;
-    font-weight: 500;
+  .tax-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/tax-image_2x.jpg') lightgray 50% / cover no-repeat;
   }
-  p{
-    font-size: 16px;
+  .fintech-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/fintech-image_2x.jpg') lightgray 50% / cover no-repeat;
   }
-}
+  .civil-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/civil-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+  .admin-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/admin-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .intellectual-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/intellectual-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .military-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/military-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .debt-rec-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/debt-rec-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .deb-pro-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/deb-pro-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .labor-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/labor-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
+  .intel-list {
+    margin-bottom: 24px;
+    h2 {
+      font-size: 20px;
+      font-family: 'Roboto';
+    }
+    .intel-title li {
+      font-size: 16px;
+    }
+  }
+
+  .labor-whyme-title,
+  .admin-pc-whyme-title,
+  .debt-rec-pc-whyme-title {
+    width: 728px;
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
   .side-buttons-pc-flex-container {
     display: block;
   }
@@ -176,21 +247,33 @@ p.admin-descr{
     display: flex;
     gap: 24px;
   }
-  .admin-pc-service-title-container{
-    display:flex;
-  flex-direction: column;
-    .pc-column-service-items{
-      margin-bottom:-18px;
-        .service-item{
-          .service-details{
-            h3{
-              width: 696px;
-            }
+
+  .labor-pc-service-title-container,
+  .admin-pc-service-title-container,
+  .debt-rec-pc-service-title-container {
+    display: flex;
+    flex-direction: column;
+    .pc-column-service-items {
+      margin-bottom: -18px;
+      .service-item {
+        p {
+          font-size: 16px;
+        }
+        .service-details {
+          h3 {
+            width: 696px;
+            font-size: 16px;
           }
         }
+      }
     }
- 
-}
+  }
+
+  .military-service-details {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
   .pc-service-title-container {
     display: flex;
     flex-direction: row;
@@ -202,7 +285,7 @@ p.admin-descr{
       flex-direction: column;
       gap: 24px;
       max-width: 410px;
-      // посчитать формулу этого width
+      // как перебить  max-width: 410px;?
       .service-item {
         margin: 0;
         min-height: 100px;
@@ -217,6 +300,18 @@ p.admin-descr{
       }
     }
   }
+
+  .military-service-item {
+    min-height: 88px !important;
+  }
+  .deb-pro-service-details {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .deb-pro-service-item {
+    min-height: 38px !important;
+  }
+
   .side-service-buttons-container {
     .service-buttons li {
       padding: 20px 10px;
@@ -251,10 +346,12 @@ p.admin-descr{
     }
   }
 
+  .debt-rec-pc-whyme-title,
   .whyme-title {
     h2 {
       font-size: 20px;
-      font-weight: 500;
+      font-family: 'Roboto';
+      color: var(--black-secondary-text-color);
     }
     p {
       font-size: 16px;
@@ -280,8 +377,10 @@ p.admin-descr{
   .service-item-bottom-text {
     font-size: 16px;
   }
-.admin-bottom-text{
-  margin-top: 18px;
-}
 
+  .labor-bottom-text,
+  .admin-bottom-text,
+  .debt-rec-pc-bottom-text {
+    margin-top: 18px;
+  }
 }

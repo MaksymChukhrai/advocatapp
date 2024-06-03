@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,6 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  labor-img-pc"></div>
 
           <div class="service-title">
  <!-- добавлено --> 
@@ -27,9 +31,9 @@
             <h1>Трудове право</h1>
           </div>
 <!-- добавлено --> 
-            <div class="migration-serv-img business-law-img"></div>
+            <div class="migration-serv-img labor-img"></div>
             <article>
-              <p>
+              <p class="labor-descr">
                 Моя мета – не лише вигравати справи, а й забезпечити справедливий розгляд трудових спорів які можуть стати великим стресом як для працівників, так і для роботодавців. Адвокат приділяє особливу увагу захисту прав працівників з величезним професіоналізмом.
               </p>
             </article>
@@ -38,14 +42,22 @@
             </button>
           </div>
              <!-- закрыть <div flex-container> -->
-            </div>        
-          <div class="whyme-title">
+            </div>
+          </div> 
+          <div class="service-type-pc-flex-container">
+            <div class="side-buttons-pc-flex-container">
+              <include src="./partials/includes/side-service-buttons.html"></include>
+            </div>
+        <div class="service-type-pc-block-container">
+          
+          <div class="labor-whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
                 Я пропоную широкий спектр правової допомоги у сфері трудового права, включаючи:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="labor-pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -72,6 +84,9 @@
                   <h3>Захист від дискримінації та неправильного обходу закону</h3>
                 </div>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -103,9 +118,10 @@
                 </div>
               </div>
             </div>
+            </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
-          <div class="service-item-bottom-text">
+          <div class="service-item-bottom-text labor-bottom-text">
             <p>
                 Не зволікайте! Зверніться до адвоката вже зараз! Звернувшись до мене, я допоможу вам:
             </p>
@@ -126,6 +142,7 @@
           </div>
         </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>

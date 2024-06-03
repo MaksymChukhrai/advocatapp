@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,6 +20,9 @@
               <include src="./partials/includes/side-service-buttons.html"></include>
             </div>
 <!-- добавлено -->
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  debt-rec-img-pc"></div>
 
           <div class="service-title">
  <!-- добавлено --> 
@@ -29,7 +33,7 @@
           <!-- добавлено --> 
             <div class="migration-serv-img debt-recovery-img"></div>
             <article>
-              <p>
+              <p class="debt-rec-descr">
                 Повернення боргів – це процес стягнення коштів, які ви позичили
                 іншій особі або організації. Цей процес може бути складним, адже
                 боржники не завжди охоче йдуть на контакт або мають можливість
@@ -41,12 +45,20 @@
             </button>
           </div>
             <!-- закрыть <div flex-container> -->
+            </div> 
         </div>         
-          <div class="whyme-title">
+        <div class="service-type-pc-flex-container">
+          <div class="side-buttons-pc-flex-container">
+            <include src="./partials/includes/side-service-buttons.html"></include>
+          </div>
+      <div class="service-type-pc-block-container">
+
+          <div class="debt-rec-pc-whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>Я можу допомогти вам на всіх етапах цього процесу, включаючи:</p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="debt-rec-pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -95,6 +107,9 @@
                   відшкодування і т. д.
                 </p>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -143,9 +158,10 @@
                 </p>
               </div>
             </div>
+            </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
-          <div class="service-item-bottom-text">
+          <div class="service-item-bottom-text debt-rec-pc-bottom-text">
             <p>
               Я гарантую кожному клієнту прозорі ціни та ефективний результат.
             </p>
@@ -157,6 +173,7 @@
           </div>
         </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>

@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container"> 
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,6 +20,10 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  deb-pro-img-pc"></div>
+
           <div class="service-title">
  <!-- добавлено --> 
  <div class="service-title-flex-container" >           
@@ -28,7 +33,7 @@
           <!-- добавлено -->            
             <div class="migration-serv-img debtor-protection-img"></div>
             <article>
-              <p>
+              <p class="deb-pro-descr">
                 Життя буває непередбачуваним, і іноді борги стають непосильною ношею. Адвокат по кредитних боргах може захищати права боржника, якщо той потрапив у складну ситуацію. Наприклад, якщо кредитори порушили права боржника або відмовилися від домовленості, адвокат може захистити інтереси свого клієнта у суді.
               </p>
             </article>
@@ -37,16 +42,24 @@
             </button>
           </div>
             <!-- закрыть <div flex-container> -->
-          </div>         
+          </div>   
+        </div>
+        <div class="service-type-pc-flex-container">
+          <div class="side-buttons-pc-flex-container">
+            <include src="./partials/includes/side-service-buttons.html"></include>
+          </div>
+      <div class="service-type-pc-block-container">
+          
           <div class="whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
                 Захист прав боржника включає наступні види правової допомоги:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
-              <div class="service-item">
-                <div class="service-details">
+            <div class="pc-service-title-container">
+              <div class="pc-column-service-items">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -55,8 +68,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -65,8 +78,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -75,8 +88,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -85,16 +98,16 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Зупинення звернення стягнення на майно</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -103,8 +116,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -113,8 +126,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -123,8 +136,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -133,8 +146,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -143,8 +156,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -153,8 +166,11 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+            </div>
+
+            <div class="pc-column-service-items">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -163,8 +179,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -173,8 +189,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -183,8 +199,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -193,8 +209,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -203,8 +219,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -213,8 +229,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -223,8 +239,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -233,8 +249,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -243,8 +259,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -253,8 +269,8 @@
                   </h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item deb-pro-service-item">
+                <div class="service-details deb-pro-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
@@ -263,22 +279,26 @@
                   </h3>
                 </div>
               </div>
-              
-            </div>
+             </div>
+          </div>  
+     
             <!-- контейнер для компоновки на min width -PC -->
           </div>
           <div class="service-item-bottom-text">
             <p>
-              Я гарантую кожному клієнту прозорі ціни та ефективний результат.
+              Звертайтеся до мене для оперативного та ефективного зняття арешту з майна та рахунків в Україні. З моїм досвідом у розблокуванні рахунків та вирішенні судових питань, пов'язаних з боргами та кредитами, ви отримаєте результат, на який можете розраховувати.
             </p>
-            <br />
+            <br>
             <p>
               Для отримання додаткової консультацій залиште заявку на сайті або
               просто зателефонуйте.
             </p>
           </div>
         </div>
+      </div>
+    </div>
       </section>
+    </div>
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>

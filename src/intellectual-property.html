@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,6 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  intellectual-img-pc"></div>
 
           <div class="service-title">
             <!-- добавлено --> 
@@ -29,7 +33,7 @@
 <!-- добавлено --> 
             <div class="migration-serv-img intellectual-img"></div>
             <article>
-              <p>
+              <p class="intellectual-descr">
                 Інтелектуальна власність: Захистіть свої ідеї та творчість.
                 Інтелектуальне право (власність) – це збірне поняття, яке об’єднує «продукти розуму». Захист вашої інтелектуальної власності є ключовим фактором для успіху в будь-якій сфері.
               </p>
@@ -39,7 +43,14 @@
             </button>
           </div>
             <!-- закрыть <div flex-container> -->
-     </div>         
+            </div>
+     </div>      
+     <div class="service-type-pc-flex-container">
+      <div class="side-buttons-pc-flex-container">
+        <include src="./partials/includes/side-service-buttons.html"></include>
+      </div>
+  <div class="service-type-pc-block-container">
+     
           <div class="intel-list">
           <h2>До переліку об'єктів інтелектуальної власності входять:</h2>
           <ul class="intel-title">
@@ -61,7 +72,8 @@
                 Адвоката з інтелектуальної власності надає високопрофесійні послуги та консультує з питань авторського права та суміжних прав, забезпечить кваліфіковану допомогу під час розробки та укладення авторських, ліцензійних договорів, угод на передавання майнових прав. Я можу допомогти вам в тому числі з наступних питань:
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
+            <div class="pc-service-title-container">
+              <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -86,6 +98,9 @@
                     Вжиття заходів проти тих, хто незаконно використовує вашу інтелектуальну власність;
                 </p>
               </div>
+            </div>
+
+            <div class="pc-column-service-items">
               <div class="service-item">
                 <div class="service-details">
                   <svg width="24" height="24">
@@ -108,7 +123,7 @@
                     Надання правової допомоги з будь-яких питань, пов'язаних з авторським правом, патентами, товарними знаками, ноу-хау та іншими аспектами інтелектуальної власності.
                 </p>
               </div>
-
+            </div>
             </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
@@ -124,6 +139,7 @@
           </div>
         </div>
       </section>
+    </div> 
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>

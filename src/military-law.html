@@ -10,6 +10,7 @@
   <body>
     <include src="./partials/includes/header.html"></include>
     <main>
+      <div class="service-types-pc-gradient-container">  
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
@@ -19,7 +20,9 @@
     <include src="./partials/includes/side-service-buttons.html"></include>
   </div>
 <!-- добавлено -->
-
+<div class="service-img-flex-container">
+  <!-- вставить новую картинку в CSS -->
+  <div class="service-types-img-pc  military-img-pc"></div>
           <div class="service-title">
  <!-- добавлено --> 
  <div class="service-title-flex-container" >           
@@ -29,7 +32,7 @@
           <!-- добавлено -->           
             <div class="migration-serv-img military-img"></div>
             <article>
-              <p>
+              <p class="military-descr">
                 Військове право: Захист ваших прав та інтересів
 Військова служба – це почесний обов'язок, але вона також пов'язана з ризиками та складнощами. Якщо ви зіткнулися з проблемами у цій сфері, вам потрібна допомога кваліфікованого адвоката.
               </p>
@@ -40,101 +43,114 @@
           </div>
            <!-- закрыть <div flex-container> -->
         </div>
+      </div>
+      <div class="service-type-pc-flex-container">
+        <div class="side-buttons-pc-flex-container">
+          <include src="./partials/includes/side-service-buttons.html"></include>
+        </div>
+    <div class="service-type-pc-block-container">
+
+
           <div class="whyme-title">
             <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
             <p>
-                Першочергово це комплексний та професійний юридичний супровід у всіх питаннях, пов'язаних з військовим правом та знання адвоката, які на протязі 15 років відшліфовувались та удосконалювались, крім того
+                Першочергово це комплексний та професійний юридичний супровід у всіх питаннях, пов'язаних з військовим правом та знання адвоката, які на протязі 15 років відшліфовувались та удосконалювались, крім того
             </p>
             <!-- контейнер для компоновки на min width -PC -->
-            <div>
-              <div class="service-item">
-                <div class="service-details">
+            <div class="pc-service-title-container">
+              <div class="pc-column-service-items">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження рішення комісії МОУ про відмову у виплаті Одноразової Грошової Допомоги Членам Сім'ї загиблого військовослужбовця</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження рішення про відмову у виплаті ОГД у разі отримання поранення, травми під час війни;</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження притягнення до адміністративної відповідальності</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Перерахунок одноразової грошової допомоги при звільненні з військової служби</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження незаконного звільнення з військової служби</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Забезпечення супроводу отримання одноразових виплат у разі загибелі, каліцтва</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+            </div>
+
+            <div class="pc-column-service-items">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження наказів командування про притягнення до дисциплінарної відповідальності</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Захист у справах про самовільне залишення військової служби</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження рішення про відмову у наданні статусу учасника бойових дій</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Оскарження бездіяльності органів місцевої влади у наданні статусу "Член сім'ї загиблого ветерана війни"</h3>
                 </div>
               </div>
-              <div class="service-item">
-                <div class="service-details">
+              <div class="service-item military-service-item">
+                <div class="service-details military-service-details">
                   <svg width="24" height="24">
                     <use href="./images/sprite.svg#circle-yes"></use>
                   </svg>
                   <h3>Консультація призовників з питань призову на строкову службу</h3>
                 </div>
               </div>
+            </div>  
             </div>
             <!-- контейнер для компоновки на min width -PC -->
           </div>
@@ -149,7 +165,10 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
       </section>
+    </div> 
       <include src="./partials/includes/order-form.html"></include>
     </main>
     <include src="./partials/includes/footer.html"></include>
