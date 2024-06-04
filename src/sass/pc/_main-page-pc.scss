@@ -302,6 +302,19 @@ height: 17px;
 .page-order-section{
     display: block;
 }
+.order-image{
+    height: 391px;
+    width: 540px; 
+    background: linear-gradient(
+        0deg,
+        rgba(185, 185, 185, 0.10) 0%,
+        rgba(185, 185, 185, 0.10) 100%
+    ), 
+    url('../images/igor-main-order-image_pc_2x.jpg') no-repeat center;
+    background-size: cover; 
+    border-radius: 4px;
+  }
+
 
 .order-section-container{
     background: transparent;

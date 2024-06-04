@@ -97,6 +97,9 @@
     p.labor-descr {
       font-size: 20px;
     }
+    p.business-descr {
+      font-size: 20px;
+    }
   }
 
   .side-buttons {
@@ -112,6 +115,7 @@
   .labor-img,
   .debt-recovery-img,
   .debtor-protection-img,
+  .business-law-img,
   .migration-img {
     display: none;
   }
@@ -217,6 +221,15 @@
       url('../images/labor-image_2x.jpg') lightgray 50% / cover no-repeat;
   }
 
+  .business-img-pc {
+    background: linear-gradient(
+        0deg,
+        rgba(135, 125, 125, 0.4) 0%,
+        rgba(135, 125, 125, 0.4) 100%
+      ),
+      url('../images/business-image_2x.jpg') lightgray 50% / cover no-repeat;
+  }
+
   .intel-list {
     margin-bottom: 24px;
     h2 {
@@ -228,13 +241,17 @@
     }
   }
 
+  .business-whyme-title,
   .labor-whyme-title,
   .admin-pc-whyme-title,
   .debt-rec-pc-whyme-title {
     width: 728px;
     h2 {
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 600;
+      color: var(--black-secondary-text-color);
+      font-family: 'Roboto';
+      font-size: 20px;
     }
     p {
       font-size: 16px;
