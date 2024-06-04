@@ -343,17 +343,25 @@ display: none;
   }
 }
 
-// .main-order-section,
-.page-order-section{
-  display:none;
-}
 
 // order-section
 .order-section-container {
-  padding: 40px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
   background: var(--main-order-gradient);
 }
+.order-image{
+  height: 300px;
+  width:100%;
+  border-radius: 4px;
+  background: linear-gradient(
+        0deg,
+        rgba(185, 185, 185, 0.10) 0%,
+        rgba(185, 185, 185, 0.10) 100%
+    ), 
+    url('../images/igor-2_w393.jpg') no-repeat center;
 
+
+}
 
 .order-section-container img {
   height: 300px;

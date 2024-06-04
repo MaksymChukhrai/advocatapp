@@ -6,14 +6,14 @@ import 'slick-carousel';
 
 $(document).ready(function() {
   $('.slider-wrapper').slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 2,
+      slidesToScroll: 1,
       arrows: true,
       prevArrow: $('.prev-slide'),
       nextArrow: $('.next-slide'),
       adaptiveHeight: true,
       centerMode:false,
-      centerPadding:'0px',
+      centerPadding:'24px',
       responsive: [
 
         {

@@ -167,60 +167,8 @@ height: 30px;
     // transform-origin: bottom ;
     // overflow: hidden;
 }
-.feedback-section{
-    background: var(--feedback-background-color);
-}
-.background-container{
-    background: var(--feedback-background-color);
-}
-.feedback-container{
-    padding: 100px 88px;
-    max-width: 1280px;
-    margin: 0 auto;
-    background: transparent;
-    h2{
-        font-size: 32px;
-        margin-bottom: 34px;
-      }
-    .feedback-img{
-        height: 418px;
-    }
-    
-}
-
-.slider-slide{
-    padding: 20px 10px;
-    height: 416px;
-    width: 352px !important;
-    h3{
-        font-size: 24px;
-    }
-}
-.stars-mob{
-    display:none;
-  }
 
 
-.stars{
-    display: flex;
-    justify-content: flex-start;
-    gap: 4px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-}
-
-.stars > li > svg {
-    width: 20px;
-    height: 20px;
-}
-.quotes svg {
-    width: 8px;
-    height: 14px;
-}
-
-.slider-text {
-    font-size: 16px;
-}
 
 //contacts
 .contacts-address-section{
