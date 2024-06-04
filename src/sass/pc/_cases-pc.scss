@@ -1,0 +1,23 @@
+@media screen and (min-width: 1280px) {
+.cases{
+    padding: 0;
+    .cases-content{
+        background: none;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 100px 88px;
+    }
+}
+
+.steps-section{
+    background: var(--select-bg-color);
+    .steps-section-container{
+        background: none;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 100px 88px;
+    }
+}
+
+
+}
