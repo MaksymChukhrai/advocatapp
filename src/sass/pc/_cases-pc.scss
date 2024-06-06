@@ -43,9 +43,9 @@
   .wide-image {
     max-width: 712px;
   }
-  .narrow-image {
-    width: auto;
-  }
+  // .narrow-image {
+  //   width: auto;
+  // }
   .caption {
     padding: 8px;
     height: 84px;
@@ -53,6 +53,33 @@
   .case-caption {
     font-size: 20px;
   }
+//case animations
+.card-flex-pc-container {
+  position: relative; /* Добавлено для обеспечения правильного позиционирования */
+}
+.case-description-container {
+  width: 1104px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  // transform: translateX(-35%);
+
+  .case-card{
+ 
+    .case-flex-container-left {
+      width: 728px;
+    }
+    .case-flex-container-right {
+      width: 352px;
+    }
+    
+  }
+  
+}
+
+
 
   //steps
   .four-steps {
