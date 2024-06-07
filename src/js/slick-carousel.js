@@ -6,21 +6,23 @@ import 'slick-carousel';
 
 $(document).ready(function() {
   $('.slider-wrapper').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+   
       arrows: true,
       prevArrow: $('.prev-slide'),
       nextArrow: $('.next-slide'),
-      adaptiveHeight: true,
-      centerMode:false,
-      centerPadding:'24px',
+   
+   
+      centerPadding:'10px',
       responsive: [
 
         {
           breakpoint: 1280, // до 1280px - tab
           settings: {
-              slidesToShow: 2,
+              slidesToShow: 2.2,
               slidesToScroll: 3,
+      
           }
         },
         {
@@ -28,6 +30,7 @@ $(document).ready(function() {
           settings: {
               slidesToShow: 1.1,
               slidesToScroll: 1,
+             
           }
         },
 

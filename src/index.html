@@ -1,372 +1,362 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Головна</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <!-- <script type="module" src="./index.js"></script> -->
-  </head>
-  <body>
-    <include src="./partials/includes/header.html"></include>
-    <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Головна</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- <script type="module" src="./index.js"></script> -->
+</head>
+
+<body>
+  <include src="./partials/includes/header.html"></include>
+  <main>
     <section class="main-slogan">
       <div class="main-slogan-container">
         <div class="position-container">
-        <div class="slogan-text main-slogan-text">
-          <h1>Якою б не була ваша проблема - я маю стратегію для її вирішення</h1>
-          <h3>Дійте зараз! Запишіться на консультацію, і ми разом знайдемо рішення</h3>
+          <div class="slogan-text main-slogan-text">
+            <h1>Якою б не була ваша проблема - я маю стратегію для її вирішення</h1>
+            <h3>Дійте зараз! Запишіться на консультацію, і ми разом знайдемо рішення</h3>
+          </div>
+          <button type="button" class="order-btn slogan-order-btn" data-modal-open>
+            Замовити консультацію
+          </button>
         </div>
-        <button type="button" class="order-btn slogan-order-btn" data-modal-open>
-          Замовити консультацію
-        </button>
-      </div>
       </div>
     </section>
-<section class="hero-section">
-  <div class="hero-pos-container">
-    <div class="hero-container">
-      <div class="hero-details">
-        <div class="hero-name">
-          <h2>Адвокат</h2>
-          <h1>Ігор Тарасенко</h1>
-        </div>
-        <div class="hero-section-text tab-pc">
-          <p>Моя місія, як адвоката полягає в забезпеченні правової підтримки та захисту для кожного клієнта, забезпечуючи справедливість та права. <br><br>
-          Завдяки своєму професійному досвіду та глибокому розумінню правових процесів у різних галузях права, я забезпечую ефективний захист інтересів своїх клієнтів. <br><br>
-          Моя місія - стати надійним партнером для кожного клієнта, вирішуючи правові проблеми та забезпечуючи успішний результат у кожній справі.</p>
-        </div>
-      </div>
-      <picture>
-        <!-- Изображение для мобильных и планшетных экранов -->
-        <source srcset="./images/igor-1_1.jpg" media="(max-width: 1279px)">
-        <!-- Изображение для экранов шириной 1280px и больше -->
-        <source srcset="./images/igor-1_pc_2x.jpg" media="(min-width: 1280px)">
-        <!-- Обязательный тег <img> для браузеров, которые не поддерживают <picture> -->
-        <img src="./images/igor-1_1.jpg" alt="адвокат Тарасенко">
-      </picture>
-       
-        <div class="hero-section-text mob">
-          <p>Моя місія, як адвоката полягає в забезпеченні правової підтримки та захисту для кожного клієнта, забезпечуючи справедливість та права. <br>
-          Завдяки своєму професійному досвіду та глибокому розумінню правових процесів у різних галузях права, я забезпечую ефективний захист інтересів своїх клієнтів. <br>
-          Моя місія - стати надійним партнером для кожного клієнта, вирішуючи правові проблеми та забезпечуючи успішний результат у кожній справі.</p>
-        </div>
-      
-    
-    </div>
-  </div>
-</section>
-<section class="achievements-section">
-
-<div class="achievements-container">
-  <ul class="achievements">
-    <li class="up-text">
-      <span class="figures">15 років </span>
-      <span class="bot-text">Практики</span>
-    </li>
-    <li><hr id="ach-line"></li>
-    <li class="up-text">
-      <span class="figures">500</span>
-      <span class="bot-text">Клієнтів</span>
-    </li>
-    <li><hr id="ach-line"></li>
-    <li class="up-text">
-      <span class="figures">90%</span>
-      <span class="bot-text">Виграних справ</span>
-    </li>
-  </ul>
-
-</div>
-</section>
-<section class="areas-section">
-  <div class="areas-section-container">
-<h1>Напрямки юридичної 
-  практики</h1>
-  <div class="grid-container">
-    <div class="product-card">
-      <a href="./criminal-law.html" class="card-link">
-      <div class="card-image image-1">
+    <section class="hero-section">
+      <div class="hero-pos-container">
+        <div class="hero-container">
+          <div class="hero-details">
+            <div class="hero-name">
+              <h2>Адвокат</h2>
+              <h1>Ігор Тарасенко</h1>
+            </div>
+            <div class="hero-section-text tab-pc">
+              <p>Моя місія, як адвоката полягає в забезпеченні правової підтримки та захисту для кожного клієнта,
+                забезпечуючи справедливість та права. <br><br>
+                Завдяки своєму професійному досвіду та глибокому розумінню правових процесів у різних галузях права, я
+                забезпечую ефективний захист інтересів своїх клієнтів. <br><br>
+                Моя місія - стати надійним партнером для кожного клієнта, вирішуючи правові проблеми та забезпечуючи
+                успішний результат у кожній справі.</p>
+            </div>
           </div>
-      <div class="caption">
-        <img src="./images/criminal-law.png" alt="#" />
-        <h3>Кримінальна практика</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./administrative-law.html" class="card-link">
-      <div class="card-image image-2">
-        </div>
-      <div class="caption">
-        <img src="./images/administrative-law.png" alt="#" />
-        <h3>Адміністративна практика</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./migration-services.html" class="card-link">
-      <div class="card-image image-3">
-     </div>
-      <div class="caption">
-        <img src="./images/migration-logo.png" alt="#" />
-        <h3>Міграційні послуги</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./civil-law.html" class="card-link">
-      <div class="card-image image-4">
-      </div>
-      <div class="caption">
-        <img src="./images/civil-law.png" alt="#" />
-        <h3>Цивільна практика</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./intellectual-property.html" class="card-link">
-      <div class="card-image image-5">
-     </div>
-      <div class="caption">
-        <img src="./images/intellectual-property.png" alt="#" />
-        <h3>Інтелектуальна власність</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./tax-law.html" class="card-link">
-      <div class="card-image image-6">
-        </div>
-      <div class="caption">
-        <img src="./images/tax-law.png" alt="#" />
-        <h3>Податкова практика</h3>
-      </div>
-</a>
-    </div>
-    <div class="product-card">
-      <a href="./military-law.html" class="card-link">
-      <div class="card-image image-7">
-        </div>
-      <div class="caption">
-        <img src="./images/military-law.png" alt="#" />
-        <h3>Військове право</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./business-law.html" class="card-link">
-      <div class="card-image image-8">
-     </div>
-      <div class="caption">
-        <img src="./images/business-law.png" alt="#" />
-        <h3>Адвокат для бізнесу</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./fintech.html" class="card-link">
-      <div class="card-image image-9">
-    </div>
-      <div class="caption">
-        <img src="./images/fintech.png" alt="#" />
-        <h3>Fintech</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card">
-      <a href="./debt-recovery.html" class="card-link">
-      <div class="card-image image-10">
-    </div>
-      <div class="caption">
-        <img src="./images/debt-recovery.png" alt="#" />
-        <h3>Повернення боргів</h3>
-      </div>
-  </a>
-    </div>
-    <div class="product-card ">
-      <a href="./debtor-protection.html" class="card-link">
-      <div class="card-image image-11">
-    </div>
-      <div class="caption">
-        <img src="./images/debtor-protection.png" alt="#" />
-        <h3>Захист прав боржника</h3>
-      </div>
-    </a>
-    </div>
-    <div class="product-card ">
-      <a href="./labor-law.html" class="card-link">
-      <div class="card-image image-12">
-      </div>
-      <div class="caption">
-        <img src="./images/labor-law.png" alt="#" />
-        <h3>Трудове право</h3>
-      </div>
-    </a>
-    </div>
-  </div>
-</section>
-<include src="./partials/includes/feedback-cases.html"></include>
+          <picture>
+            <!-- Изображение для мобильных и планшетных экранов -->
+            <source srcset="./images/igor-1_1.jpg" media="(max-width: 1279px)">
+            <!-- Изображение для экранов шириной 1280px и больше -->
+            <source srcset="./images/igor-1_pc_2x.jpg" media="(min-width: 1280px)">
+            <!-- Обязательный тег <img> для браузеров, которые не поддерживают <picture> -->
+            <img src="./images/igor-1_1.jpg" alt="адвокат Тарасенко">
+          </picture>
 
-<div class="background-container">
-  <div class="order-address-flex-container">
-  <section class="main-order-section page-order-section">
-    <div class="order-section-container">
-      <div class="order-image"></div>
-      <!-- <img src="./images/igor-2_w393.jpg" alt="адвокат в окулярах"/> -->
-      <div class="order-main">
-        <h2>Замовити консультацію</h2>
-        <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3>
-        <form action="#" class="form" method="POST">
-          <label class="form-label"
-          >Ім'я та Прізвище
-          <input
-            type="text"
-            data-validate-field="name"
-            name="name"
-            placeholder="Ввести ім'я"
-            class="form-input input-name"
-          />
-        </label>
-        <label class="form-label"
-        >Номер телефону
-        <input
-          type="tel"
-          data-validate-field="tel"
-          name="tel"
-          placeholder="Ввести номер"
-          class="form-input input-tel"
-        />
-        </label>
-          <button class="btn-submit"  type="submit">
-            Передзвонити 
-            <span class="btn-icon">
-              <svg width="17" height="16">
-                <use href="./images/sprite.svg#phone"></use>
-              </svg>
-            </span>
-          </button>
-        </form>
-      </div>
-    <div class="main-socials">
-      <h3>Або напишіть мені:</h3>
-      <ul class="main-social-icons">
-        <li>
-          <div class="social-icon-block">
-            <a
-            href="viber://chat?number=380937531516"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="social-link"
-          >
-            <svg class="main-social-icon">
-                <use href="././images/sprite.svg#icon-viber"></use>
-            </svg>
-            <span class="social-title">Viber</span>
-        </a>
-      </div>
-        </li>
-        <li>
-          <div class="social-icon-block">
-            <a
-            href="https://t.me/Advokat_Tarasenko_Igor"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="social-link"
-          >
-            <svg class="main-social-icon">
-                <use href="./images/sprite.svg#icon-telegram"></use>
-            </svg>
-            <span class="social-title">Telegram</span>
-        </a>
-        </div>
-        </li>
-        <li>
-          <div class="social-icon-block">
-            <a
-            href="https://m.me/100017282700952"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="social-link"
-          >
-            <svg class="main-social-icon">
-                <use href="./images/sprite.svg#icon-messenger"></use>
-            </svg>
-            <span class="social-title">Messenger</span>
-        </a>
+          <div class="hero-section-text mob">
+            <p>Моя місія, як адвоката полягає в забезпеченні правової підтримки та захисту для кожного клієнта,
+              забезпечуючи справедливість та права. <br>
+              Завдяки своєму професійному досвіду та глибокому розумінню правових процесів у різних галузях права, я
+              забезпечую ефективний захист інтересів своїх клієнтів. <br>
+              Моя місія - стати надійним партнером для кожного клієнта, вирішуючи правові проблеми та забезпечуючи
+              успішний результат у кожній справі.</p>
           </div>
-        </li>
-        <li>
-          <div class="social-icon-block">
-            <a
-            href="https://wa.me/380937531516"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="social-link"
-          >
-            <svg class="main-social-icon">
-                <use href="./images/sprite.svg#icon-whatsapp"></use>
-            </svg>
-            <span class="social-title">WhatsApp</span>
-        </a>
-          </div>
-        </li>
-    </ul>
-  </div>
-    </div>
-  </section>
-  <section class="adress-section">
-    <div class="adress-section-container">
-  <h2>Контакти:</h2>
-  <div class="tel-number">
-    <a href="tel:+38093753-15-16">
-    <svg >
-      <use href="./images/sprite.svg#phone"></use>
-    </svg>
-    +38(093) 753-15-16</a>
-  </div>
-  <div class="mail">
-    <a href="mailto:tarasenko.igor@ukr.net">
-    <svg width="17" height="13">
-      <use href="./images/sprite.svg#envelope"></use>
-    </svg>
-    tarasenko.igor@ukr.net</a>
-  </div>
-  <address class="adress">
-    <nav>
-      <a
-        href="https://maps.app.goo.gl/X1wFYnyKQRANqNe69"
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        class="google-link"
-      >
-        <svg width="16" height="18">
-          <use href="./images/sprite.svg#bank"></use>
-        </svg>
-        <p>м. Київ. вул. Деревлянська, буд. 8, оф. 4</p>
-      </a>
-    </nav>
-  </address>
-  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.61131211887!2d30.46810847655832!3d50.46696227159541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdd749dff09b%3A0x1476632af515a66f!2z0LLRg9C70LjRhtGPINCU0LXRgNC10LLQu9GP0L3RgdGM0LrQsCwgOCwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1713828058512!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+
+        </div>
+      </div>
+    </section>
+    <section class="achievements-section">
+
+      <div class="achievements-container">
+        <ul class="achievements">
+          <li class="up-text">
+            <span class="figures">15 років </span>
+            <span class="bot-text">Практики</span>
+          </li>
+          <li>
+            <hr id="ach-line">
+          </li>
+          <li class="up-text">
+            <span class="figures">500</span>
+            <span class="bot-text">Клієнтів</span>
+          </li>
+          <li>
+            <hr id="ach-line">
+          </li>
+          <li class="up-text">
+            <span class="figures">90%</span>
+            <span class="bot-text">Виграних справ</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section class="areas-section">
+      <div class="areas-section-container">
+        <h1>Напрямки юридичної
+          практики</h1>
+        <div class="grid-container">
+          <div class="product-card">
+            <a href="./criminal-law.html" class="card-link">
+              <div class="card-image image-1">
+              </div>
+              <div class="caption">
+                <img src="./images/criminal-law.png" alt="#" />
+                <h3>Кримінальна практика</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./administrative-law.html" class="card-link">
+              <div class="card-image image-2">
+              </div>
+              <div class="caption">
+                <img src="./images/administrative-law.png" alt="#" />
+                <h3>Адміністративна практика</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./migration-services.html" class="card-link">
+              <div class="card-image image-3">
+              </div>
+              <div class="caption">
+                <img src="./images/migration-logo.png" alt="#" />
+                <h3>Міграційні послуги</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./civil-law.html" class="card-link">
+              <div class="card-image image-4">
+              </div>
+              <div class="caption">
+                <img src="./images/civil-law.png" alt="#" />
+                <h3>Цивільна практика</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./intellectual-property.html" class="card-link">
+              <div class="card-image image-5">
+              </div>
+              <div class="caption">
+                <img src="./images/intellectual-property.png" alt="#" />
+                <h3>Інтелектуальна власність</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./tax-law.html" class="card-link">
+              <div class="card-image image-6">
+              </div>
+              <div class="caption">
+                <img src="./images/tax-law.png" alt="#" />
+                <h3>Податкова практика</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./military-law.html" class="card-link">
+              <div class="card-image image-7">
+              </div>
+              <div class="caption">
+                <img src="./images/military-law.png" alt="#" />
+                <h3>Військове право</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./business-law.html" class="card-link">
+              <div class="card-image image-8">
+              </div>
+              <div class="caption">
+                <img src="./images/business-law.png" alt="#" />
+                <h3>Адвокат для бізнесу</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./fintech.html" class="card-link">
+              <div class="card-image image-9">
+              </div>
+              <div class="caption">
+                <img src="./images/fintech.png" alt="#" />
+                <h3>Fintech</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="./debt-recovery.html" class="card-link">
+              <div class="card-image image-10">
+              </div>
+              <div class="caption">
+                <img src="./images/debt-recovery.png" alt="#" />
+                <h3>Повернення боргів</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card ">
+            <a href="./debtor-protection.html" class="card-link">
+              <div class="card-image image-11">
+              </div>
+              <div class="caption">
+                <img src="./images/debtor-protection.png" alt="#" />
+                <h3>Захист прав боржника</h3>
+              </div>
+            </a>
+          </div>
+          <div class="product-card ">
+            <a href="./labor-law.html" class="card-link">
+              <div class="card-image image-12">
+              </div>
+              <div class="caption">
+                <img src="./images/labor-law.png" alt="#" />
+                <h3>Трудове право</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+    <section class="feedback-slider-section">
+      <div class="feedback-container">
+        <h2>Відгуки клієнтів</h2>
+        <div class="feedback-img"></div>
+        <!-- <img src="./images/feedback.jpg" alt="Пише в щоденник" /> -->
+        <include src="./partials/includes/feedback-cases.html"></include>
+      </div>
+    </section>
+
+    <div class="background-container">
+      <div class="order-address-flex-container">
+        <section class="main-order-section page-order-section">
+          <div class="order-section-container">
+            <div class="order-image"></div>
+            <!-- <img src="./images/igor-2_w393.jpg" alt="адвокат в окулярах"/> -->
+            <div class="order-main">
+              <h2>Замовити консультацію</h2>
+              <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3>
+              <form action="#" class="form" method="POST">
+                <label class="form-label">Ім'я та Прізвище
+                  <input type="text" data-validate-field="name" name="name" placeholder="Ввести ім'я"
+                    class="form-input input-name" />
+                </label>
+                <label class="form-label">Номер телефону
+                  <input type="tel" data-validate-field="tel" name="tel" placeholder="Ввести номер"
+                    class="form-input input-tel" />
+                </label>
+                <button class="btn-submit" type="submit">
+                  Передзвонити
+                  <span class="btn-icon">
+                    <svg width="17" height="16">
+                      <use href="./images/sprite.svg#phone"></use>
+                    </svg>
+                  </span>
+                </button>
+              </form>
+            </div>
+            <div class="main-socials">
+              <h3>Або напишіть мені:</h3>
+              <ul class="main-social-icons">
+                <li>
+                  <div class="social-icon-block">
+                    <a href="viber://chat?number=380937531516" target="_blank" rel="noopener noreferrer nofollow"
+                      class="social-link">
+                      <svg class="main-social-icon">
+                        <use href="././images/sprite.svg#icon-viber"></use>
+                      </svg>
+                      <span class="social-title">Viber</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="social-icon-block">
+                    <a href="https://t.me/Advokat_Tarasenko_Igor" target="_blank" rel="noopener noreferrer nofollow"
+                      class="social-link">
+                      <svg class="main-social-icon">
+                        <use href="./images/sprite.svg#icon-telegram"></use>
+                      </svg>
+                      <span class="social-title">Telegram</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="social-icon-block">
+                    <a href="https://m.me/100017282700952" target="_blank" rel="noopener noreferrer nofollow"
+                      class="social-link">
+                      <svg class="main-social-icon">
+                        <use href="./images/sprite.svg#icon-messenger"></use>
+                      </svg>
+                      <span class="social-title">Messenger</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="social-icon-block">
+                    <a href="https://wa.me/380937531516" target="_blank" rel="noopener noreferrer nofollow"
+                      class="social-link">
+                      <svg class="main-social-icon">
+                        <use href="./images/sprite.svg#icon-whatsapp"></use>
+                      </svg>
+                      <span class="social-title">WhatsApp</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="adress-section">
+          <div class="adress-section-container">
+            <h2>Контакти:</h2>
+            <div class="tel-number">
+              <a href="tel:+38093753-15-16">
+                <svg>
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                +38(093) 753-15-16</a>
+            </div>
+            <div class="mail">
+              <a href="mailto:tarasenko.igor@ukr.net">
+                <svg width="17" height="13">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                tarasenko.igor@ukr.net</a>
+            </div>
+            <address class="adress">
+              <nav>
+                <a href="https://maps.app.goo.gl/X1wFYnyKQRANqNe69" target="_blank" rel="noopener noreferrer nofollow"
+                  class="google-link">
+                  <svg width="16" height="18">
+                    <use href="./images/sprite.svg#bank"></use>
+                  </svg>
+                  <p>м. Київ. вул. Деревлянська, буд. 8, оф. 4</p>
+                </a>
+              </nav>
+            </address>
+            <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.61131211887!2d30.46810847655832!3d50.46696227159541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdd749dff09b%3A0x1476632af515a66f!2z0LLRg9C70LjRhtGPINCU0LXRgNC10LLQu9GP0L3RgdGM0LrQsCwgOCwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1713828058512!5m2!1sru!2sua"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        </section>
+      </div>
     </div>
-  </section>
-  </div>
-</div>
 
   </main>
-    <include src="./partials/includes/footer.html"></include>
+  <include src="./partials/includes/footer.html"></include>
 
 
-    <!-- modal windows html components-->
-    <include src="./partials/includes/modal-order-window.html"></include>
-    <include src="./partials/includes/modal-thanks.html"></include>
-    <!-- modal windows script -->
-  <script  src="./js/modal-order-window.js"></script>
+  <!-- modal windows html components-->
+  <include src="./partials/includes/modal-order-window.html"></include>
+  <include src="./partials/includes/modal-thanks.html"></include>
+  <!-- modal windows script -->
+  <script src="./js/modal-order-window.js"></script>
   <!-- mobile menu script -->
-  <script  src="./js/my-mobile-menu.js"></script>
+  <script src="./js/my-mobile-menu.js"></script>
   <script type="module" src="./js/slick-carousel.js"></script>
-   <!-- validation script -->
-   <script src="./js/form-validate.js" type="module"></script>
+  <!-- validation script -->
+  <script src="./js/form-validate.js" type="module"></script>
 
 </body>
+
 </html>

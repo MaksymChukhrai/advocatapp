@@ -1,7 +1,16 @@
 // feedback-section
-.feedback-container {
+.feedback-slider-section{
+  background: var(--feedback-background-color);
+}
+
+.feedback-cases-container {
   padding: 40px 16px;
   background: var(--feedback-background-color);
+  .feedback-img-cases {
+    background: linear-gradient(0deg, #9fa3aa33 0% 100%), #d3d3d3 url('../images/feedback_2x_mob_h265.jpg') 50% / cover no-repeat;
+    border-radius: 4px;
+    height: 187px;
+  }
 }
 .feedback-container h2 {
   color: #000;
@@ -86,7 +95,7 @@
   // transition: transform 0.5s ease;
 }
 .slick-slide {
-  margin-left: 30px; /* Смещение вправо на 20px */
+  margin-left: 10px; 
 }
 
 // @media (max-width: 400px) {
