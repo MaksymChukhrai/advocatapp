@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) {
 
+  .feedback-container,
 .feedback-cases-container {
     padding: 70px 60px;
     h2{
@@ -35,6 +36,7 @@
 .slider-slide {
   height: 280px;
     width: 312px !important;
+    margin-left: -20px;
 }
 .cases-prev-slide svg,
 .cases-next-slide svg, 
