@@ -11,8 +11,6 @@
     padding: 100px 88px;
     margin: 0 auto;
     max-width: 1280px;
-    // margin-left:0vw;
-
     background: transparent;
     h2{
         font-size: 32px;
@@ -54,16 +52,20 @@
       background-position: center;
     }
   }
+  .cases-feedback-slider{
+    margin-top: 0;
+  }
+
 
   .slick-slide {
-    margin-left: 20px; 
+    margin-left: 10px; 
   } 
 
 
   .slider-slide {
     padding: 20px 20px;
     height: 416px;
-    width: 360px !important;
+    width: 352px !important;
 
     h3 {
       font-size: 24px;
