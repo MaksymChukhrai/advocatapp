@@ -36,7 +36,10 @@
   height: 280px;
     width: 312px !important;
 }
-.prev-slide svg, .next-slide svg {
+.cases-prev-slide svg,
+.cases-next-slide svg, 
+.main-prev-slide svg,
+.main-next-slide svg {
     width: 40px;
     height: 40px;
 }

@@ -3,26 +3,37 @@
   background: var(--feedback-background-color);
 }
 
+.feedback-container,
 .feedback-cases-container {
-  padding: 40px 16px;
+  padding: 40px 15px;
   background: var(--feedback-background-color);
+
   .feedback-img-cases {
     background: linear-gradient(0deg, #9fa3aa33 0% 100%), #d3d3d3 url('../images/feedback_2x_mob_h265.jpg') 50% / cover no-repeat;
     border-radius: 4px;
     height: 187px;
   }
 }
-.feedback-container h2 {
+
+.feedback-img{
+  background: linear-gradient(0deg, #9fa3aa33 0% 100%), #d3d3d3 url('../images/feedback_2x_mob_h265.jpg') 50% / cover no-repeat;
+  border-radius: 4px;
+  height: 187px;
+}
+.feedback-container,
+.feedback-cases-container {
+  h2{
   color: #000;
   font-family: 'Merriweather';
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 24px;
+  }
 }
-.feedback-container img {
-  border-radius: 4px;
-  width: 100%;
-}
+// .feedback-container img {
+//   border-radius: 4px;
+//   width: 100%;
+// }
 
 // slider
 .slider-slide {
@@ -41,8 +52,7 @@
   background-color: lightgray;
   background-position: 50%;
   height: 260px;
-  margin-right: 12px; /* Отступ справа для создания промежутка */
-  margin-left: 0px;
+  
 }
 .slider-slide h3 {
   color: #000;
@@ -80,53 +90,40 @@
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4; /* 15.4px */
+  line-height: 1.4; 
 }
 .quotes-bottom {
   justify-content: flex-end;
 }
 
-.feedback-slider {
+.main-feedback-slider {
   margin-top: 12px;
 }
 
-.slider-wrapper {
-  display: flex;
-  // transition: transform 0.5s ease;
-}
+
 .slick-slide {
-  margin-left: 10px; 
+  margin-left: 20px; 
 }
 
-// @media (max-width: 400px) {
-//   .slider-slide {
-//     width: calc((100% - 16px) / 1.5); /* Ширина слайда с учетом gap и отображения полтора слайда */
-//   }
-// }
 
-.slider-slide.active {
-  display: block;
-}
 .slider-controls {
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
 }
-//   .slider-controls {
-//     position: absolute;
-//     bottom: 10px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     display: flex;
-// }
-.prev-slide,
-.next-slide {
+
+.cases-prev-slide,
+.cases-next-slide,
+.main-prev-slide,
+.main-next-slide {
   border: none;
   background: transparent;
 }
 
-.prev-slide svg,
-.next-slide svg {
+.cases-prev-slide svg,
+.cases-next-slide svg, 
+.main-prev-slide svg,
+.main-next-slide svg {
   width: 32px;
   height: 32px;
 }

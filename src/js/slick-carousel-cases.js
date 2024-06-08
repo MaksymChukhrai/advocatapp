@@ -5,13 +5,13 @@ import $ from 'jquery';
 import 'slick-carousel';
 
 $(document).ready(function() {
-  $('.slider-wrapper').slick({
-      slidesToShow: 3,
+  $('.cases-slider-wrapper').slick({
+      slidesToShow: 1.95,
       slidesToScroll: 3,
    
       arrows: true,
-      prevArrow: $('.prev-slide'),
-      nextArrow: $('.next-slide'),
+      prevArrow: $('.cases-prev-slide'),
+      nextArrow: $('.cases-next-slide'),
    
    
       centerPadding:'10px',
