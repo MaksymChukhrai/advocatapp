@@ -4,8 +4,8 @@
 	"description": "",
 	"homepage": "https://maksymchukhrai.github.io/advocatapp/",
 	"scripts": {
-		"start": "parcel src/*.html",
-		"build": "parcel build src/*.html --public-url /advocatapp/"
+		"start": "parcel src/.html",
+		"build": "parcel build src/*.html --public-url /"
 	},
 	"repository": {
 		"type": "git",

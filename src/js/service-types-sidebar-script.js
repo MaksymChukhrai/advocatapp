@@ -3,7 +3,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const links = document.querySelectorAll('.sidebar a');
-    // const content = document.getElementById('content');
+    const content = document.getElementById('content');
+    console.log('Content element:', content);
 
     links.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Обновление активного класса
                 links.forEach(link => link.parentElement.classList.remove('select'));
                 const activeLink = document.querySelector(`a[data-url="${url}"]`);
+                console.log('Active link:', activeLink);
                 if (activeLink) {
                     activeLink.parentElement.classList.add('select');
                     console.log('Added select class to', activeLink.parentElement); // Проверка добавления класса
