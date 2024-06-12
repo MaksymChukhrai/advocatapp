@@ -2,7 +2,7 @@
 	"name": "advocatapp",
 	"version": "2.0.0",
 	"description": "",
-	"homepage": "https://igor-tarasenko.com",
+	"homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
     "scripts": {
 		"start": "parcel src/index.html",
         "build": "parcel build src/*.html --public-url /advocatapp/"
