@@ -1,7 +1,7 @@
 // src/js/service-types-sidebar-script.js
 import $ from 'jquery';
-
-$(window).on('load', () => {
+//заменил на 'DOMContentLoaded'
+document.addEventListener('DOMContentLoaded', () => {
   const currentUrl = window.location.pathname.split('/').pop();
 
   const $links = $('.service-buttons li a');
