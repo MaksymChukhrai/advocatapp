@@ -83,6 +83,8 @@ function sendFormData(formData) {
   xhr.onload = function () {
     if (xhr.status === 200) {
       // Форма успешно отправлена
+      console.log('Отправлено')
+      // Показать отдельное окно src\partials\includes\modal-thanks.html
       showThanksModal();
     } else {
       // Произошла ошибка
