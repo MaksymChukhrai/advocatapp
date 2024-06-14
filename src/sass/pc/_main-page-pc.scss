@@ -10,7 +10,7 @@
             rgba(2, 2, 2, 0.4) 1.01%,
             rgba(177, 170, 170, 0.4) 101.01%
           ),
-          url('../images/pc-main-slogan.jpg');
+          url('../images/pc-main-slogan.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -175,7 +175,7 @@ height: 30px;
     background: var(--feedback-background-color);
 }
 .contacts-main-slogan{
-    background-image: linear-gradient(#b1aaaa66 -1.01%, #02020266 98.99%), url('../images/pc-menu-2x.jpg');
+    background-image: linear-gradient(#b1aaaa66 -1.01%, #02020266 98.99%), url('../images/pc-menu-2x.webp');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,7 +258,7 @@ height: 17px;
         rgba(185, 185, 185, 0.10) 0%,
         rgba(185, 185, 185, 0.10) 100%
     ), 
-    url('../images/igor-main-order-image_pc_2x.jpg') no-repeat center;
+    url('../images/igor-main-order-image_pc_2x.webp') no-repeat center;
     background-size: cover; 
     border-radius: 4px;
   }

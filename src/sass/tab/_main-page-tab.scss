@@ -6,7 +6,7 @@
         rgba(2, 2, 2, 0.4) 1.01%,
         rgba(177, 170, 170, 0.4) 101.01%
       ),
-      url('../images/tab-main-slogan.jpg');
+      url('../images/tab-main-slogan.webp');
     background-size: cover, cover; /* Первое cover для градиента, второе для изображения */
     background-repeat: no-repeat, no-repeat; /* Оба слоя без повтора */
     background-position: center, center; /* Центрируем оба слоя */
@@ -175,7 +175,7 @@
           rgba(185, 185, 185, 0.10) 0%,
           rgba(185, 185, 185, 0.10) 100%
       ), 
-      url('../images/igor-main-order-image_tab_2x.jpg') no-repeat center;
+      url('../images/igor-main-order-image_tab_2x.webp') no-repeat center;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; 
@@ -274,7 +274,7 @@
 //contacts
 .contacts-container{
   height: 485px;
-  background: linear-gradient(0deg, #dcdad84d 0% 100%), #d3d3d3 url('../images/tab-menu-2x.jpg') 50% / cover no-repeat;
+  background: linear-gradient(0deg, #dcdad84d 0% 100%), #d3d3d3 url('../images/tab-menu-2x.webp') 50% / cover no-repeat;
   display: flex;
   justify-content: flex-start;
 }
