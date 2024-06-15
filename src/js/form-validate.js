@@ -1,3 +1,5 @@
+//src\js\form-validate.js
+
 import Inputmask from 'inputmask';
 
 // Получаем ссылки на модальные окна
@@ -77,6 +79,7 @@ function sendFormData(formData) {
   // Здесь вы можете добавить код для отправки формы на сервер, например, с помощью AJAX
   // После получения ответа от сервера об успешной отправке вызовите функцию showThanksModal()
 
+  console.log('Отправляемые данные формы:', Array.from(formData.entries()));
   // Пример с использованием XMLHttpRequest
   const xhr = new XMLHttpRequest();
   xhr.open('POST', 'mail.php', true);
@@ -96,7 +99,7 @@ function sendFormData(formData) {
 
 function showThanksModal() {
   // Закрываем модальное окно с формой
-  orderModal.classList.remove('is-visible');
+  orderModal.classList.remove('thanks-is-hidden');
 
   // Показываем модальное окно "Спасибо" (проверить код на хостинге)
   thanksModal.style.display = 'block';
