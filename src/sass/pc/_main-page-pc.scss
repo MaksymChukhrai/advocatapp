@@ -205,12 +205,12 @@ height: 30px;
     max-width: 1280px;
     margin: 0 auto;
     padding:100px 0px;
-   
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: space-around;
     padding-right: 88px;
 
 .adress-section-container{
-    width: 628px;
+    width: 749px;
     background: transparent;
     padding: 0;
     h2{
@@ -244,7 +244,7 @@ height: 17px;
     font-size: 20px;
 }
     .map{
-        height: 756px; 
+      height: 805px;
     }
 }
 .page-order-section{
@@ -252,7 +252,7 @@ height: 17px;
 }
 .order-image{
     height: 391px;
-    width: 540px; 
+    width: 419px; 
     background: linear-gradient(
         0deg,
         rgba(185, 185, 185, 0.10) 0%,
@@ -272,13 +272,14 @@ height: 17px;
     }
     .order-main{
         padding: 48px 16px 0;
+        width: 419px;
     }
     .order-main > h2{
         font-size: 24px;
     }
     .order-main > h3{
         font-size: 20px;
-        width: 508px;
+        width: 387px;
     }
 
 }
@@ -301,10 +302,21 @@ height: 17px;
 }
 .main-socials {
     padding: 8px 16px 32px;
+    width: 419px;
+    .social-container{
+        flex-direction: column;
+    }
     h3{
         font-size: 20px; 
     }
+    .main-social-icons {
+        padding: 0 24px;
+    }
 
+}
+
+.gap-pc-low{
+    gap: 80px;
 }
 .main-social-icon {
     width: 30px;

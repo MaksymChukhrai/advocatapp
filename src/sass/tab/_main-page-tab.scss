@@ -168,14 +168,14 @@
     }
   }
   .order-image{
-    height: 465px;
+    height: 621px;
     // width: 648px;
       background: linear-gradient(
           0deg,
           rgba(185, 185, 185, 0.10) 0%,
           rgba(185, 185, 185, 0.10) 100%
       ), 
-      url('../images/igor-main-order-image_tab_2x.webp') no-repeat center;
+      url('../images/igor-main-order-image_tab_2x.webp');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; 

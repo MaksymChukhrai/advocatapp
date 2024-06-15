@@ -353,7 +353,7 @@ display: none;
   background: var(--main-order-gradient);
 }
 .order-image{
-  height: 300px;
+  height: 388px;
   width:100%;
   border-radius: 4px;
   background: linear-gradient(
@@ -362,7 +362,7 @@ display: none;
         rgba(185, 185, 185, 0.10) 100%
     ), 
     url('../images/igor-2_w393.webp') no-repeat center;
-
+    background-size: cover;
 
 }
 
@@ -495,11 +495,17 @@ margin-left: 10px;
 .main-socials{
   padding:0px 15px 20px 15px;
   background: var(--header-white-color);
+  .social-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 .main-social-icons{
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
+  gap: 9.375vw;
 }
 .social-icon-block a{
   display: flex;
