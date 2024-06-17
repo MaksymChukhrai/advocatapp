@@ -146,8 +146,13 @@
     padding: 20px 16px;
  
   }
+
+  .social-icon-block a{
+      display:flex;
+      flex-direction: row;
+      gap:4px;
+  }
   .thanks-btn-submit{
-    padding:14px 16px;
     margin:0;
     border: 3px solid var(--bronze-button);
     color: var(--black-button-color);
@@ -156,9 +161,7 @@
     align-items: center;
     background: transparent;
     padding: 14px 60px;
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.4;
     display: flex;
