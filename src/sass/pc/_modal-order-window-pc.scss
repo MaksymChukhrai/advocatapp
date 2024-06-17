@@ -79,6 +79,55 @@ height: 30px;
 //     width: 20px;
 //     height: 20px;
 // }
+  //thanks modal
+  .thanks-section-container{
+    width: 933px;
+
+  }
+  .thanks-header-modal{
+    svg{
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .thanks-flex-container {
+    padding: 20px 32px;
+    gap: 18px;
+    .thanks-modal-img {
+      width: 342px;
+      height: 346px;
+      background: linear-gradient(
+        0deg,
+        rgba(159, 163, 170, 0.2) 0%,
+        rgba(159, 163, 170, 0.2) 100%
+      ),
+      url('../images/thanks-modal-pc_2x.webp') lightgray 50% / cover
+        no-repeat;
+    }
+    .thanks-main-modal {
+      width: 509px;
+      h1{
+        font-size: 24px;
+      }
+      .thanks-main-modal-text {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .thanks-main-modal-socials {
+      padding: 12px 20px;
+        h3{
+          font-size: 16px;
+        }
+        ul{
+          margin-top:24px;
+        }
+    }
+
+  }
+
+
 
 
 }

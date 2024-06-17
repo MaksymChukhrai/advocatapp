@@ -98,6 +98,13 @@
     height: 20px;
   }
   //thanks modal
+  .thanks-section-container{
+    width: 739px;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
   .thanks-flex-container {
     display: flex;
     justify-content: center;
@@ -131,7 +138,7 @@
       }
     }
     .thanks-main-modal-socials {
-      padding: 0;
+      padding: 12px 0px;
         h3{
           font-size: 15px;
           font-weight: 700;
