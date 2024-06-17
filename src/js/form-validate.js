@@ -4,7 +4,7 @@ import Inputmask from 'inputmask';
 
 // Получаем ссылки на модальные окна
 const orderModal = document.querySelector('.main-order-section .backdrop');
-const thanksModal = document.querySelector('.thanks-section');
+const thanksModal = document.querySelector('.thanks-section .thanks-backdrop');
 
 // Инициализация валидации форм
 initFormValidation();
@@ -99,7 +99,7 @@ function sendFormData(formData) {
 
 function showThanksModal() {
   // Закрываем модальное окно с формой
-  orderModal.classList.remove('thanks-is-hidden');
+  orderModal.classList.remove('.thanks-backdrop.is-visible');
 
   // Показываем модальное окно "Спасибо" (проверить код на хостинге)
   thanksModal.style.display = 'block';
