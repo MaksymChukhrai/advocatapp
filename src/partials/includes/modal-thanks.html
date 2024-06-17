@@ -1,4 +1,7 @@
+<!-- src\partials\includes\modal-thanks.html -->
+
 <section class="thanks-section thanks-is-hidden">
+<div class="thanks-backdrop">
   <div class="thanks-section-container">
     <div class="thanks-header-modal">
       <div class="header-modal-container">
@@ -11,6 +14,8 @@
         <use href="./images/sprite.svg#close-cross"></use>
       </svg>
     </div>
+<div class="thanks-flex-container">
+    <div class="thanks-modal-img"></div>
     <div class="thanks-main-modal">
       <h1>Дякую, що залишили заявку</h1>
       <div class="thanks-main-modal-text">
@@ -71,9 +76,18 @@
         </ul>
       </div>
     </div>
+  </div>
+
       <div class="thanks-modal-btn">
-        <button class="btn-submit" data-modal-submit type="submit">Ok</button>
+        <button class="thanks-btn-submit" type="submit">Ok
+          <span class="btn-icon">
+            <svg >
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </span>
+        </button>
       </div>
     
   </div>
+</div>
 </section>

@@ -4,9 +4,9 @@
   --black-secondary-text-color: #0d0d0e;
   --black-button-color: #262525;
   --select-bg-color: #f8f3ed;
-  --border-grey:#D2D2D2;
-  --caption-grey:#D9D9D9;
-  --light-yellow:#F0E9DD;
+  --border-grey: #d2d2d2;
+  --caption-grey: #d9d9d9;
+  --light-yellow: #f0e9dd;
   --brown-gradient: linear-gradient(
     91deg,
     #7e7b79 0.66%,
@@ -34,14 +34,28 @@
     rgba(135, 125, 125, 0.4) 0%,
     rgba(135, 125, 125, 0.4) 100%
   );
+
+  --button-hover-gradient: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(
+      92deg,
+      #b16a12 4.34%,
+      #d28f2c 38.72%,
+      #deaa5e 66.5%,
+      #aa640d 97.51%
+    );
   --main-white-color: #ffffff;
-  --modal-white-color:#FCFEFF;
+  --modal-white-color: #fcfeff;
   --button-white-color: #e7e7e7;
   --main-order-gradient: linear-gradient(91deg, #cfc9c2 0.16%, #fffaf4 100.76%);
   --bronze-button: #b4721d;
-  --orange-button:#faac39;
+  --orange-button: #faac39;
   --transition-speed: 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  --card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 body {
