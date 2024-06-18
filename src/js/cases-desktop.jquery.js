@@ -30,7 +30,7 @@ if (isDesktopWidth()) {
           
           // Центрирование описания
           if (isRightAligned) {
-            $description.css('transform', 'translateX(-35%)');
+            $description.css('transform', 'translateX(0)');
           } else {
             $description.css('transform', 'translateX(0)');
           }

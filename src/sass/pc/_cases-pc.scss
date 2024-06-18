@@ -38,8 +38,14 @@
   }
   .height-img {
     height: 236px;
+    overflow: hidden;
   }
-
+  .card-image{
+    transition: transform var(--transition-speed); /* Для плавного перехода */
+    }
+    .card-image:hover{
+      transform: scale(1.2);
+   }
   .wide-image {
     max-width: 712px;
   }
@@ -47,6 +53,12 @@
     width: 0;
     transition: width 0.5s;
   }
+
+  .wide-image:hover,
+  .narrow-image:hover {
+    cursor: pointer;
+  }
+
   .caption {
     padding: 8px;
     height: 84px;
