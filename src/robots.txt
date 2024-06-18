@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /css/
+Disallow: /favicon/
+Disallow: /js/
+Disallow: /phpmailer/
+Disallow: /mail.php
+Disallow: /priv-policy.html
+Disallow: /README.md
+
+Sitemap: https://igor-tarasenko.com/sitemap.xml

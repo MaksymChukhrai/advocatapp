@@ -1,3 +1,5 @@
+//src\js\cases-desktop.jquery.js
+
 import $ from 'jquery';
 
 // Функция для проверки ширины экрана

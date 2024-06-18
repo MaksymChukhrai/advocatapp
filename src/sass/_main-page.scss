@@ -213,13 +213,17 @@ display: none;
 .card-image {
   width: 100%;
   height: 94px; /* Указываем высоту картинки */
-  overflow-y: hidden;
+  // overflow-y: hidden;
   transition: transform 0.5s ease; /* Плавный переход для эффекта zoom */
 }
-.main-card-image:hover{
-  transform: scaleX(1.2);
-  cursor: pointer;
+
+.overflow-container{
   overflow: hidden;
+}
+.main-card-image:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+ 
 }
 
 .image-1 {
