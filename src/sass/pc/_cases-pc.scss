@@ -52,9 +52,12 @@
   .wide-image {
     max-width: 712px;
   }
+  .card-image-pc-container {
+    cursor: pointer;
+    transition: all var(--transition-speed);
+  }
  .narrow-image {
     width: 0;
-    transition: width 0.5s;
   }
 
   .wide-image:hover,
@@ -83,16 +86,16 @@
   // transform: translateX(-390px);
 
   .case-card{
- 
+
     .case-flex-container-left {
       width: 728px;
     }
     .case-flex-container-right {
       width: 352px;
     }
-    
+
   }
-  
+
 }
 
 //добавить изображения широких-узких карточек

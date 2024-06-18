@@ -140,12 +140,12 @@ font-weight: 700;
 //     overflow: hidden;
 //     transition: max-height var(--transition-speed) ease-in-out, opacity var(--transition-speed) ease-in-out;
 //   }
-  
+
 //   .case-card :not(.is-hidden) {
 //     opacity: 1;
-//     height: auto; 
+//     height: auto;
 //   }
-  
+
 
 .wide-image{
     flex-basis: 100%;
@@ -268,7 +268,7 @@ font-weight: 700;
     font-style: normal;
     font-weight: 700;
     line-height: 1.4;
- 
+
 }
 
 .case-caption{
@@ -276,7 +276,7 @@ font-weight: 700;
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size-adjust: 0.7; 
+    font-size-adjust: 0.7;
     height: 58px;
     background: var(--light-yellow);
 }
