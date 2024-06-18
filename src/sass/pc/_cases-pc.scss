@@ -40,11 +40,14 @@
     height: 236px;
     overflow: hidden;
   }
-  .card-image{
+  .card-image,
+  .main-card-image  {
     transition: transform var(--transition-speed); /* Для плавного перехода */
     }
+
+    .main-card-image:hover,
     .card-image:hover{
-      transform: scale(1.2);
+      transform: scaleX(1.2);
    }
   .wide-image {
     max-width: 712px;

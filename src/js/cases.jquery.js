@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 // Функция для проверки ширины экрана
 function isMobileWidth() {
-  return window.matchMedia('(max-width: 767px)').matches;
+  return window.matchMedia('(max-width: 765px)').matches;
 }
 
 if (isMobileWidth()) {

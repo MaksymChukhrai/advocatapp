@@ -107,7 +107,7 @@ font-weight: 700;
     margin-top:12px;
     margin-bottom:10px;
 }
-
+.main-card-image,
 .card-image{
     display: block;
     transition: transform var(--transition-speed);
@@ -116,7 +116,7 @@ font-weight: 700;
 }
 
 .card-image:hover{
-    transform: scale(1.2);
+    transform: scaleX(1.2);
     cursor:pointer;
  }
 /* Анимация для карточек */

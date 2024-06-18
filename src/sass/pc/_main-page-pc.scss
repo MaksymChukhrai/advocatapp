@@ -146,6 +146,10 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(calc((100% - 176px - (24px * 4)) / 3), 1fr));
     gap: 24px;
 }
+
+.areas-section-container .main-card-image{
+    height: 250px;
+}
 .areas-section-container .card-image{
     height: 250px;
 
