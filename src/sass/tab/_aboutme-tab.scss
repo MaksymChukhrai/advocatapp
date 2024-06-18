@@ -67,6 +67,13 @@
     margin: 0;
       margin-left: auto;
 }
+
+.order-btn-aboutme:hover{
+    background: var(--button-hover-gradient);
+    color:var(--header-white-color);
+    cursor: pointer;
+  }
+
 //whyme-section
 .whyme-section-container{
     padding: 70px 60px;

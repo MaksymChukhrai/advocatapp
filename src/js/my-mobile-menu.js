@@ -7,7 +7,7 @@
 
   openMenuBtns.forEach(btn => {
     btn.addEventListener("click", toggleMenu);
-    console.log('Клик по кнопке открытия моб меню');
+    // console.log('Клик по кнопке открытия моб меню');
   });
 
   closeMenuBtn.addEventListener("click", toggleMenu);

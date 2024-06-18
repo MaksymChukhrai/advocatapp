@@ -57,6 +57,11 @@
       }
     }
   }
+  .services-btn:hover{
+    background: var(--button-hover-gradient);
+    color:var(--header-white-color);
+    cursor: pointer;
+  }
 
   .migration-serv-container article {
     color: var(--black-secondary-text-color);

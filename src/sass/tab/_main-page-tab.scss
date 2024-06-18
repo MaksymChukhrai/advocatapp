@@ -72,6 +72,9 @@
   .mob {
     display: none;
   }
+  .slogan-order-btn:hover {
+    cursor: pointer;
+  }
 
   // achievements-section
   .achievements-container {
@@ -209,6 +212,15 @@
       margin-right: auto;
       margin-left: auto;
       width: 30vw;
+      align-items: center;
+    }
+    .btn-submit:hover{
+      background: var(--button-hover-gradient);
+      color:var(--header-white-color);
+      cursor: pointer;
+      svg{
+        fill:var(--header-white-color);
+      }
     }
   
   .main-socials {
@@ -305,5 +317,11 @@
   background: transparent;
   color:var(--black-secondary-text-color);
 }
+.contact-slogan-btn:hover{
+  background: var(--button-hover-gradient);
+  color:var(--header-white-color);
+  cursor: pointer;
+}
+
 
 }
