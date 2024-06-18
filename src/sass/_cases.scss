@@ -24,6 +24,15 @@ font-weight: 400;
 .cases-pc-container{
     display:none;
 }
+// .case-description-container{
+//     transition: transform var(--transition-speed), opacity var(--transition-speed);
+//     opacity: 0;
+//     transform: scaleY(0);
+// }
+// .case-description-container:not(.is-hidden) {
+//     opacity: 1;
+//     transform: scaleY(1);
+//   }
 
 .case-description{
     line-height:1.4;
@@ -111,10 +120,9 @@ font-weight: 700;
     cursor:pointer;
  }
 /* Анимация для карточек */
-// .card-image-container{
-//     border-radius: 4px;
-//     transition: flex-basis 0.3s ease-in-out, background 0.3s ease-in-out;
-// }
+.card-image-container {
+    transition: transform var(--transition-speed);
+  }
 
 .case-card-module{
     display: flex;
@@ -141,13 +149,13 @@ font-weight: 700;
 
 .wide-image{
     flex-basis: 100%;
-  
+    transition: transform var(--transition-speed);
 }
 
 .narrow-image{
     flex-basis: calc((100% - 15px) / 2);
        height: 100%;
-  
+       transition: transform var(--transition-speed);
 }
 .height-img{
     height: 122px;

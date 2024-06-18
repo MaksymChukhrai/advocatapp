@@ -2,6 +2,13 @@
 
 import $ from 'jquery';
 
+
+// Функция для проверки ширины экрана
+function isMobileWidth() {
+  return window.matchMedia('(max-width: 767px)').matches;
+}
+
+if (isMobileWidth()) {
 $(document).ready(function() {
   $('.case-card-module').each(function() {
     const $module = $(this);
@@ -45,4 +52,5 @@ function reorderContainers($module, $containers) {
   $narrowContainers.detach();
   $wideContainer.appendTo($module);
   $narrowContainers.prependTo($module);
+}
 }
