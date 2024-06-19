@@ -139,9 +139,11 @@ margin-bottom: 4px;
 }
 
 .business-law-img{
+    background: var(--gradient-service-img),url('../images/labor-image_2x.webp') lightgray 50% / cover no-repeat; 
+}
+.labor-img{
     background: var(--gradient-service-img),url('../images/area-8_352x234.webp') lightgray 50% / cover no-repeat; 
 }
-
 .debt-recovery-img{
     background: var(--gradient-service-img),url('../images/debt-recovery.webp') lightgray 50% / cover no-repeat;  
 }
