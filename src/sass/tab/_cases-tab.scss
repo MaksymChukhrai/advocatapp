@@ -9,7 +9,9 @@
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
+    transform: translateX(0);
   }
+
 
   .case-description-container.is-hidden {
     display: none;

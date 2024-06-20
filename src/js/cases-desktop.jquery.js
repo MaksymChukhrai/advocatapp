@@ -33,7 +33,7 @@ const handleWideCardClick = function($card) {
   if ($description.hasClass('is-hidden')) {
     // Центрирование описания
     if (isRightAligned) {
-      $description.css('transform', 'translateX(0)');
+      $description.css('transform', 'translateX(-27vw)');
     } else {
       $description.css('transform', 'translateX(0)');
     }
@@ -61,7 +61,7 @@ const handleNarrowCardClick = function($card) {
 
     // Центрирование описания
     if (isRightAligned) {
-      $description.css('transform', 'translateX(-35%)');
+      $description.css('transform', 'translateX(-27vw)');
     } else {
       $description.css('transform', 'translateX(0)');
     }
@@ -99,95 +99,3 @@ $(document).ready(function () {
     }
   })
 })
-
-// if (isDesktopWidth()) {
-//   $(document).ready(function() {
-//     const $caseModules = $('.case-card-pc-module');
-//
-//     $caseModules.each(function() {
-//       const $module = $(this);
-//       const $containers = $module.find('.card-flex-pc-container');
-//       const $cards = $module.find('.card-image-pc-container');
-//
-//       // Функции для обработки кликов и анимаций
-//       const handleWideCardClick = function($card) {
-//         const $description = $card.find('.case-description-container');
-//         const $previousDescription = $('.case-description-container:not(.is-hidden)');
-//         const $container = $card.closest('.card-flex-pc-container');
-//         const isRightAligned = $container.parent().children('.card-flex-pc-container').index($container) % 2 === 1;
-//
-//         // Закрытие предыдущего открытого описания
-//         animateDescriptionToggle($previousDescription, () => {
-//           $previousDescription.addClass('is-hidden');
-//         })
-//
-//         // Открытие текущего описания
-//         if ($description.hasClass('is-hidden')) {
-//           // Центрирование описания
-//           if (isRightAligned) {
-//             $description.css('transform', 'translateX(0)');
-//           } else {
-//             $description.css('transform', 'translateX(0)');
-//           }
-//
-//           animateDescriptionToggle($description, () => {
-//             $description.removeClass('is-hidden');
-//           });
-//         }
-//       };
-//
-//       const handleNarrowCardClick = function($card) {
-//         const $description = $card.find('.case-description-container');
-//         const $container = $card.closest('.card-flex-pc-container');
-//         const $previousDescription = $('.case-description-container:not(.is-hidden)').not($description);
-//         const $siblingCard = $card.siblings('.card-image-pc-container').not($card);
-//         const isRightAligned = $container.parent().children('.card-flex-pc-container').index($container) % 2 === 1;
-//
-//         // Закрытие предыдущего открытого описания
-//         animateDescriptionToggle($previousDescription, () => {
-//           $previousDescription.addClass('is-hidden');
-//         })
-//
-//         animateCardExpansion($card, $siblingCard, () => {
-//           $card.removeClass('narrow-image').addClass('wide-image');
-//           $siblingCard.removeClass('wide-image').addClass('narrow-image');
-//           // $description.removeClass('is-hidden');
-//
-//           // Центрирование описания
-//           if (isRightAligned) {
-//             $description.css('transform', 'translateX(-35%)');
-//           } else {
-//             $description.css('transform', 'translateX(0)');
-//           }
-//
-//           animateDescriptionToggle($description, () => {
-//             $description.removeClass('is-hidden');
-//           });
-//         });
-//       };
-//
-//       const animateCardExpansion = function($card, $siblingCard, complete = () => {}) {
-//         const cardWidth = $card.outerWidth();
-//         const siblingWidth = $siblingCard.outerWidth();
-//
-//         $card.animate({ width: cardWidth + siblingWidth }, { duration: 500 });
-//         $siblingCard.animate({ width: 0 }, { duration: 500, complete });
-//       };
-//
-//       const animateDescriptionToggle = function($description, complete = () => {}) {
-//         $description.animate({ height: 'toggle', opacity: 'toggle' }, { duration: 500, complete });
-//       };
-//
-//       // Добавление обработчиков событий кликов
-//       // $cards.on('click', function() {
-//       //   const $card = $(this);
-//       //
-//       //   if ($card.hasClass('wide-image')) {
-//       //     handleWideCardClick($card);
-//       //   } else {
-//       //     handleNarrowCardClick($card);
-//       //   }
-//       // });
-//     });
-//   });
-// }

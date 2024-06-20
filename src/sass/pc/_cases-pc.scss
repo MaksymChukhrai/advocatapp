@@ -83,7 +83,8 @@
   position: relative;
   z-index: 1;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  // transform: translateX(-390px);
+  transform: translateX(0);
+
 
   .case-card{
 
