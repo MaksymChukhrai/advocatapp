@@ -75,12 +75,13 @@ function handleFormSubmit(event) {
   }
 }
 
-function sendFormData(formData, form) {
+function sendFormData(formData) {
   console.log('Отправляемые данные формы:', Array.from(formData.entries()));
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', form.action);
-  xhr.onload = function() {
+  xhr.open('POST', 'mail.php', true);
+  xhr.onload = function () {
     if (xhr.status === 200) {
+      // Форма успешно отправлена
       console.log('Форма успешно отправлена:', xhr.responseText);
       // Закрываем модальное окно
       const modalBackdrop = form.closest('.backdrop, .thanks-backdrop');
@@ -99,17 +100,21 @@ function sendFormData(formData, form) {
   xhr.onerror = function() {
     console.error('Ошибка при отправке формы:', xhr.status, xhr.statusText);
   };
+  xhr.open('POST', 'mail.php', true);
   xhr.send(formData);
 }
 
 function showThanksModal() {
-  // Показываем модальное окно "Спасибо"
-  thanksModal.style.display = 'block';
+  // Открываем окно "Спасибо"
+  const thanksModal = document.querySelector('.thanks-backdrop');
+  if (thanksModal) {
+    thanksModal.classList.add('is-visible');
 
-  // Закрыть модальное окно "Спасибо" при нажатии на кнопку "Ok"
-  const okButton = thanksModal.querySelector('.btn-submit');
-  okButton.addEventListener('click', () => {
-    thanksModal.style.display = 'none';
-  });
+    // Закрыть модальное окно "Спасибо" при нажатии на кнопку "Ok"
+    const okButton = thanksModal.querySelector('.thanks-btn-submit');
+    okButton.addEventListener('click', () => {
+      thanksModal.classList.remove('is-visible');
+    });
+  }
 }
 
