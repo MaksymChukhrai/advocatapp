@@ -2,10 +2,6 @@
 
 import Inputmask from 'inputmask';
 
-// Получаем ссылки на модальные окна
-const orderModal = document.querySelector('.main-order-section .backdrop');
-const thanksModal = document.querySelector('.thanks-section .thanks-backdrop');
-
 // Инициализация валидации форм
 initFormValidation();
 
@@ -14,26 +10,30 @@ function initFormValidation() {
 
   forms.forEach(form => {
     const telSelector = form.querySelector('input.input-tel');
-    const inputMask = new Inputmask('+38 (999) 999-99-99');
-    inputMask.mask(telSelector);
+    if (telSelector) {
+      const inputMask = new Inputmask('+38 (999) 999-99-99');
+      inputMask.mask(telSelector);
+    }
 
     const nameSelector = form.querySelector('input.input-name');
-    const nameMask = new Inputmask({
-      regex: "[A-Za-zа-яА-ЯёЁ\\s]{3,30}",
-      placeholder: "",
-      showMaskOnHover: false,
-      clearIncomplete: true,
-      oncomplete: function () {
-        // Валидация завершена успешно
-      },
-      onincomplete: function () {
-        // Валидация не завершена
-      },
-      oncleared: function () {
-        // Поле очищено
-      }
-    });
-    nameMask.mask(nameSelector);
+    if (nameSelector) {
+      const nameMask = new Inputmask({
+        regex: "[A-Za-zа-яА-ЯёЁ\\s]{3,30}",
+        placeholder: "",
+        showMaskOnHover: false,
+        clearIncomplete: true,
+        oncomplete: function () {
+          // Валидация завершена успешно
+        },
+        onincomplete: function () {
+          // Валидация не завершена
+        },
+        oncleared: function () {
+          // Поле очищено
+        }
+      });
+      nameMask.mask(nameSelector);
+    }
 
     form.addEventListener('submit', handleFormSubmit);
   });
@@ -53,7 +53,7 @@ function handleFormSubmit(event) {
     console.log('Form data as array:', Array.from(formData.entries()));
 
     // Отправляем форму на сервер с помощью AJAX
-    sendFormData(formData);
+    sendFormData(formData, form);
   } else {
     // Если данные введены неправильно, добавляем стилизованное диагностическое сообщение
     const errorMessages = Array.from(form.querySelectorAll('.error-message'));
@@ -75,36 +75,38 @@ function handleFormSubmit(event) {
   }
 }
 
-function sendFormData(formData) {
-  // Здесь вы можете добавить код для отправки формы на сервер, например, с помощью AJAX
-  // После получения ответа от сервера об успешной отправке вызовите функцию showThanksModal()
-
+function sendFormData(formData, form) {
   console.log('Отправляемые данные формы:', Array.from(formData.entries()));
-  // Пример с использованием XMLHttpRequest
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'mail.php', true);
-  xhr.onload = function () {
+  xhr.open('POST', form.action);
+  xhr.onload = function() {
     if (xhr.status === 200) {
-      // Форма успешно отправлена
-      console.log('Отправлено')
-      // Показать отдельное окно src\partials\includes\modal-thanks.html
-      showThanksModal();
+      console.log('Форма успешно отправлена:', xhr.responseText);
+      // Закрываем модальное окно
+      const modalBackdrop = form.closest('.backdrop, .thanks-backdrop');
+      if (modalBackdrop) {
+        modalBackdrop.classList.remove('is-visible');
+      }
+      // Открываем окно "Спасибо"
+      const thanksModal = document.querySelector('.thanks-backdrop');
+      if (thanksModal) {
+        thanksModal.classList.add('is-visible');
+      }
     } else {
-      // Произошла ошибка
-      console.error('Ошибка отправки формы');
+      console.error('Ошибка при отправке формы:', xhr.status, xhr.statusText);
     }
+  };
+  xhr.onerror = function() {
+    console.error('Ошибка при отправке формы:', xhr.status, xhr.statusText);
   };
   xhr.send(formData);
 }
 
 function showThanksModal() {
-  // Закрываем модальное окно с формой
-  orderModal.classList.remove('.thanks-backdrop.is-visible');
-
-  // Показываем модальное окно "Спасибо" (проверить код на хостинге)
+  // Показываем модальное окно "Спасибо"
   thanksModal.style.display = 'block';
 
-  // Здесь вы можете добавить код для закрытия модального окна "Спасибо" при нажатии на кнопку "Ok"
+  // Закрыть модальное окно "Спасибо" при нажатии на кнопку "Ok"
   const okButton = thanksModal.querySelector('.btn-submit');
   okButton.addEventListener('click', () => {
     thanksModal.style.display = 'none';
