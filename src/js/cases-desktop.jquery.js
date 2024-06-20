@@ -33,7 +33,7 @@ const handleWideCardClick = function($card) {
   if ($description.hasClass('is-hidden')) {
     // Центрирование описания
     if (isRightAligned) {
-      $description.css('transform', 'translateX(-27vw)');
+      $description.css('transform', 'translateX(-26vw)');
     } else {
       $description.css('transform', 'translateX(0)');
     }
@@ -61,7 +61,7 @@ const handleNarrowCardClick = function($card) {
 
     // Центрирование описания
     if (isRightAligned) {
-      $description.css('transform', 'translateX(-27vw)');
+      $description.css('transform', 'translateX(-26vw)');
     } else {
       $description.css('transform', 'translateX(0)');
     }
