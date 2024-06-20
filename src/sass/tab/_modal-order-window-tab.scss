@@ -113,6 +113,7 @@
     background: var(--header-white-color);
 
     .thanks-modal-img {
+      display: block;
       border-radius: 4px;
       width: 214px;
       height: 290px;
@@ -172,6 +173,9 @@
     font-weight: 700;
     line-height: 1.4;
     display: flex;
+    .btn-icon{
+      display:block;
+  }
   }
   .thanks-btn-submit:hover{
     background: var(--button-hover-gradient);

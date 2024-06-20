@@ -6,7 +6,9 @@ import Inputmask from 'inputmask';
 initFormValidation();
 
 function initFormValidation() {
+  console.log('initFormValidation вызван');
   const forms = document.querySelectorAll('.form, .order-form form');
+  console.log('Выбранные формы:', forms);
 
   forms.forEach(form => {
     const telSelector = form.querySelector('input.input-tel');
@@ -47,7 +49,7 @@ function handleFormSubmit(event) {
 
   if (form.checkValidity()) {
     // Проверяем валидацию формы
-    console.log('Validation passes and form submitted', event);
+    console.log('Валидация пройдена и форма отправлена', event);
     const formData = new FormData(form);
     console.log('Form data:', formData);
     console.log('Form data as array:', Array.from(formData.entries()));
@@ -76,31 +78,23 @@ function handleFormSubmit(event) {
 }
 
 function sendFormData(formData) {
+    // После получения ответа от сервера об успешной отправке вызовите функцию showThanksModal()
+
   console.log('Отправляемые данные формы:', Array.from(formData.entries()));
+  // Пример с использованием XMLHttpRequest
   const xhr = new XMLHttpRequest();
   xhr.open('POST', 'mail.php', true);
   xhr.onload = function () {
     if (xhr.status === 200) {
       // Форма успешно отправлена
-      console.log('Форма успешно отправлена:', xhr.responseText);
-      // Закрываем модальное окно
-      const modalBackdrop = form.closest('.backdrop, .thanks-backdrop');
-      if (modalBackdrop) {
-        modalBackdrop.classList.remove('is-visible');
-      }
-      // Открываем окно "Спасибо"
-      const thanksModal = document.querySelector('.thanks-backdrop');
-      if (thanksModal) {
-        thanksModal.classList.add('is-visible');
-      }
+      console.log('Отправлено')
+      // Показать отдельное окно src\partials\includes\modal-thanks.html
+      showThanksModal();
     } else {
-      console.error('Ошибка при отправке формы:', xhr.status, xhr.statusText);
+      // Произошла ошибка
+      console.error('Ошибка отправки формы');
     }
   };
-  xhr.onerror = function() {
-    console.error('Ошибка при отправке формы:', xhr.status, xhr.statusText);
-  };
-  xhr.open('POST', 'mail.php', true);
   xhr.send(formData);
 }
 

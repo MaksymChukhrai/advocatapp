@@ -143,3 +143,74 @@ height: 16px;
     opacity: 1; /* Делаем модальное окно видимым при добавлении класса .is-visible */
     pointer-events: auto; /* Включаем взаимодействие с модальным окном */
   }
+  //thanks modal
+  .thanks-section-container{
+   width: 300px;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
+
+  .thanks-flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 16px;
+
+    background: var(--header-white-color);
+
+    .thanks-modal-img {
+display: none;
+    }
+    .thanks-main-modal {
+      padding: 0;
+      .thanks-main-modal-text {
+        margin: 20px 0px;
+        gap: 9px;
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 1.4;
+        }
+      }
+    }
+    .thanks-main-modal-socials {
+      padding: 8px 0px;
+        h3{
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 1.4; 
+          text-align: center;
+        }
+    }
+  }
+
+  .thanks-modal-btn{
+    padding: 20px 16px;
+   }
+
+   .thanks-btn-submit{
+    width: 268px;
+    margin:0;
+    border: 3px solid var(--bronze-button);
+    color: var(--black-button-color);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 14px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    display: flex;
+    .btn-icon{
+        display:none;
+    }
+  }
+
+  .thanks-btn-submit:hover{
+    background: var(--button-hover-gradient);
+    color:var(--header-white-color);
+    cursor: pointer;
+
+  }
