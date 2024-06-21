@@ -1,13 +1,10 @@
-// src/js/form-validate.js
-
-import JustValidate from 'just-validate';
+import JustValidate from 'just-validate/dist/just-validate.es.js';
 import Inputmask from 'inputmask';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded. Initializing form validation.');
   initFormValidation('.form');
 
-  // Обработчик для кнопки отправки в модальном окне
   const modalSubmitBtn = document.querySelector('.modal-submit-btn');
   if (modalSubmitBtn) {
     modalSubmitBtn.addEventListener('click', (event) => {
@@ -22,6 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
 function initFormValidation(formSelector) {
   console.log(`Initializing validation for forms: ${formSelector}`);
   const forms = document.querySelectorAll(formSelector);
@@ -35,13 +40,13 @@ function initFormValidation(formSelector) {
       : form.querySelector('.btn-submit');
     const telInput = form.querySelector('[data-validate-field="tel"]');
     const nameInput = form.querySelector('[data-validate-field="name"]');
-    
-    // Настройка Inputmask для поля телефона
+
     const inputMask = new Inputmask('+38 (999) 999-99-99', {
-      placeholder: "",
+      placeholder: " ",
       showMaskOnHover: false,
       clearIncomplete: true
     });
+
     inputMask.mask(telInput);
 
     console.log(`Creating JustValidate instance for form ${index + 1}`);
@@ -63,8 +68,8 @@ function initFormValidation(formSelector) {
         },
         {
           rule: 'minLength',
-          value: 2,
-          errorMessage: 'Мінімальна довжина 2 символи',
+          value: 3,
+          errorMessage: 'Мінімальна довжина 3 символи',
         },
         {
           rule: 'maxLength',
@@ -84,13 +89,11 @@ function initFormValidation(formSelector) {
         },
         {
           rule: 'function',
-          validator: function() { 
-            const value = telInput.inputmask.unmaskedvalue();
-            const isValid = value.length === 10;
-            console.log(`Phone number validation: ${isValid ? 'passed' : 'failed'}, Value: ${value}`);
-            return isValid;
+          validator: function(value) { 
+            const unmaskedValue = value.replace(/[^\d]/g, '');
+            return unmaskedValue.length === 12;
           },
-          errorMessage: 'Введіть коректний номер телефону',
+          errorMessage: 'Введіть повний номер телефону',
         },
       ]);
 
@@ -111,59 +114,60 @@ function initFormValidation(formSelector) {
       });
     });
 
-    // Добавляем обработчики для активации/деактивации кнопки отправки
     [nameInput, telInput].forEach(input => {
-      input.addEventListener('input', () => {
+      input.addEventListener('input', debounce(() => {
         validation.revalidate().then(isValid => {
           submitButton.disabled = !isValid;
         });
-      });
+      }, 1300)); // 300ms задержка
     });
 
-    // Изначально деактивируем кнопку отправки
     submitButton.disabled = true;
   });
 }
 
 function handleFormSubmit(form) {
-  console.log('Handling form submission');
-  const formData = new FormData(form);
-  console.log('Form data:', Object.fromEntries(formData));
-
-  // Здесь должен быть код для отправки данных на сервер
-  // Поскольку у вас нет бэкенда, мы просто имитируем отправку
-
-  setTimeout(() => {
-    console.log('Form data sent successfully');
-    showThanksModal();
-    form.reset();
-  }, 1000);
+  sendFormData(form, false);
 }
 
 function handleModalFormSubmit(form) {
-  console.log('Handling modal form submission');
+  sendFormData(form, true);
+}
+
+function sendFormData(form, isModal = false) {
+  console.log(`Sending ${isModal ? 'modal ' : ''}form data`);
   const formData = new FormData(form);
-  console.log('Modal form data:', Object.fromEntries(formData));
+  const formDataObj = {};
+  formData.forEach((value, key) => {
+    formDataObj[key] = value;
+  });
+  console.log('Form data:', formDataObj);
 
-  // Имитация отправки данных
-  setTimeout(() => {
-    console.log('Modal form data sent successfully');
-    
-    // Закрываем модальное окно
-    const modalElement = form.closest('.backdrop');
-    if (modalElement) {
-      modalElement.classList.remove('is-visible');
-      console.log('Modal window closed');
-    } else {
-      console.log('Modal element not found');
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        console.log('Відправлено');
+        alert('Слава Україні! Ваше повідомлення відправлено.👍');
+        
+        if (isModal) {
+          const modalElement = form.closest('.backdrop');
+          if (modalElement) {
+            modalElement.classList.remove('is-visible');
+            console.log('Modal window closed');
+          }
+        }
+
+        showThanksModal();
+        form.reset();
+      } else {
+        alert('Невдача! Введіть коректні дані і спробуйте знову.😕');
+      }
     }
+  }
 
-    // Показываем модальное окно с благодарностью
-    showThanksModal();
-
-    form.reset();
-    console.log('Modal form reset after submission');
-  }, 1000);
+  xhr.open('POST', 'mail.php', true);
+  xhr.send(formData);
 }
 
 function showThanksModal() {
