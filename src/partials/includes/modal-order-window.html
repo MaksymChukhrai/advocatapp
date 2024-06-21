@@ -26,23 +26,25 @@
           <div class="order-form modal-form">
             <h2>Замовити консультацію</h2>
             <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3>
-            <form action="#" class="form" method="POST">
-              <label class="form-label"
-                >Ім'я
+            <form action="#" class="form" autocomplete="off" method="POST">
+              <label class="form-label">
+                Ім'я
                 <input
                   type="text"
                   data-validate-field="name"
                   name="name"
                   placeholder="Ввести ім'я"
+                  autocomplete="off"
                   class="form-input input-name input-modal-name"
                 />
               </label>
-              <label class="form-label"
-                >Номер телефону
+              <label class="form-label">
+                Номер телефону
                 <input
                   type="tel"
                   data-validate-field="tel"
                   name="tel"
+                  autocomplete="off"
                   placeholder="Ввести номер"
                   class="form-input input-tel input-modal-tel"
                 />
@@ -116,18 +118,18 @@
           </div>
       </div>
     </div>
-    <div class="modal-order-btn">
-      <form class="form" action="#" method="POST">
-      <button class="btn-submit modal-submit-btn" data-modal-submit type="submit">
-        Передзвонити
-        <span class="btn-icon">
-          <svg >
-            <use href="./images/sprite.svg#phone"></use>
-          </svg>
-        </span>
-      </button>
+    <form class="modal-form" method="POST">
+      <div class="modal-order-btn">
+        <button class="btn-submit modal-submit-btn" data-modal-submit type="submit">
+          Передзвонити
+          <span class="btn-icon">
+            <svg>
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
     </form>
-    </div>
   </div>
 </div>
 </section>

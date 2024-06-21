@@ -259,23 +259,39 @@
             <div class="order-main">
               <h2>Замовити консультацію</h2>
               <h3>Заповніть форму нижче і я зв'яжуся з вами найближчим часом</h3>
-              <form action="#" class="form" method="POST">
-                <label class="form-label">Ім'я
-                  <input type="text" data-validate-field="name" name="name" placeholder="Ввести ім'я"
-                    class="form-input input-name" />
+              <form action="#" class="form" autocomplete="off" method="POST">
+                <label class="form-label">
+                  Ім'я
+                  <input
+                    type="text"
+                    data-validate-field="name"
+                    name="name"
+                    placeholder="Ввести ім'я"
+                    autocomplete="off"
+                    class="form-input input-name"
+                  />
                 </label>
-                <label class="form-label">Номер телефону
-                  <input type="tel" data-validate-field="tel" name="tel" placeholder="Ввести номер"
-                    class="form-input input-tel" />
+                <label class="form-label">
+                  Номер телефону
+                  <input
+                    type="tel"
+                    data-validate-field="tel"
+                    name="tel"
+                    autocomplete="off"
+                    placeholder="Ввести номер"
+                    class="form-input input-tel"
+                  />
                 </label>
-                <button class="btn-submit" type="submit">
-                  Передзвонити
-                  <span class="btn-icon">
-                    <svg width="17" height="16">
-                      <use href="./images/sprite.svg#phone"></use>
-                    </svg>
-                  </span>
-                </button>
+                <div class="form-btn">
+                  <button class="btn-submit" id="submit-btn" type="submit">
+                    Передзвонити
+                    <span class="btn-icon">
+                      <svg>
+                        <use href="./images/sprite.svg#phone"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
               </form>
             </div>
             <div class="main-socials">
@@ -384,6 +400,8 @@
   <script type="module" src="./js/slick-carousel-main.js"></script>
   <!-- validation script -->
   <script src="./js/form-validate.js" type="module"></script>
+
+
 
 </body>
 

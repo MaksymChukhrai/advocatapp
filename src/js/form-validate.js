@@ -1,114 +1,183 @@
-//src\js\form-validate.js
+// src/js/form-validate.js
 
+import JustValidate from 'just-validate';
 import Inputmask from 'inputmask';
 
-// Инициализация валидации форм
-initFormValidation();
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded. Initializing form validation.');
+  initFormValidation('.form');
 
-function initFormValidation() {
-  console.log('initFormValidation вызван');
-  const forms = document.querySelectorAll('.form, .order-form form');
-  console.log('Выбранные формы:', forms);
+  // Обработчик для кнопки отправки в модальном окне
+  const modalSubmitBtn = document.querySelector('.modal-submit-btn');
+  if (modalSubmitBtn) {
+    modalSubmitBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      const modalForm = document.querySelector('.modal-order-window .form');
+      if (modalForm) {
+        modalForm.dispatchEvent(new Event('submit'));
+      } else {
+        console.error('Modal form not found');
+      }
+    });
+  }
+});
 
-  forms.forEach(form => {
-    const telSelector = form.querySelector('input.input-tel');
-    if (telSelector) {
-      const inputMask = new Inputmask('+38 (999) 999-99-99');
-      inputMask.mask(telSelector);
-    }
+function initFormValidation(formSelector) {
+  console.log(`Initializing validation for forms: ${formSelector}`);
+  const forms = document.querySelectorAll(formSelector);
+  
+  forms.forEach((form, index) => {
+    const isModal = form.closest('.modal-order-window') !== null;
+    console.log(`Form ${index + 1} is modal: ${isModal}`);
 
-    const nameSelector = form.querySelector('input.input-name');
-    if (nameSelector) {
-      const nameMask = new Inputmask({
-        regex: "[A-Za-zа-яА-ЯёЁ\\s]{3,30}",
-        placeholder: "",
-        showMaskOnHover: false,
-        clearIncomplete: true,
-        oncomplete: function () {
-          // Валидация завершена успешно
+    const submitButton = isModal 
+      ? document.querySelector('.modal-submit-btn') 
+      : form.querySelector('.btn-submit');
+    const telInput = form.querySelector('[data-validate-field="tel"]');
+    const nameInput = form.querySelector('[data-validate-field="name"]');
+    
+    // Настройка Inputmask для поля телефона
+    const inputMask = new Inputmask('+38 (999) 999-99-99', {
+      placeholder: "",
+      showMaskOnHover: false,
+      clearIncomplete: true
+    });
+    inputMask.mask(telInput);
+
+    console.log(`Creating JustValidate instance for form ${index + 1}`);
+    const validation = new JustValidate(form, {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'is-label-invalid',
+      errorLabelStyle: {
+        color: 'red',
+        textDecoration: 'underlined',
+      },
+      focusInvalidField: false,
+    });
+
+    validation
+      .addField('[data-validate-field="name"]', [
+        {
+          rule: 'required',
+          errorMessage: 'Ім\'я обов\'язкове',
         },
-        onincomplete: function () {
-          // Валидация не завершена
+        {
+          rule: 'minLength',
+          value: 2,
+          errorMessage: 'Мінімальна довжина 2 символи',
         },
-        oncleared: function () {
-          // Поле очищено
+        {
+          rule: 'maxLength',
+          value: 30,
+          errorMessage: 'Максимальна довжина 30 символів',
+        },
+        {
+          rule: 'customRegexp',
+          value: /^[A-Za-zа-яА-ЯёЁіІїЇєЄ'\s-]+$/,
+          errorMessage: 'Допустимі тільки літери, апостроф та дефіс',
+        },
+      ])
+      .addField('[data-validate-field="tel"]', [
+        {
+          rule: 'required',
+          errorMessage: 'Номер телефону обов\'язковий',
+        },
+        {
+          rule: 'function',
+          validator: function() { 
+            const value = telInput.inputmask.unmaskedvalue();
+            const isValid = value.length === 10;
+            console.log(`Phone number validation: ${isValid ? 'passed' : 'failed'}, Value: ${value}`);
+            return isValid;
+          },
+          errorMessage: 'Введіть коректний номер телефону',
+        },
+      ]);
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      console.log(`Form ${index + 1} submission attempt`);
+      validation.validate().then((isValid) => {
+        console.log(`Form ${index + 1} validation result: ${isValid ? 'valid' : 'invalid'}`);
+        if (isValid) {
+          if (isModal) {
+            handleModalFormSubmit(form);
+          } else {
+            handleFormSubmit(form);
+          }
+        } else {
+          console.log(`Validation failed for form ${index + 1}`);
         }
       });
-      nameMask.mask(nameSelector);
-    }
+    });
 
-    form.addEventListener('submit', handleFormSubmit);
+    // Добавляем обработчики для активации/деактивации кнопки отправки
+    [nameInput, telInput].forEach(input => {
+      input.addEventListener('input', () => {
+        validation.revalidate().then(isValid => {
+          submitButton.disabled = !isValid;
+        });
+      });
+    });
+
+    // Изначально деактивируем кнопку отправки
+    submitButton.disabled = true;
   });
 }
 
-function handleFormSubmit(event) {
-  console.log('Form submitted:', event.target);
-  event.preventDefault();
+function handleFormSubmit(form) {
+  console.log('Handling form submission');
+  const formData = new FormData(form);
+  console.log('Form data:', Object.fromEntries(formData));
 
-  const form = event.target;
+  // Здесь должен быть код для отправки данных на сервер
+  // Поскольку у вас нет бэкенда, мы просто имитируем отправку
 
-  if (form.checkValidity()) {
-    // Проверяем валидацию формы
-    console.log('Валидация пройдена и форма отправлена', event);
-    const formData = new FormData(form);
-    console.log('Form data:', formData);
-    console.log('Form data as array:', Array.from(formData.entries()));
-
-    // Отправляем форму на сервер с помощью AJAX
-    sendFormData(formData, form);
-  } else {
-    // Если данные введены неправильно, добавляем стилизованное диагностическое сообщение
-    const errorMessages = Array.from(form.querySelectorAll('.error-message'));
-    errorMessages.forEach(message => message.remove());
-
-    const invalidFields = Array.from(form.querySelectorAll(':invalid'));
-    invalidFields.forEach(field => {
-      const errorMessage = document.createElement('div');
-      errorMessage.classList.add('error-message');
-      errorMessage.textContent = 'Введіть коректні дані';
-      field.parentNode.appendChild(errorMessage);
-    });
-
-    // Через некоторое время убираем сообщение об ошибке
-    setTimeout(() => {
-      const errorMessages = Array.from(form.querySelectorAll('.error-message'));
-      errorMessages.forEach(message => message.remove());
-    }, 3000);
-  }
+  setTimeout(() => {
+    console.log('Form data sent successfully');
+    showThanksModal();
+    form.reset();
+  }, 1000);
 }
 
-function sendFormData(formData) {
-    // После получения ответа от сервера об успешной отправке вызовите функцию showThanksModal()
+function handleModalFormSubmit(form) {
+  console.log('Handling modal form submission');
+  const formData = new FormData(form);
+  console.log('Modal form data:', Object.fromEntries(formData));
 
-  console.log('Отправляемые данные формы:', Array.from(formData.entries()));
-  // Пример с использованием XMLHttpRequest
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'mail.php', true);
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      // Форма успешно отправлена
-      console.log('Отправлено')
-      // Показать отдельное окно src\partials\includes\modal-thanks.html
-      showThanksModal();
+  // Имитация отправки данных
+  setTimeout(() => {
+    console.log('Modal form data sent successfully');
+    
+    // Закрываем модальное окно
+    const modalElement = form.closest('.backdrop');
+    if (modalElement) {
+      modalElement.classList.remove('is-visible');
+      console.log('Modal window closed');
     } else {
-      // Произошла ошибка
-      console.error('Ошибка отправки формы');
+      console.log('Modal element not found');
     }
-  };
-  xhr.send(formData);
+
+    // Показываем модальное окно с благодарностью
+    showThanksModal();
+
+    form.reset();
+    console.log('Modal form reset after submission');
+  }, 1000);
 }
 
 function showThanksModal() {
-  // Открываем окно "Спасибо"
+  console.log('Showing thanks modal');
   const thanksModal = document.querySelector('.thanks-backdrop');
   if (thanksModal) {
     thanksModal.classList.add('is-visible');
 
-    // Закрыть модальное окно "Спасибо" при нажатии на кнопку "Ok"
     const okButton = thanksModal.querySelector('.thanks-btn-submit');
     okButton.addEventListener('click', () => {
       thanksModal.classList.remove('is-visible');
+      console.log('Thanks modal closed');
     });
+  } else {
+    console.log('Thanks modal not found');
   }
 }
-

@@ -7,7 +7,6 @@
 		"start": "parcel src/index.html",
 		"build": "parcel build src/*.html --public-url /advocatapp/"
 	},
-
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/MaksymChukhrai/advocatapp.git"
@@ -21,6 +20,7 @@
 	"dependencies": {
 		"inputmask": "^5.0.8",
 		"jquery": "^3.7.1",
+		"just-validate": "^4.3.0",
 		"modern-normalize": "^1.1.0",
 		"parcel-bundler": "^1.12.5",
 		"slick-carousel": "^1.8.1"
