@@ -11,6 +11,7 @@ footer {
   margin: 0 auto;
 }
 
+
 .all-rights h3,
 .socials h3,
 .logo-slogan {
@@ -49,8 +50,17 @@ footer {
 }
 .all-rights{
   display: flex;
+  gap:20px;
   justify-content: center;
   margin-top: 10px;
   padding-bottom: 14px;
+  h3 a {
+    color: inherit; 
+    text-decoration: none; 
+  }
+  h3 a:hover {
+    text-decoration: underline; /* Добавить подчеркивание при наведении */
+  cursor:pointer;
+  }
 }
 

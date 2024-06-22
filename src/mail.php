@@ -44,6 +44,7 @@ try {
   // Получатель письма
 
   $mail->addAddress('m.chukhrai@gmail.com');
+  $mail->addAddress('tarasenko.igor@ukr.net');
  
 
   // Прикрипление файлов к письму
