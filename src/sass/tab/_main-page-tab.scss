@@ -230,6 +230,14 @@
     h3 {
       font-size: 16px;
     }
+    .social-container{
+      .main-social-icons{
+  
+        width: 300px;
+        justify-content: flex-start;
+        gap: 80px;
+      }
+    }
   }
   .main-social-icons {
     margin-top: 20px;
