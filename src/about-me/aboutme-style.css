@@ -1,0 +1,227 @@
+:root{
+    --primary-white-color: #ffffff;
+    --test-background-color: rgba(0, 0, 4);
+--accent-blue-color:#007bff;
+}
+body{
+    background-color:var(--test-background-color);
+    color:var(--primary-white-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+      text-align: justify;
+      font-weight: 400;
+      font-size: 16px;
+}
+.video-bg{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.effects{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.main-container{
+    max-width:425px ;
+    margin:0 auto;
+    padding: 15px;
+    z-index: 2;
+}
+.lang{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+.lang a {
+    color: var(--primary-white-color); /* Устанавливаем цвет для неактивных ссылок */
+    text-decoration: none;
+}
+.lang a:active {
+    color:var(--accent-blue-color);
+}
+.english:hover,
+.ukrain:hover,
+.russian:hover{
+cursor: pointer;
+}
+.project-link {
+    color: var(--accent-blue-color);
+}
+
+.project-link:active {
+    color: var(--primary-white-color);
+}
+
+.about-title{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+.myphoto {
+    width: 200px; /* Задайте ширину и высоту контейнера */
+    height: 200px;
+    border-radius: 50%; /* Сделайте круглый контейнер с помощью border-radius */
+    overflow: hidden; /* Обрежьте фотографию по границам контейнера */
+margin:0 auto;
+margin-bottom:20px;
+
+}
+
+.myphoto img {
+    width: 100%; /* Заполните 100% ширины контейнера */
+    height: 100%; /* Поддерживайте пропорции изображения */
+    display: block; /* Уберите лишние промежутки отображения в строке */
+    object-fit: cover; /* Сохраните пропорции и обрежьте изображение, чтобы оно полностью заполняло контейнер */
+    object-position: 50% 50%; /* Сместите видимую часть изображения вправо на 20% и по вертикали по центру (настройте значения в соответствии с вашими потребностями) */
+}
+.aboutme{
+    font-weight: 400;
+    font-size: 16px;
+}
+h2{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+.skills-items>li:not(:last-child){
+    margin-bottom:15px;
+}
+.skills-items li strong {
+    font-weight: bold; /* Жирный шрифт для тега strong */
+    font-size: 18px;
+    color: #007bff; /* Цвет текста (можете выбрать свой цвет) */
+  }
+  .whyme-items>li:not(:last-child){
+    margin-bottom:15px;
+}
+.whyme-items li strong {
+    font-weight: bold; /* Жирный шрифт для тега strong */
+    font-size: 18px;
+    color: #007bff; /* Цвет текста (можете выбрать свой цвет) */
+  }
+
+.socials{
+    margin-top:30px;
+}
+.social-items{
+    display:flex;
+    gap:50px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom:20px;
+
+}
+.social-icon-1,
+.social-icon-2,
+.social-icon-3{
+    fill:var(--primary-white-color);
+}
+.social-icon-3{
+    width: 55px;
+    height:55px;
+    padding-bottom: 5px;
+}
+.social-icon-1:hover,
+.social-icon-1:focus{
+    fill:red;
+}
+.social-icon-2:hover,
+.social-icon-2:focus{
+    fill:#0088CC;
+}
+.social-icon-3:hover,
+.social-icon-3:focus{
+    fill:#0077B5;
+}
+@media screen and (min-width: 768px) {
+    .main-container {
+    max-width: 768px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        max-width: 1200px;
+        position: relative;
+        }
+    .aboutme,
+    .skills,
+    .mission,
+    .whyme,
+    .mycontacts,
+    .socials,
+    .project-title {
+        position: absolute;
+        padding: 20px;
+        /* border: 1px solid #ccc;
+        border-radius: 10px; */
+        }
+
+
+     .aboutme{
+        width: 400px;
+        top: 20vh;
+        left: -55vh;
+     }
+     .skills{
+        width: 650px;
+        top: 60vh;
+        left: -55vh;
+     }
+     .mission{
+        width: 500px;
+        top: 20vh;
+        left: 57vh;
+     }
+     .whyme{
+        width: 650px;
+        top: 50vh;
+        left: 40vh;
+     }
+     .project-title{
+        width: 550px;
+        top: 115vh;
+        left: 45vh;
+     }
+
+.mycontacts{
+    width: 550px;
+    top: 120vh;
+    left: -40vh;
+}
+
+.socials{
+    margin-top:0;
+    position: inherit;
+    top: 100vh;
+    left: -10vw;
+    border:0;
+}
+.social-items{
+    padding-bottom: 0;
+}
+
+}
