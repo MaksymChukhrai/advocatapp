@@ -148,7 +148,7 @@ function sendFormData(form, isModal = false) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         console.log('Відправлено');
-        alert('Слава Україні! Ваше повідомлення відправлено.👍');
+        // alert('Слава Україні! Ваше повідомлення відправлено.👍');
         
         if (isModal) {
           const modalElement = form.closest('.backdrop');
