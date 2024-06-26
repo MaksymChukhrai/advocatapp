@@ -1,151 +1,171 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fintech</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <include src="./partials/includes/header.html"></include>
-    <main>
-      <div class="service-types-pc-gradient-container"> 
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKWS0HTM5G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WKWS0HTM5G');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- <script type="module" src="./index.js"></script> -->
+</head>
+
+<body>
+  <include src="./partials/includes/header.html"></include>
+  <main>
+    <div class="service-types-pc-gradient-container">
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
-<!-- добавлено -->
-<div class="service-flex-container">
-  <div class="side-buttons">
-    <include src="./partials/includes/side-service-buttons.html"></include>
-  </div>
-<!-- добавлено -->
-<div class="service-img-flex-container">
-  <!-- вставить новую картинку в CSS -->
-  <div class="service-types-img-pc  fintech-img-pc"></div>
-          <div class="service-title">
- <!-- добавлено --> 
-          <div class="service-title-flex-container" >           
-            <img src="./images/fintech.png" alt="#" />
-            <h1>Fintech</h1>
-          </div>
-          <!-- добавлено -->           
-            <div class="migration-serv-img fintech-img"></div>
-            <article>
-              <p class="fintech-descr">
-                Фінтех – сфера, що динамічно розвивається та потребує чіткої та продуманої правової підтримки. Я готовий запропонувати вам допомогу у різноманітних питаннях у світі гемблінг-індустрії, консультації та отримання ліцензій на криптовалюту, платіжні системи або інші проекти у галузі фінтеху.
-              </p>
-            </article>
-            <button type="button" class="services-btn" data-modal-open>
-              Замовити консультацію
-            </button>
-          </div>
-           <!-- закрыть <div flex-container> -->
-          </div>
-        </div>      
-        <div class="service-type-pc-flex-container">
-           <div class="side-buttons-pc-flex-container">
-             <include src="./partials/includes/side-service-buttons.html"></include>
-           </div>
-       <div class="service-type-pc-block-container">
-
-
-          <div class="whyme-title">
-            <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
-            <p>
-                Я, як досвідчений юрист у сфері фінтех, можу допомогти вам з будь-якими юридичними питаннями, пов'язаними з:
-            </p>
-            <!-- контейнер для компоновки на min width -PC -->
-            <div class="pc-service-title-container">
-              <div class="pc-column-service-items">
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Дотримання вимог регулюючих органів</h3>
+          <!-- добавлено -->
+          <div class="service-flex-container">
+            <div class="side-buttons">
+              <include src="./partials/includes/side-service-buttons.html"></include>
+            </div>
+            <!-- добавлено -->
+            <div class="service-img-flex-container">
+              <!-- вставить новую картинку в CSS -->
+              <div class="service-types-img-pc  fintech-img-pc"></div>
+              <div class="service-title">
+                <!-- добавлено -->
+                <div class="service-title-flex-container">
+                  <img src="./images/fintech.png" alt="#" />
+                  <h1>Fintech</h1>
                 </div>
-                <p>
-                    Я допоможу вам орієнтуватися у складній сфері правових норм гемблінгу та забезпечу дотримання відповідних вимог закону;
-                </p>
+                <!-- добавлено -->
+                <div class="migration-serv-img fintech-img"></div>
+                <article>
+                  <p class="fintech-descr">
+                    Фінтех – сфера, що динамічно розвивається та потребує чіткої та продуманої правової підтримки. Я
+                    готовий запропонувати вам допомогу у різноманітних питаннях у світі гемблінг-індустрії, консультації
+                    та отримання ліцензій на криптовалюту, платіжні системи або інші проекти у галузі фінтеху.
+                  </p>
+                </article>
+                <button type="button" class="services-btn" data-modal-open>
+                  Замовити консультацію
+                </button>
               </div>
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>
-                    Отримання ліцензії
-                  </h3>
-                </div>
+              <!-- закрыть <div flex-container> -->
+            </div>
+          </div>
+          <div class="service-type-pc-flex-container">
+            <div class="side-buttons-pc-flex-container">
+              <include src="./partials/includes/side-service-buttons.html"></include>
+            </div>
+            <div class="service-type-pc-block-container">
+
+
+              <div class="whyme-title">
+                <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
                 <p>
-                    Надам вам підтримку у отриманні необхідних ліцензій для вашої діяльності в сфері гемблінгу та забезпечу гладку і ефективну взаємодію з регуляторами;
+                  Я, як досвідчений юрист у сфері фінтех, можу допомогти вам з будь-якими юридичними питаннями,
+                  пов'язаними з:
+                </p>
+                <!-- контейнер для компоновки на min width -PC -->
+                <div class="pc-service-title-container">
+                  <div class="pc-column-service-items">
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Дотримання вимог регулюючих органів</h3>
+                      </div>
+                      <p>
+                        Я допоможу вам орієнтуватися у складній сфері правових норм гемблінгу та забезпечу дотримання
+                        відповідних вимог закону;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>
+                          Отримання ліцензії
+                        </h3>
+                      </div>
+                      <p>
+                        Надам вам підтримку у отриманні необхідних ліцензій для вашої діяльності в сфері гемблінгу та
+                        забезпечу гладку і ефективну взаємодію з регуляторами;
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="pc-column-service-items">
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Управління ризиками</h3>
+                      </div>
+                      <p>
+                        Допоможу виявити й знизити потенційні ризики, пов’язані з вашим гемблінг-бізнесом,
+                        і розроблю стратегію для їх ефективного управління;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Правові консультації</h3>
+                      </div>
+                      <p>
+                        Надам консультації з питань стратегії, маркетингу, розвитку бізнесу та інших
+                        аспектів гемблінг-індустрії.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- контейнер для компоновки на min width -PC -->
+              </div>
+              <div class="service-item-bottom-text">
+                <p>
+                  Я гарантую кожному клієнту прозорі ціни та ефективний результат.
+                </p>
+                <br />
+                <p>
+                  Для отримання додаткової консультацій залиште заявку на сайті або
+                  просто зателефонуйте.
                 </p>
               </div>
             </div>
-
-            <div class="pc-column-service-items">
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Управління ризиками</h3>
-                </div>
-                <p>
-                    Допоможу виявити й знизити потенційні ризики, пов’язані з вашим гемблінг-бізнесом, і розроблю стратегію для їх ефективного управління;
-                </p>
-              </div>
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Правові консультації</h3>
-                </div>
-                <p>
-                    Надам консультації з питань стратегії, маркетингу, розвитку бізнесу та інших аспектів гемблінг-індустрії.
-                </p>
-              </div>
-            </div>
-            </div>
-            <!-- контейнер для компоновки на min width -PC -->
-          </div>
-          <div class="service-item-bottom-text">
-            <p>
-              Я гарантую кожному клієнту прозорі ціни та ефективний результат.
-            </p>
-            <br />
-            <p>
-              Для отримання додаткової консультацій залиште заявку на сайті або
-              просто зателефонуйте.
-            </p>
           </div>
         </div>
-      </div>
-    </div>
       </section>
     </div>
-      <include src="./partials/includes/order-form.html"></include>
-    </main>
-    <include src="./partials/includes/footer.html"></include>
-  
-    <!-- modal windows html components-->
-    <include src="./partials/includes/modal-order-window.html"></include>
-    <include src="./partials/includes/modal-thanks.html"></include>
-    <!-- modal windows script -->
-    <script defer src="./js/modal-order-window.js"></script>
-    <!-- mobile menu script -->
-    <script defer src="./js/my-mobile-menu.js"></script>
-    <!-- redirect service types script -->
-    <script defer src="./js/service-types-script.js"></script>
+    <include src="./partials/includes/order-form.html"></include>
+  </main>
+  <include src="./partials/includes/footer.html"></include>
 
-      <!-- redirect service types script for side menu tab and PC-->
-    <script type="module" src="./js/service-types-sidebar-script.js"></script>
-    <!-- <script type="module" src="./js/proba.js"></script> -->
+  <!-- modal windows html components-->
+  <include src="./partials/includes/modal-order-window.html"></include>
+  <include src="./partials/includes/modal-thanks.html"></include>
+  <!-- modal windows script -->
+  <script defer src="./js/modal-order-window.js"></script>
+  <!-- mobile menu script -->
+  <script defer src="./js/my-mobile-menu.js"></script>
+  <!-- redirect service types script -->
+  <script defer src="./js/service-types-script.js"></script>
 
-   <!-- validation script -->
-   <script src="./js/form-validate.js" type="module"></script>
-   
-  </body>
+  <!-- redirect service types script for side menu tab and PC-->
+  <script type="module" src="./js/service-types-sidebar-script.js"></script>
+  <!-- <script type="module" src="./js/proba.js"></script> -->
+
+  <!-- validation script -->
+  <script src="./js/form-validate.js" type="module"></script>
+
+</body>
+
 </html>

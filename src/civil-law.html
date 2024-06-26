@@ -1,173 +1,189 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Цивільна практика</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <include src="./partials/includes/header.html"></include>
-    <main>
-      <div class="service-types-pc-gradient-container">  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKWS0HTM5G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WKWS0HTM5G');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Цивільна практика</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- <script type="module" src="./index.js"></script> -->
+</head>
+
+<body>
+  <include src="./partials/includes/header.html"></include>
+  <main>
+    <div class="service-types-pc-gradient-container">
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
-<!-- добавлено -->
-<div class="service-flex-container">
-  <div class="side-buttons">
-    <include src="./partials/includes/side-service-buttons.html"></include>
-  </div>
-<!-- добавлено -->
-<div class="service-img-flex-container">
-  <!-- вставить новую картинку в CSS -->
-  <div class="service-types-img-pc  civil-img-pc"></div>
-        <div class="service-title">
-  <!-- добавлено --> 
-          <div class="service-title-flex-container" >
-            <img src="./images/civil-law.png" alt="#" />
-            <h1>Цивільна практика</h1>
+          <!-- добавлено -->
+          <div class="service-flex-container">
+            <div class="side-buttons">
+              <include src="./partials/includes/side-service-buttons.html"></include>
+            </div>
+            <!-- добавлено -->
+            <div class="service-img-flex-container">
+              <!-- вставить новую картинку в CSS -->
+              <div class="service-types-img-pc  civil-img-pc"></div>
+              <div class="service-title">
+                <!-- добавлено -->
+                <div class="service-title-flex-container">
+                  <img src="./images/civil-law.png" alt="#" />
+                  <h1>Цивільна практика</h1>
+                </div>
+                <!-- добавлено -->
+                <div class="migration-serv-img civil-img"></div>
+                <article>
+                  <p class="civil-descr">
+                    Цивільні справи – найпоширеніша і одночасно найскладніша категорія суперечок в судах України. В
+                    основі зазначених конфліктів лежить принцип суперництва і рівноправності сторін, тож у таких
+                    конфліктах перемагає той, хто краще підготовлений юридично. Адвокат по цивільних справах – це ваша
+                    можливість бути переможцем в будь-якому судовому змаганні.
+                  </p>
+                </article>
+                <button type="button" class="services-btn" data-modal-open>
+                  Замовити консультацію
+                </button>
+              </div>
+              <!-- закрыть <div flex-container> -->
+            </div>
           </div>
-  <!-- добавлено -->          
-            <div class="migration-serv-img civil-img"></div>
-            <article>
-              <p class="civil-descr">
-                Цивільні справи – найпоширеніша і одночасно найскладніша категорія суперечок в судах України. В основі зазначених конфліктів лежить принцип суперництва і рівноправності сторін, тож у таких конфліктах перемагає той, хто краще підготовлений юридично. Адвокат по цивільних справах – це ваша можливість бути переможцем в будь-якому судовому змаганні.
-              </p>
-            </article>
-            <button type="button" class="services-btn" data-modal-open>
-              Замовити консультацію
-            </button>
-          </div>
-          <!-- закрыть <div flex-container> -->
-          </div>
-        </div>
-        <div class="service-type-pc-flex-container">
-          <div class="side-buttons-pc-flex-container">
-            <include src="./partials/includes/side-service-buttons.html"></include>
-          </div>
-      <div class="service-type-pc-block-container">
+          <div class="service-type-pc-flex-container">
+            <div class="side-buttons-pc-flex-container">
+              <include src="./partials/includes/side-service-buttons.html"></include>
+            </div>
+            <div class="service-type-pc-block-container">
 
-          <div class="whyme-title">
-            <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
-            <p>
-                Я маю великий досвід роботи з широким спектром цивільних справ, включаючи:
-            </p>
-            <!-- контейнер для компоновки на min width -PC -->
-            <div class="pc-service-title-container">
-              <div class="pc-column-service-items">
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Договірні зобов’язання</h3>
-                </div>
+              <div class="whyme-title">
+                <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
                 <p>
-                    Стягнення штрафних санкцій і примус з боку до виконання обов’язків;
+                  Я маю великий досвід роботи з широким спектром цивільних справ, включаючи:
                 </p>
-              </div>
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>
-                    Економічні операції між комерційними організаціями
-                  </h3>
+                <!-- контейнер для компоновки на min width -PC -->
+                <div class="pc-service-title-container">
+                  <div class="pc-column-service-items">
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Договірні зобов’язання</h3>
+                      </div>
+                      <p>
+                        Стягнення штрафних санкцій і примус з боку до виконання обов’язків;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>
+                          Економічні операції між комерційними організаціями
+                        </h3>
+                      </div>
+                      <p>
+                        Неякісні поставки, прострочення виробництва та інші важливі види діяльності;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Право власності</h3>
+                      </div>
+                      <p>
+                        Визнання прав на майно та витребування своєї речі з чужого незаконного володіння;
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="pc-column-service-items">
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Права споживачів</h3>
+                      </div>
+                      <p>
+                        Захист прав споживачів у разі придбання неякісних товарів або отримання неякісних послуг;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Спадкові справи
+                        </h3>
+                      </div>
+                      <p>
+                        Вступ у спадкові права, вирішення спорів між спадкоємцями;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Надання послуг та виконання робіт</h3>
+                      </div>
+                      <p>
+                        Захист прав замовників та виконавців послуг та робіт.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <!-- контейнер для компоновки на min width -PC -->
+              </div>
+              <div class="service-item-bottom-text">
                 <p>
-                    Неякісні поставки, прострочення виробництва та інші важливі види діяльності;
+                  Я гарантую кожному клієнту прозорі ціни та ефективний результат.
                 </p>
-              </div>
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Право власності</h3>
-                </div>
+                <br />
                 <p>
-                    Визнання прав на майно та витребування своєї речі з чужого незаконного володіння;
+                  Для отримання додаткової консультацій залиште заявку на сайті або
+                  просто зателефонуйте.
                 </p>
               </div>
             </div>
-
-            <div class="pc-column-service-items">
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Права споживачів</h3>
-                </div>
-                <p>
-                    Захист прав споживачів у разі придбання неякісних товарів або отримання неякісних послуг;
-                </p>
-              </div>
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Спадкові справи
-                  </h3>
-                </div>
-                <p>
-                    Вступ у спадкові права, вирішення спорів між спадкоємцями;
-                </p>
-              </div>
-              <div class="service-item">
-                <div class="service-details">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#circle-yes"></use>
-                  </svg>
-                  <h3>Надання послуг та виконання робіт</h3>
-                </div>
-                <p>
-                    Захист прав замовників та виконавців послуг та робіт.
-                </p>
-              </div>
-            </div>
-          </div>
-            <!-- контейнер для компоновки на min width -PC -->
-          </div>
-          <div class="service-item-bottom-text">
-            <p>
-              Я гарантую кожному клієнту прозорі ціни та ефективний результат.
-            </p>
-            <br />
-            <p>
-              Для отримання додаткової консультацій залиште заявку на сайті або
-              просто зателефонуйте.
-            </p>
           </div>
         </div>
-      </div>
-    </div>
       </section>
     </div>
-      <include src="./partials/includes/order-form.html"></include>
-    </main>
-    <include src="./partials/includes/footer.html"></include>
-  
-    <!-- modal windows html components-->
-    <include src="./partials/includes/modal-order-window.html"></include>
-    <include src="./partials/includes/modal-thanks.html"></include>
-    <!-- modal windows script -->
-    <script defer src="./js/modal-order-window.js"></script>
-    <!-- mobile menu script -->
-    <script defer src="./js/my-mobile-menu.js"></script>
-    <!-- redirect service types script -->
-    <script defer src="./js/service-types-script.js"></script>
+    <include src="./partials/includes/order-form.html"></include>
+  </main>
+  <include src="./partials/includes/footer.html"></include>
 
-      <!-- redirect service types script for side menu tab and PC-->
-    <script type="module" src="./js/service-types-sidebar-script.js"></script>
-    <!-- <script type="module" src="./js/proba.js"></script> -->
+  <!-- modal windows html components-->
+  <include src="./partials/includes/modal-order-window.html"></include>
+  <include src="./partials/includes/modal-thanks.html"></include>
+  <!-- modal windows script -->
+  <script defer src="./js/modal-order-window.js"></script>
+  <!-- mobile menu script -->
+  <script defer src="./js/my-mobile-menu.js"></script>
+  <!-- redirect service types script -->
+  <script defer src="./js/service-types-script.js"></script>
 
-   <!-- validation script -->
-   <script src="./js/form-validate.js" type="module"></script>
-   
-  </body>
+  <!-- redirect service types script for side menu tab and PC-->
+  <script type="module" src="./js/service-types-sidebar-script.js"></script>
+  <!-- <script type="module" src="./js/proba.js"></script> -->
+
+  <!-- validation script -->
+  <script src="./js/form-validate.js" type="module"></script>
+
+</body>
+
 </html>

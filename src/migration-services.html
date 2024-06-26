@@ -1,233 +1,246 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Міграційні послуги</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <include src="./partials/includes/header.html"></include>
-    <main>
-      <div class="service-types-pc-gradient-container">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKWS0HTM5G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WKWS0HTM5G');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Міграційні послуги</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- <script type="module" src="./index.js"></script> -->
+</head>
+
+<body>
+  <include src="./partials/includes/header.html"></include>
+  <main>
+    <div class="service-types-pc-gradient-container">
       <include src="./partials/includes/service-types.html"></include>
       <section class="migration-serv-section">
         <div class="migration-serv-container">
-<!-- добавлено -->
+          <!-- добавлено -->
           <div class="service-flex-container">
             <div class="side-buttons">
               <include src="./partials/includes/side-service-buttons.html"></include>
             </div>
-<!-- добавлено -->
-  <div class="service-img-flex-container">
-    <div class="service-types-img-pc migration-img-pc"></div>
-          <div class="service-title">
-<!-- добавлено --> 
-              <div class="service-title-flex-container" >
-                <img src="./images/migration-logo.png" alt="#" />
-                <h1>Міграційні послуги</h1>
-              </div>
-  <!-- добавлено --> 
-            <div class="migration-serv-img migration-img"></div>
-            <article>
-              <p class="migtation-descr">
-                Це галузь права, яка стосується переміщення осіб між країнами,
-                визначає їхні правові статуси та обов'язки в новому місці
-                проживання. Ця галузь права регулює питання візових режимів та
-                дозволів на працевлаштування до статусу біженців та отримання
-                громадянства.
-              </p>
-            </article>
-            <button type="button" class="services-btn" data-modal-open>
-              Замовити консультацію
-            </button>
-          </div>
-  </div>
-           <!-- закрыть <div flex-container> -->
-        </div>
-
-<div class="service-type-pc-flex-container">
-        <div class="side-buttons-pc-flex-container">
-          <include src="./partials/includes/side-service-buttons.html"></include>
-        </div>
-        <div class="service-type-pc-block-container">
-          <div class="whyme-title">
-            <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
-            <p>Завдання які вирішує адвокат з міграційних питань:</p>
-            <!-- контейнер для компоновки на min width -PC -->
-            <div class="pc-service-title-container">
-              <div class="pc-column-service-items">
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Допомога у міграції</h3>
-                  </div>
-                  <p>
-                    Надаю консультації та підтримку особам, які планують міграцію
-                    до іншої країни або в Україну. Це може включати отримання
-                    візи, робочого дозволу, пошуку місця для проживання та інші
-                    аспекти міграції;
+            <!-- добавлено -->
+            <div class="service-img-flex-container">
+              <div class="service-types-img-pc migration-img-pc"></div>
+              <div class="service-title">
+                <!-- добавлено -->
+                <div class="service-title-flex-container">
+                  <img src="./images/migration-logo.png" alt="#" />
+                  <h1>Міграційні послуги</h1>
+                </div>
+                <!-- добавлено -->
+                <div class="migration-serv-img migration-img"></div>
+                <article>
+                  <p class="migtation-descr">
+                    Це галузь права, яка стосується переміщення осіб між країнами,
+                    визначає їхні правові статуси та обов'язки в новому місці
+                    проживання. Ця галузь права регулює питання візових режимів та
+                    дозволів на працевлаштування до статусу біженців та отримання
+                    громадянства.
                   </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Отримання громадянства / відмова від громадянства</h3>
-                  </div>
-                  <p>
-                    Надаю консультації та підтримку особам, які планують міграцію
-                    до іншої країни або в Україну. Це може включати отримання
-                    візи, робочого дозволу, пошуку місця для проживання та інші
-                    аспекти міграції;
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Оформлення запрошення, візи</h3>
-                  </div>
-                  <p>
-                    Допомагаю в оформленні запрошень для іноземців та отриманні
-                    візи для в'їзду до країни;
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Отримання ВНЖ, ПМП, громадянства</h3>
-                  </div>
-                  <p>
-                    Надаю правовий супровід у процесах отримання постійного місця
-                    проживання (ВНЖ), постійного місця проживання на постійній
-                    основі (ПМП) та громадянства;
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Реєстрація (прописка) іноземця</h3>
-                  </div>
-                  <p>
-                    Допомагаю іноземцям офіційно зареєструватися на території
-                    України, що вкрай важливо для легального перебування;
-                  </p>
-                </div>
-              </div>
-
-              <div class="pc-column-service-items">
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Отримання дозволу на працевлаштування</h3>
-                  </div>
-                  <p>
-                    Надаю підтримку в оформленні дозволу на працевлаштування для
-                    іноземців, які планують працювати в Україні;
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg >
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Апостиль, консульська легалізація, нотаріальний переклад
-                      документів</h3>
-                  </div>
-                  <p>
-                    Забезпечую легалізацію та переклад документів, які вимагаються
-                    для міграційних процедур;
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>
-                      Продовження терміну перебування на території України/дозволу
-                      на роботу
-                    </h3>
-                  </div>
-                  <p>
-                    Надаю правовий супровід у питаннях продовження термінів
-                    перебування на території України чи отримання дозволів на
-                    роботу.
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Оформлення/підтвердження громадянства дітей</h3>
-                  </div>
-                  <p>
-                    Вирішую питання щодо громадянства дітей, особливо якщо батьки
-                    є громадянами різних країн;
-                  </p>
-                </div>
-                <div class="service-item">
-                  <div class="service-details">
-                    <svg width="24" height="24">
-                      <use href="./images/sprite.svg#circle-yes"></use>
-                    </svg>
-                    <h3>Отримання податкового номера для іноземця</h3>
-                  </div>
-                  <p>Допомагаю іноземцям отримати податковий номер в Україні;</p>
-                </div>
+                </article>
+                <button type="button" class="services-btn" data-modal-open>
+                  Замовити консультацію
+                </button>
               </div>
             </div>
-            <!-- контейнер для компоновки на min width -PC -->
+            <!-- закрыть <div flex-container> -->
           </div>
-          <div class="service-item-bottom-text">
-            <p>
-              Я гарантую кожному клієнту прозорі ціни та ефективний результат.
-            </p>
-            <br />
-            <p>
-              Для отримання додаткової консультацій залиште заявку на сайті або
-              просто зателефонуйте.
-            </p>
+
+          <div class="service-type-pc-flex-container">
+            <div class="side-buttons-pc-flex-container">
+              <include src="./partials/includes/side-service-buttons.html"></include>
+            </div>
+            <div class="service-type-pc-block-container">
+              <div class="whyme-title">
+                <h2 class="get-title">Що ви отримаєте, звернувшись до мене?</h2>
+                <p>Завдання які вирішує адвокат з міграційних питань:</p>
+                <!-- контейнер для компоновки на min width -PC -->
+                <div class="pc-service-title-container">
+                  <div class="pc-column-service-items">
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Допомога у міграції</h3>
+                      </div>
+                      <p>
+                        Надаю консультації та підтримку особам, які планують міграцію
+                        до іншої країни або в Україну. Це може включати отримання
+                        візи, робочого дозволу, пошуку місця для проживання та інші
+                        аспекти міграції;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Отримання громадянства / відмова від громадянства</h3>
+                      </div>
+                      <p>
+                        Надаю консультації та підтримку особам, які планують міграцію
+                        до іншої країни або в Україну. Це може включати отримання
+                        візи, робочого дозволу, пошуку місця для проживання та інші
+                        аспекти міграції;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Оформлення запрошення, візи</h3>
+                      </div>
+                      <p>
+                        Допомагаю в оформленні запрошень для іноземців та отриманні
+                        візи для в'їзду до країни;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Отримання ВНЖ, ПМП, громадянства</h3>
+                      </div>
+                      <p>
+                        Надаю правовий супровід у процесах отримання постійного місця
+                        проживання (ВНЖ), постійного місця проживання на постійній
+                        основі (ПМП) та громадянства;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Реєстрація (прописка) іноземця</h3>
+                      </div>
+                      <p>
+                        Допомагаю іноземцям офіційно зареєструватися на території
+                        України, що вкрай важливо для легального перебування;
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="pc-column-service-items">
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Отримання дозволу на працевлаштування</h3>
+                      </div>
+                      <p>
+                        Надаю підтримку в оформленні дозволу на працевлаштування для
+                        іноземців, які планують працювати в Україні;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg>
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Апостиль, консульська легалізація, нотаріальний переклад
+                          документів</h3>
+                      </div>
+                      <p>
+                        Забезпечую легалізацію та переклад документів, які вимагаються
+                        для міграційних процедур;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>
+                          Продовження терміну перебування на території України/дозволу
+                          на роботу
+                        </h3>
+                      </div>
+                      <p>
+                        Надаю правовий супровід у питаннях продовження термінів
+                        перебування на території України чи отримання дозволів на
+                        роботу.
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Оформлення/підтвердження громадянства дітей</h3>
+                      </div>
+                      <p>
+                        Вирішую питання щодо громадянства дітей, особливо якщо батьки
+                        є громадянами різних країн;
+                      </p>
+                    </div>
+                    <div class="service-item">
+                      <div class="service-details">
+                        <svg width="24" height="24">
+                          <use href="./images/sprite.svg#circle-yes"></use>
+                        </svg>
+                        <h3>Отримання податкового номера для іноземця</h3>
+                      </div>
+                      <p>Допомагаю іноземцям отримати податковий номер в Україні;</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- контейнер для компоновки на min width -PC -->
+              </div>
+              <div class="service-item-bottom-text">
+                <p>
+                  Я гарантую кожному клієнту прозорі ціни та ефективний результат.
+                </p>
+                <br />
+                <p>
+                  Для отримання додаткової консультацій залиште заявку на сайті або
+                  просто зателефонуйте.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
         </div>
       </section>
     </div>
-      <include src="./partials/includes/order-form.html"></include>
-      <include src="./partials/includes/order-form-pc.html"></include>
-    </main>
-    <include src="./partials/includes/footer.html"></include>
-  
-  
-    <!-- modal windows html components-->
-    <include src="./partials/includes/modal-order-window.html"></include>
-    <include src="./partials/includes/modal-thanks.html"></include>
-    <!-- modal windows script -->
-    <script defer src="./js/modal-order-window.js"></script>
-    <!-- mobile menu script -->
-    <script defer src="./js/my-mobile-menu.js"></script>
-    <!-- redirect service types script for mob-->
-    <script defer src="./js/service-types-script.js"></script>
-    <!-- redirect service types script for side menu tab and PC-->
-    <script type="module" src="./js/service-types-sidebar-script.js"></script>
-    <!-- <script type="module" src="./js/proba.js"></script> -->
+    <include src="./partials/includes/order-form.html"></include>
+    <include src="./partials/includes/order-form-pc.html"></include>
+  </main>
+  <include src="./partials/includes/footer.html"></include>
 
-   <!-- validation script -->
-   <script src="./js/form-validate.js" type="module"></script>
-   
-  </body>
+
+  <!-- modal windows html components-->
+  <include src="./partials/includes/modal-order-window.html"></include>
+  <include src="./partials/includes/modal-thanks.html"></include>
+  <!-- modal windows script -->
+  <script defer src="./js/modal-order-window.js"></script>
+  <!-- mobile menu script -->
+  <script defer src="./js/my-mobile-menu.js"></script>
+  <!-- redirect service types script for mob-->
+  <script defer src="./js/service-types-script.js"></script>
+  <!-- redirect service types script for side menu tab and PC-->
+  <script type="module" src="./js/service-types-sidebar-script.js"></script>
+  <!-- <script type="module" src="./js/proba.js"></script> -->
+
+  <!-- validation script -->
+  <script src="./js/form-validate.js" type="module"></script>
+
+</body>
+
 </html>

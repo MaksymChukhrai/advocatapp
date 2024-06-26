@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кейси з практики</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <!-- <script type="module" src="./index.js"></script> -->
-  </head>
-  <body>
-    <include src="./partials/includes/header.html"></include>
-    <main>
-      <section class="cases">
-        <div class="cases-content">
-            <div class="cases-about">
-                <h1>Успішні кейси з моєї практики</h1>
-                <p>Приклади реальних кейсів, як успішні рішення допомогли клієнтам вирішити правові проблеми</p>
-            </div>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKWS0HTM5G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WKWS0HTM5G');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кейси з практики</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- <script type="module" src="./index.js"></script> -->
+</head>
+
+<body>
+  <include src="./partials/includes/header.html"></include>
+  <main>
+    <section class="cases">
+      <div class="cases-content">
+        <div class="cases-about">
+          <h1>Успішні кейси з моєї практики</h1>
+          <p>Приклади реальних кейсів, як успішні рішення допомогли клієнтам вирішити правові проблеми</p>
+        </div>
         <include src="./partials/includes/cases/cases-mob-container.html"></include>
         <include src="./partials/includes/cases/cases-pc-tab-container.html"></include>
-         </div>
+      </div>
     </section>
-      <include src="./partials/includes/steps.html"></include>
-      <section  class="feedback-slider-section">
-        <div class="feedback-cases-container">
-              <h2>Відгуки клієнтів</h2>
-              <div class="feedback-flex-container">
-                  <div class="feedback-img-cases"></div>
-                    <div class="width-container">
-                  <include src="./partials/includes/feedback-cases.html"></include>
-                </div>
-              </div>
+    <include src="./partials/includes/steps.html"></include>
+    <section class="feedback-slider-section">
+      <div class="feedback-cases-container">
+        <h2>Відгуки клієнтів</h2>
+        <div class="feedback-flex-container">
+          <div class="feedback-img-cases"></div>
+          <div class="width-container">
+            <include src="./partials/includes/feedback-cases.html"></include>
+          </div>
         </div>
-      </section>
-    
-    </main>
-    <include src="./partials/includes/footer.html"></include>
- 
-    <!-- modal windows html components-->
-    <include src="./partials/includes/modal-order-window.html"></include>
-    <include src="./partials/includes/modal-thanks.html"></include>
-    <!-- modal windows script -->
+      </div>
+    </section>
+
+  </main>
+  <include src="./partials/includes/footer.html"></include>
+
+  <!-- modal windows html components-->
+  <include src="./partials/includes/modal-order-window.html"></include>
+  <include src="./partials/includes/modal-thanks.html"></include>
+  <!-- modal windows script -->
   <script defer src="./js/modal-order-window.js"></script>
   <!-- mobile menu script -->
   <script defer src="./js/my-mobile-menu.js"></script>
   <script type="module" src="./js/slick-carousel-cases.js"></script>
   <!-- cases card animations for mob version -->
   <script type="module" src="./js/cases.jquery.js"></script>
- <!-- cases card animations for TAB-PC versions -->
- <script type="module" src="./js/cases-desktop.jquery.js"></script>
- <!-- <script type="module" src="./js/proba.js"></script> -->
+  <!-- cases card animations for TAB-PC versions -->
+  <script type="module" src="./js/cases-desktop.jquery.js"></script>
+  <!-- <script type="module" src="./js/proba.js"></script> -->
 
-     <!-- validation script -->
-     <script src="./js/form-validate.js" type="module"></script>
+  <!-- validation script -->
+  <script src="./js/form-validate.js" type="module"></script>
 
-  
 
- <script defer src="./js/fonts-adjust.js"></script>
- <!-- steps animations -->
- <script defer src="./js/steps-animation.js"></script>
+
+  <script defer src="./js/fonts-adjust.js"></script>
+  <!-- steps animations -->
+  <script defer src="./js/steps-animation.js"></script>
 </body>
+
 </html>
