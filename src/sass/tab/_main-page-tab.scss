@@ -72,9 +72,13 @@
   .mob {
     display: none;
   }
-  .slogan-order-btn:hover {
+  .slogan-order-btn:hover{
     cursor: pointer;
+    background: var(--button-hover-gradient);
   }
+.slogan-order-btn:active{
+    background: var(--button-active-gradient);
+    }
 
   // achievements-section
   .achievements-container {

@@ -47,6 +47,12 @@
       #deaa5e 66.5%,
       #aa640d 97.51%
     );
+  --button-active-gradient: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #b4721d;
   --main-white-color: #ffffff;
   --modal-white-color: #fcfeff;
   --button-white-color: #e7e7e7;

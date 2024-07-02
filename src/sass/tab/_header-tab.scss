@@ -12,7 +12,16 @@
 
   .header-btn:hover{
     cursor: pointer;
+    background: var(--button-hover-gradient);
   }
+  .header-btn:active{
+    background: var (--button-active-gradient);
+    }
+
+
+
+
+
   main {
     padding-top: 106px;
   }

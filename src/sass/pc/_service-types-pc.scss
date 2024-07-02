@@ -62,6 +62,10 @@
     color:var(--header-white-color);
     cursor: pointer;
   }
+  .services-btn:active{
+    background: var(--button-active-gradient);
+    color:var(--header-white-color);
+  }
 
   .migration-serv-container article {
     color: var(--black-secondary-text-color);
