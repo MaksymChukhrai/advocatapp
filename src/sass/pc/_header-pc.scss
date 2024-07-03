@@ -60,7 +60,31 @@ header{
         padding: 10px 30px;
 }
 
+.header-menu_link {
+    text-decoration: none; 
+    position: relative; 
+  }
+  
+  .header-menu_link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color:var(--caption-grey); 
+    opacity: 0; /* Изначально невидимо */
 
-
+    transition: transform 0.4s ease-out;
+  }
+  
+  .header-menu_link:hover::after {
+transform: scaleX(1);
+    opacity: 1; /* Появляется при наведении */
+  }
+  .header-menu_link:hover{
+    font-weight: 700;
+  }
 
 }
