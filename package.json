@@ -3,10 +3,10 @@
 	"version": "2.0.0",
 	"description": "",
 	"homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
-"scripts": {
-    "start": "parcel src/.html",
-    "build": "parcel build src/*.html --public-url /"
-},
+	"scripts": {
+		"start": "parcel src/index.html",
+		"build": "parcel build src/*.html --public-url /advocatapp/"
+	},
 
 	"repository": {
 		"type": "git",
