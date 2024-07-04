@@ -11,14 +11,14 @@ const closeModalBtn = document.querySelector('[data-modal-close]');
 function openModal() {
   backdrop.classList.add('is-visible');
   document.body.classList.add('modal-open');
-  console.log('Клик по кнопке открытия модального окна');
+
 }
 
 // Функция для закрытия модального окна
 function closeModal() {
   backdrop.classList.remove('is-visible');
   document.body.classList.remove('modal-open');
-  console.log('Клик по кнопке закрытия модального окна');
+
 }
 
 // Добавляем обработчики событий для открытия модального окна

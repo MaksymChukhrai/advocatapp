@@ -2,7 +2,7 @@ import JustValidate from 'just-validate/dist/just-validate.es.js';
 import Inputmask from 'inputmask';
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM fully loaded. Initializing form validation.');
+  // console.log('DOM fully loaded. Initializing form validation.');
   initFormValidation('.form');
 
   const modalSubmitBtn = document.querySelector('.modal-submit-btn');
@@ -28,12 +28,12 @@ function debounce(func, wait) {
 }
 
 function initFormValidation(formSelector) {
-  console.log(`Initializing validation for forms: ${formSelector}`);
+  // console.log(`Initializing validation for forms: ${formSelector}`);
   const forms = document.querySelectorAll(formSelector);
   
   forms.forEach((form, index) => {
     const isModal = form.closest('.modal-order-window') !== null;
-    console.log(`Form ${index + 1} is modal: ${isModal}`);
+    // console.log(`Form ${index + 1} is modal: ${isModal}`);
 
     const submitButton = isModal 
       ? document.querySelector('.modal-submit-btn') 
@@ -49,7 +49,7 @@ function initFormValidation(formSelector) {
 
     inputMask.mask(telInput);
 
-    console.log(`Creating JustValidate instance for form ${index + 1}`);
+    // console.log(`Creating JustValidate instance for form ${index + 1}`);
     const validation = new JustValidate(form, {
       errorFieldCssClass: 'is-invalid',
       errorLabelCssClass: 'is-label-invalid',
