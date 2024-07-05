@@ -10,10 +10,10 @@
 
 "repository": {
   "type": "git",
-  "url": "git+https://github.com/AdvocateIgorTarasenko/advocatapp.git"
+  "url": "git+https://https://github.com/MaksymChukhrai/advocatapp.git"
 },
 	"keywords": [],
-	"author": "Maksym Chukhrai <m.chukhrai@gmail.com>",
+	"author": "Maksym --- Chukhrai <m.chukhrai@gmail.com>",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/MaksymChukhrai/advocatapp/issues"
