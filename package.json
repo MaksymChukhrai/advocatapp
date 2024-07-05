@@ -8,10 +8,10 @@
 		"build": "parcel build src/*.html --public-url /advocatapp/"
 	},
 
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MaksymChukhrai/advocatapp.git"
-	},
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/AdvocateIgorTarasenko/advocatapp.git"
+},
 	"keywords": [],
 	"author": "Maksym Chukhrai <m.chukhrai@gmail.com>",
 	"license": "ISC",
