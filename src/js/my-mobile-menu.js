@@ -14,5 +14,7 @@
 
   function toggleMenu() {
     menu.classList.toggle("is-open");
+        // Заблокировать/разблокировать прокручивание страницы
+        document.body.classList.toggle("no-scroll", menu.classList.contains("is-open"));
   }
 })();
