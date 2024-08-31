@@ -49,6 +49,7 @@ The production version of the project will be automatically built and deployed t
  "start": "parcel src/index.html",
  "build": "parcel build src/*.html --public-url /advocatapp/"
 },
+```
 
 ### Building a Production Version
 
