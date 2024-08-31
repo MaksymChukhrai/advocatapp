@@ -1,121 +1,81 @@
-# Parcel template
+# Advocate App
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратитесь к документации](https://parceljs.org/).
-В этот репозиторий выложены исходные файлы проекта
+A multi-page website for advertising lawyer services, showcasing legal expertise across various fields of law. The site offers different forms of collaboration, from one-time consultations to client representation in courts of various instances. It also highlights successful case studies from practice and allows visitors to submit requests for feedback.
 
-## Клонирование репозитория и подготовка к редакции проекта
+## Features
 
-1. Убедитесь что на компьютере установлена LTS-версия Node.js.
-   [Скачайте и установите](https://nodejs.org/en/) её если необходимо.
-2. Склонируйте этот репозиторий.
-3. Откройте проект в VSCode, запустите терминал и свяжите проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-4. Установите зависимости проекта в терминале командой `npm install` .
-5. Запустите режим разработки, выполнив команду `npm start`.
-6. Перейдите в браузере по адресу [http://localhost:1234](http://localhost:1234).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+- 🏛️ Comprehensive information about legal services in various fields
+- 💼 Multiple collaboration options, from consultations to court representation
+- 📊 Showcase of successful case studies
+- 📝 Contact form for client inquiries
+- 🎨 Custom UI/UX design
+- 🔍 SEO-friendly semantic markup
+- 📱 Responsive design for all device types
 
-## Файлы и папки
+## Technologies Used
 
-- Все паршалы файлов стилей лежат и должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляйте в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+- HTML
+- SASS
+- JavaScript
+- jQuery
+- PHP
+- Parcel bundler
 
-## Деплой на GitHub
+## Getting Started
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке вашего репозитория. Зайдите во вкладку `Settings` и в подсекции
-`Actions` выберите выбери пункт `General`.
+### Prerequisites
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+- Node.js and npm installed on your machine
 
-Пролистайте страницу до последней секции, в которой убедитесь что выбраны опции как
-на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
-недостаточно прав для автоматизации процесса деплоя.
+### Installation
 
-![GitHub actions settings](./assets/actions-config-step-2.png)
+1. Clone this repository: `git clone https://github.com/MaksymChukhrai/advocatapp/`
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. 
+2. Install dependencies: `npm install`
+
+3. Start the local development server: `npm start`
+
+4. Open your browser and navigate to [http://localhost:1234](http://localhost:1234)
+
+## Deployment
+
+### GitHub Pages Deployment
+
+The production version of the project will be automatically built and deployed to GitHub Pages, in the `gh-pages` branch, each time the `main` branch is updated (e.g., after a direct push or an accepted pull request).
 
 ```json
 "homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
-	"scripts": {
-		"start": "parcel src/index.html",
-		"build": "parcel build src/*.html --public-url /advocatapp/"
-	},
+"scripts": {
+ "start": "parcel src/index.html",
+ "build": "parcel build src/*.html --public-url /advocatapp/"
+},
+
+### Building a Production Version
+
+## Deploying to Host IQ
+This application with the domain igor-tarasenko.com is hosted by HostIQ.
+
+## Preparing Files and Deploying to Host IQ
+After you've finished working with the project files and verified the correct functionality at http://localhost:1234, follow these steps:
+
+1. In the `package.json` file, change the root directory name (also the base URL). Specifically, the base URL should be set to `/`, as your project is in the root directory of your site (/public_html) on the provider's server.
+Modify the build script in `package.json` as follows:
 ```
-
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
-
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://maksymchukhrai.github.io/advocatapp/index.html](https://maksymchukhrai.github.io/advocatapp/index.html).
-
-Если открывается пустая страница, убедитесь что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у вас неправильное значение свойства `homepage` или скрипта `build` в
-файле `package.json`.
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
-
-# Сборка Production версии проекта.
-Объём версии DEV может достигать 0,5 Гб за счёт многочисленных вспомогательных файлов папки `node_modules` и кеша. В то же время, собранная оптимизированная версия проекта занимает до 10 Мб места, использует традиционные настройки серверов большинства хостинг провайдеров.
-
-## Деплой на хостинг провайдера Host IQ
-Данное приложение с доменом [igor-tarasenko.com](https://igor-tarasenko.com/) хостится у провайдера [HostIQ](https://hostiq.ua/ukr/)
-
-### Подготовка файлов и деплой на хостинг Host IQ
-После того, как вы закончили работу с файлами проекта, проверили корректную работу функционала на [http://localhost:1234](http://localhost:1234), выполните следующие действия:
-
-1. В файле `package.json` измените название корневого каталога (он же - базовый URL). А именно
-базовый URL-адрес должен быть установлен в `/`, так как на сервере провайдера ваш проект находится в корневой директории вашего сайта (`/public_html`).
-
-Измените скрипт build в файле `package.json` следующим образом:
-```json
 "scripts": {
     "start": "parcel src/.html",
     "build": "parcel build src/*.html --public-url /"
-}, 
-```
-2. Удалите файлы лишнего кеша из папки `.parcel-cache` и файлы из папки `dist`.
-3. В консоли VScode выполните команду `npm run build` для сборки Production версии проекта. После компиляции файлы проекта будут собраны в папке `dist`
-4. Используя ftp доступ на сервер, перенесите все файлы папки `dist` на сервер в папку `/public_html`. Файл `src\mail.php` и папку `src\phpmailer` при необходимости перенесите отдельно, так как они не попадают в пакет сборки Production.
-5. По окончании выгрузки файлов на сервер, проверьте работоспособность функционала, используя [домен проекта](https://igor-tarasenko.com/).
+},```
+
+2. Delete excess cache files from the `.parcel-cache` folder and files from the `dist` folder.
+
+3. In the VSCode console, run the command `npm run build` to build the Production version of the project. After compilation, the project files will be assembled in the `dist` folder.
+4. Using FTP access to the server, transfer all files from the dist folder to the server in the `/public_html` folder. If necessary, transfer the src\mail.php file and `src\phpmailer` folder separately, as they are not included in the Production build package.
+5. After uploading the files to the server, check the functionality using [the project domain](https://igor-tarasenko.com/).
+
+## License
+This project is open-source and available under the MIT License.
+
+## Acknowledgments
+
+- Parcel for the fast, zero configuration web application bundler
+- HostIQ for reliable hosting services
