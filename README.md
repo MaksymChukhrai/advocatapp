@@ -65,7 +65,8 @@ Modify the build script in `package.json` as follows:
 "scripts": {
     "start": "parcel src/.html",
     "build": "parcel build src/*.html --public-url /"
-},```
+},
+```
 
 2. Delete excess cache files from the `.parcel-cache` folder and files from the `dist` folder.
 
