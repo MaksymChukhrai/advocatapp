@@ -2,11 +2,11 @@
   "name": "advocatapp",
   "version": "2.0.0",
   "description": "",
-"homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
-"scripts": {
- "start": "parcel src/index.html",
- "build": "parcel build src/*.html --public-url /advocatapp/"
-},
+  "homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/*.html --public-url /advocatapp/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://https://github.com/MaksymChukhrai/advocatapp.git"
@@ -22,7 +22,6 @@
     "jquery": "^3.7.1",
     "just-validate": "^4.3.0",
     "modern-normalize": "^3.0.1",
-    "parcel-bundler": "^1.12.5",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
