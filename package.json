@@ -1,40 +1,39 @@
 {
-	"name": "advocatapp",
-	"version": "2.0.0",
-	"description": "",
-	"homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
-	"scripts": {
-		"start": "parcel src/index.html",
-		"build": "parcel build src/*.html --public-url /advocatapp/"
-	},
-
-"repository": {
-  "type": "git",
-  "url": "git+https://https://github.com/MaksymChukhrai/advocatapp.git"
-},
-	"keywords": [],
-	"author": "Maksym Chukhrai <m.chukhrai@gmail.com>",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/MaksymChukhrai/advocatapp/issues"
-	},
-	"dependencies": {
-		"inputmask": "^5.0.8",
-		"jquery": "^3.7.1",
-		"just-validate": "^4.3.0",
-		"modern-normalize": "^1.1.0",
-		"parcel-bundler": "^1.12.5",
-		"slick-carousel": "^1.8.1"
-	},
-	"devDependencies": {
-		"@parcel/config-default": "^2.12.0",
-		"@parcel/core": "^2.12.0",
-		"@parcel/packager-raw-url": "^2.12.0",
-		"@parcel/transformer-sass": "^2.12.0",
-		"@parcel/transformer-webmanifest": "^2.12.0",
-		"parcel": "^2.12.0",
-		"parcel-reporter-clean-dist": "^1.0.4",
-		"posthtml-include": "^1.7.4"
-	},
-	"browserslist": "> 0.5%, last 2 versions, not dead"
+  "name": "advocatapp",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/*.html --public-url /advocatapp/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/MaksymChukhrai/advocatapp.git"
+  },
+  "keywords": [],
+  "author": "Maksym Chukhrai <m.chukhrai@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaksymChukhrai/advocatapp/issues"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.8",
+    "jquery": "^3.7.1",
+    "just-validate": "^4.3.0",
+    "modern-normalize": "^1.1.0",
+    "parcel-bundler": "^1.12.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.12.0",
+    "@parcel/core": "^2.12.0",
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "parcel": "^2.12.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
