@@ -21,7 +21,7 @@
     "inputmask": "^5.0.8",
     "jquery": "^3.7.1",
     "just-validate": "^4.3.0",
-    "modern-normalize": "^1.1.0",
+    "modern-normalize": "^3.0.1",
     "parcel-bundler": "^1.12.5",
     "slick-carousel": "^1.8.1"
   },
@@ -33,7 +33,7 @@
     "@parcel/transformer-webmanifest": "^2.12.0",
     "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^2.0.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
