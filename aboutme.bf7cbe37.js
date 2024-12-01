@@ -1,0 +1,2 @@
+const e=document.querySelector(".backdrop"),o=document.querySelectorAll("[data-modal-open]"),t=document.querySelector("[data-modal-close]");function c(){e.classList.add("is-visible"),document.body.classList.add("modal-open")}function d(){e.classList.remove("is-visible"),document.body.classList.remove("modal-open")}o.forEach(e=>e.addEventListener("click",c)),t.addEventListener("click",d),e.addEventListener("click",function(e){e.currentTarget===e.target&&d()}),console.log("Скрипт загружен");
+//# sourceMappingURL=aboutme.bf7cbe37.js.map
