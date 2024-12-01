@@ -1,6 +1,6 @@
 //src\js\modal-order-window.js
 
-
+console.log('начало скрипта');
 // Получаем ссылки на необходимые элементы
 const backdrop = document.querySelector('.backdrop');
 const openModalBtn = document.querySelectorAll('[data-modal-open]');
@@ -36,3 +36,4 @@ function closeModalBackdrop(event) {
     closeModal();
   }
 }
+console.log('конец скрипта');
