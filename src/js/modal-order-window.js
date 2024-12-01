@@ -28,6 +28,7 @@ openModalBtn.forEach(btn => btn.addEventListener('click', openModal));
 closeModalBtn.addEventListener('click', closeModal);
 // submitModalBtn.addEventListener('click', closeModal);
 backdrop.addEventListener('click', closeModalBackdrop);
+console.log('Скрипт загружен');
 
 // Функция для закрытия модального окна при клике вне его области
 function closeModalBackdrop(event) {
