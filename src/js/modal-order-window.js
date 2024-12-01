@@ -1,6 +1,6 @@
 // src/js/modal-order-window.js
 (function() {
-  console.log('начало скрипта');
+ 
 
   // Безопасное получение элементов
   function safeQuerySelector(selector) {
@@ -21,7 +21,7 @@
     if (backdrop) {
       backdrop.classList.add('is-visible');
       document.body.classList.add('modal-open');
-      console.log('Открытие модального окна');
+      
     }
   }
 
@@ -30,7 +30,7 @@
     if (backdrop) {
       backdrop.classList.remove('is-visible');
       document.body.classList.remove('modal-open');
-      console.log('Закрытие модального окна');
+      
     }
   }
 
@@ -68,5 +68,5 @@
   // Инициализируем listeners после полной загрузки DOM
   document.addEventListener('DOMContentLoaded', initModalListeners);
 
-  console.log('конец скрипта');
+  
 })();
