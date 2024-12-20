@@ -113,8 +113,11 @@
     </div>
   </div>
     <div class="all-rights">
-      <h3>​​​​© 2024 Igor Tarasenko</h3>
+      <h3 id="copyright"></h3>
       <h3><a href="./about-me/index.html">Created by Maksym Chukhrai</a></h3>
     </div>
+    <script>
+      document.getElementById('copyright').innerHTML = `© ${new Date().getFullYear()} Igor Tarasenko`;
+  </script>
   
 </footer>
