@@ -57,14 +57,14 @@
       }
     }
   }
-  .services-btn:hover{
+  .services-btn:hover {
     background: var(--button-hover-gradient);
-    color:var(--header-white-color);
+    color: var(--header-white-color);
     cursor: pointer;
   }
-  .services-btn:active{
+  .services-btn:active {
     background: var(--button-active-gradient);
-    color:var(--header-white-color);
+    color: var(--header-white-color);
   }
 
   .migration-serv-container article {
@@ -84,9 +84,20 @@
       font-size: 16px;
       margin-top: 0px;
       margin-bottom: 0px;
+      .criminal-descr-first-line {
+        display: block;
+        margin-bottom: 10px;
+      }
     }
     p.fintech-descr {
       font-size: 20px;
+    }
+    p.military-descr {
+      font-size: 20px;
+      .military-descr-first-line {
+        display: block;
+        margin-bottom: 10px;
+      }
     }
     p.civil-descr {
       font-size: 20px;
@@ -96,6 +107,10 @@
     }
     p.intellectual-descr {
       font-size: 20px;
+      .intellectual-descr-first-line {
+        display: block;
+        margin-bottom: 10px;
+      }
     }
     p.debt-rec-descr {
       font-size: 20px;
@@ -191,7 +206,8 @@
         rgba(135, 125, 125, 0.4) 0%,
         rgba(135, 125, 125, 0.4) 100%
       ),
-      url('../images/intellectual-image_2x.webp') lightgray 50% / cover no-repeat;
+      url('../images/intellectual-image_2x.webp') lightgray 50% / cover
+        no-repeat;
   }
 
   .military-img-pc {
