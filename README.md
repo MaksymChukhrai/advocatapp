@@ -62,7 +62,7 @@ After you've finished working with the project files and verified the correct fu
 1. In the `package.json` file, change the root directory name (also the base URL). Specifically, the base URL should be set to `/`, as your project is in the root directory of your site (/public_html) on the provider's server.
 Modify the build script in `package.json` as follows:
 
-```
+```json
 "homepage": "https://igor-tarasenko.com",
 "scripts": {
     "start": "parcel src/.html",
