@@ -1,10 +1,47 @@
+# Robots.txt for igor-tarasenko.com
+# Обновлено: 2025-07-28
+
 User-agent: *
 Disallow: /css/
 Disallow: /favicon/
 Disallow: /js/
 Disallow: /phpmailer/
 Disallow: /mail.php
-Disallow: /priv-policy.html
 Disallow: /README.md
+Disallow: /src/
+Disallow: /*.pdf$
+Disallow: /tmp/
+Disallow: /backup/
 
+# Разрешить доступ к важным файлам
+Allow: /favicon.ico
+Allow: /robots.txt
+
+# Специальные правила для поисковых ботов
+User-agent: Googlebot
+Allow: /css/
+Allow: /js/
+
+User-agent: Bingbot
+Allow: /css/
+Allow: /js/
+
+User-agent: YandexBot
+Allow: /css/
+Allow: /js/
+
+# Блокировка нежелательных ботов
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Указание на sitemap
 Sitemap: https://igor-tarasenko.com/sitemap.xml
+
+# Время задержки между запросами (в секундах)
+Crawl-delay: 1
