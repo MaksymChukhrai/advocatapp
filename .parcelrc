@@ -3,7 +3,13 @@
   "transformers": {
     "*.js": ["@parcel/transformer-js"]
   },
-  "reporters": ["...", "parcel-reporter-clean-dist"]
+  "reporters": ["...", "parcel-reporter-clean-dist"],
+  "optimizers": {
+    "*.svg": []
+  },
+  "packagers": {
+    "*.svg": "@parcel/packager-raw"
+  }
 }
 
 

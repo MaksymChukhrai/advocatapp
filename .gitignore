@@ -109,3 +109,6 @@ dist
 .tern-port
 
 .CODEOWNERS
+
+# Promt file
+master_promt_adv_app.txt

@@ -1,21 +1,23 @@
 {
-  "name": "advocatapp",
-  "version": "2.0.0",
+  "name": "advocate-tarasenko-app",
+  "version": "2.0.3",
   "description": "",
-"homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
+ "homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
+
 "scripts": {
  "start": "parcel src/index.html",
  "build": "parcel build src/*.html --public-url /advocatapp/"
 },
+
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/MaksymChukhrai/advocatapp.git"
+    "url": "git+https://github.com/MaksymChukhrai/advocate-tarasenko-app.git"
   },
   "keywords": [],
   "author": "Maksym Chukhrai <m.chukhrai@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaksymChukhrai/advocatapp/issues"
+    "url": "https://github.com/MaksymChukhrai/advocate-tarasenko-app/issues"
   },
   "dependencies": {
     "inputmask": "^5.0.8",
@@ -27,6 +29,8 @@
   "devDependencies": {
     "@parcel/config-default": "^2.12.0",
     "@parcel/core": "^2.12.0",
+    "@parcel/optimizer-svgo": "^2.15.4",
+    "@parcel/packager-raw": "^2.15.4",
     "@parcel/packager-raw-url": "^2.12.0",
     "@parcel/transformer-sass": "^2.12.0",
     "@parcel/transformer-webmanifest": "^2.12.0",
