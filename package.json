@@ -2,12 +2,13 @@
   "name": "advocate-tarasenko-app",
   "version": "2.0.3",
   "description": "",
- "homepage": "https://maksymchukhrai.github.io/advocatapp/index.html",
 
-"scripts": {
- "start": "parcel src/index.html",
- "build": "parcel build src/*.html --public-url /advocatapp/"
-},
+
+"homepage": "https://maksymchukhrai.github.io/advocate-tarasenko-app/",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/*.html --public-url /advocate-tarasenko-app/"
+  },
 
   "repository": {
     "type": "git",

@@ -1,72 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Главная страница -->
   <url>
-    <loc>https://igor-tarasenko.com</loc>
-    <lastmod>2025-07-28</lastmod>
+    <loc>https://igor-tarasenko.com/</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-    <url>
+  
+  <!-- Про мене -->
+  <url>
     <loc>https://igor-tarasenko.com/aboutme.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
-    <url>
+  
+  <!-- Послуги -->
+  <url>
     <loc>https://igor-tarasenko.com/migration-services.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
-    <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/criminal-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/tax-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-    <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/fintech.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-    <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/civil-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-    <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/administrative-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-        <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/intellectual-property.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/military-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/debt-recovery.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/debtor-protection.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/labor-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <url>
     <loc>https://igor-tarasenko.com/business-law.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-      <url>
+  
+  <!-- Кейси -->
+  <url>
     <loc>https://igor-tarasenko.com/cases.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-    <url>
+  
+  <!-- Контакти -->
+  <url>
     <loc>https://igor-tarasenko.com/contacts.html</loc>
-    <lastmod>2025-07-28</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
-    <url>
-    <loc>https://igor-tarasenko.com/about-me/index.html</loc>
-    <lastmod>2025-07-28</lastmod>
-  </url>
- 
+
 </urlset>

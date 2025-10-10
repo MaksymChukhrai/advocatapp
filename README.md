@@ -51,6 +51,8 @@ The production version of the project will be automatically built and deployed t
   },
 ```
 
+[Live Github URL page](https://maksymchukhrai.github.io/advocatapp/)
+
 ### Building a Production Version
 
 ## Deploying to Host IQ
