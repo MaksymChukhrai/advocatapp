@@ -47,7 +47,7 @@ The production version of the project will be automatically built and deployed t
 "homepage": "https://maksymchukhrai.github.io/advocate-tarasenko-app/",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/*.html --public-url /advocate-tarasenko-app/"
+    "build": "parcel build src/*.html --public-url /advocatapp/"
   },
 ```
 
