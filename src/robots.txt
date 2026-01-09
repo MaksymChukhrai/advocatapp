@@ -1,5 +1,5 @@
 # Robots.txt for igor-tarasenko.com
-# Обновлено: 2025-07-28
+# Обновлено: 2026-01-09
 
 User-agent: *
 Disallow: /css/

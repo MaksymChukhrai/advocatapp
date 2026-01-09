@@ -1,26 +1,26 @@
 <footer>
   <div class="footer-container">
     <div class="footer-nav-container">
-    <nav>
-      <ul class="list-mobile_nav">
-        <li>
-          <a href="index.html" class="mobile-menu_link current">Головна</a>
-        </li>
-        <li>
-          <a href="aboutme.html" class="mobile-menu_link">Про мене</a>
-        </li>
-        <li>
-          <a href="migration-services.html" class="mobile-menu_link"
-            >Послуги</a
-          >
-        </li>
-        <li>
-          <a href="cases.html" class="mobile-menu_link">Кейси з практики</a>
-        </li>
-        <li><a href="contacts.html" class="mobile-menu_link">Контакти</a></li>
-      </ul>
-    </nav>
-  </div>
+      <nav>
+        <ul class="list-mobile_nav">
+          <li>
+            <a href="index.html" class="mobile-menu_link current">Головна</a>
+          </li>
+          <li>
+            <a href="aboutme.html" class="mobile-menu_link">Про мене</a>
+          </li>
+          <li>
+            <a href="migration-services.html" class="mobile-menu_link"
+              >Послуги</a
+            >
+          </li>
+          <li>
+            <a href="cases.html" class="mobile-menu_link">Кейси з практики</a>
+          </li>
+          <li><a href="contacts.html" class="mobile-menu_link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="name-logo">
       <a href="index.html" class="header-link">
         <h2 class="igor">ігор тарасенко</h2>
@@ -39,7 +39,12 @@
     </div>
     <!-- Кнопка бургер-меню -->
     <div class="burger-menu bm-footer-tab">
-      <button type="button" class="mobile-menu-open" data-menu-open>
+      <button
+        type="button"
+        title="Кнопка бургер-меню"
+        class="mobile-menu-open"
+        data-menu-open
+      >
         <svg width="24" height="24">
           <use href="././images/sprite.svg#burger-menu"></use>
         </svg>
@@ -54,6 +59,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
+            title="Іконка Facebook"
           >
             <svg class="s-icon">
               <use href="././images/sprite.svg#facebook-icon"></use>
@@ -66,6 +72,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
+            title="Іконка Instagram"
           >
             <svg class="s-icon">
               <use href="././images/sprite.svg#instagram-icon"></use>
@@ -78,6 +85,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
+            title="Іконка TikTok"
           >
             <svg class="s-icon">
               <use href="././images/sprite.svg#tik-tok-icon"></use>
@@ -90,6 +98,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
+            title="Іконка Viber"
           >
             <svg class="s-icon">
               <use href="././images/sprite.svg#icon-viber"></use>
@@ -103,6 +112,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="social-link"
+            title="Іконка Telegram"
           >
             <svg class="s-icon">
               <use href="././images/sprite.svg#telegram-icon"></use>
@@ -112,12 +122,20 @@
       </ul>
     </div>
   </div>
-    <div class="all-rights">
-      <h3 id="copyright"></h3>
-      <h3><a href="./about-me/index.html">Created by Maksym Chukhrai</a></h3>
-    </div>
-    <script>
-      document.getElementById('copyright').innerHTML = `© ${new Date().getFullYear()} Igor Tarasenko`;
+  <div class="all-rights">
+    <h3 id="copyright"></h3>
+   <h3>
+  <a href="https://www.mchukhrai.com/" 
+     target="_blank" 
+     rel="noopener noreferrer me" 
+     title="Перейти на сторінку розробника">
+     Created by Maksym Chukhrai
+  </a>
+</h3>
+  </div>
+  <script>
+    document.getElementById(
+      'copyright'
+    ).innerHTML = `© ${new Date().getFullYear()} Igor Tarasenko`;
   </script>
-  
 </footer>
