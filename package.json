@@ -2,15 +2,12 @@
   "name": "advocatapp",
   "version": "2.0.3",
   "description": "",
-
-
   "homepage": "https://maksymchukhrai.github.io/advocatapp/",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /advocatapp/"
   },
-
-"repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/MaksymChukhrai/advocatapp.git"
   },
@@ -20,8 +17,6 @@
   "bugs": {
     "url": "https://github.com/MaksymChukhrai/advocatapp/issues"
   },
-
-
   "dependencies": {
     "inputmask": "^5.0.8",
     "jquery": "^3.7.1",
@@ -37,6 +32,7 @@
     "@parcel/packager-raw-url": "^2.12.0",
     "@parcel/transformer-sass": "^2.12.0",
     "@parcel/transformer-webmanifest": "^2.12.0",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^2.0.1"
