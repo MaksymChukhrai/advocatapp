@@ -44,7 +44,7 @@ A multi-page website for advertising lawyer services, showcasing legal expertise
 The production version of the project will be automatically built and deployed to GitHub Pages, in the `gh-pages` branch, each time the `main` branch is updated (e.g., after a direct push or an accepted pull request).
 
 ```json
-"homepage": "https://maksymchukhrai.github.io/advocate-tarasenko-app/",
+ "homepage": "https://maksymchukhrai.github.io/advocatapp/",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /advocatapp/"
